@@ -94,8 +94,21 @@
           color:rgb(104, 0, 2);
           padding: 20px;
             
+            
         }
 
+
+.footer2 {
+          position: fixed;
+          right: 0;
+          bottom: 50%;
+          transform: translateY(50%);
+          text-align: center;
+          font-size: 80px;
+          color:rgb(104, 0, 2);
+          padding: 20px;
+            
+        }
         .lijeva-strelica {
           width: 50%;
           text-align: right;
@@ -119,6 +132,7 @@
           transform: translate(-50%, -50%);
           width: 80%;
           left: 50%;
+            z-index: 10000
         }
 
         .modal-overlay {
