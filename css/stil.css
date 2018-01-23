@@ -4,6 +4,7 @@
             padding: 0;
             background-color: #25180F;
         }
+      
         
         @font-face {
             font-family: nyala;
@@ -40,11 +41,6 @@
         }
         
         .w3-container {
-            background: url(podloga.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
             height: 100%;
             display: table-cell;
             vertical-align: middle;
@@ -59,7 +55,6 @@
         }
         
         .w3-modal-content {
-            height: 100%;
             display: table;
         }
         
