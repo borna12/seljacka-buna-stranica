@@ -72,7 +72,21 @@
             font-family: nyala;
             font-size: 60px;
             line-height: 0.5;
-            font-weight: 600
+            font-weight: 600 position: absolute;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            display: inline-block;
+            outline: 0;
+            padding: 8px 16px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            background-color: inherit;
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap;
         }
         
         .iks:hover {
@@ -160,5 +174,3 @@
         ::-webkit-scrollbar-thumb {
             background: #FF0000;
         }
-        
-       
