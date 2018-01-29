@@ -62,7 +62,8 @@
             font-family: nyala;
             font-size: 60px;
             line-height: 0.5;
-            font-weight: 600
+            font-weight: 600;
+            position: fixed;
         }
         
         .iks:hover {
@@ -87,7 +88,8 @@
                 width: 1200px;
             }
         }
-   ::-webkit-scrollbar {
+        
+        ::-webkit-scrollbar {
             width: 0px;
             /* remove scrollbar space */
             background: transparent;
@@ -99,15 +101,34 @@
             background: #FF0000;
         }
         
-        
         .prozor {
             background: #DCD1BA;
             position: fixed;
             transform: translate(-50%, -50%);
             top: 50%;
             left: 50%;
-                border-radius: 5px;
+            border-radius: 5px;
         }
-.ikona{font-size: 60px;cursor:pointer;}
-.ikona:hover{color:rgb(104, 0, 2)}
-.ikona:active {color:rgb(104, 0, 2)}
+        
+        .ikona {
+            font-size: 60px;
+            cursor: pointer;
+        }
+        
+        .ikona:hover {
+            color: rgb(104, 0, 2)
+        }
+        
+        .ikona:active {
+            color: rgb(104, 0, 2)
+        }
+        
+        p:first-letter {
+            color: rgb(104, 0, 2);
+            float: left;
+            font-size: 75px;
+            line-height: 50px;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left: 3px;
+        }
