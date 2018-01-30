@@ -2,55 +2,95 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Muzej seljačkih buna</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/w3.css">
-    <link rel="stylesheet" type="text/css" href="css/stil2.css">
-    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="js/image-map.js" type="text/javascript"></script>
+  <meta charset="utf-8">
+  <title>Muzej seljačkih buna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/stil.css">
+  <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="js/image-map.js" type="text/javascript"></script>
+  <style>
+    html,
+    body {
+      background: url(css/podloga2.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
 
+    .moj-modal {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
 </head>
 
 <body>
 
-    <div class='modal-overlay w3-animate-opacity'>
-        <div class='moj-modal'>
-            <div>
-                <div class="w3-container">
-                    <h1 class="naslov"><strong>Feudalno društvo</strong></h1>
-                    <span onclick="location.href='index.html'" class="w3-button w3-display-topright iks">&times;</span>
-                    <div style="width:50%; float:right; text-align:right"><img src="slike/feudalna-piramida.png" class="slike-tekst" usemap="#image-map">
-
-                    </div>
-
-                    <div style="width:50%;float:left">
-                        <p class="tekst">Danas nam je pomalo teško zamisliti društvo u kakvom se živjelo u srednjem vijeku i odnose koji su tada vladali. Iako feudalizam obično poistovjećujemo sa srednjim vijekom, u Hrvatskoj i susjednim zemljama zadržao se sve do 19. stoljeća. Već i stoga, bitno ga je upoznati.
-                            <br> Feudalizam je utemeljen na odnosu između vladara i njegovih vazala te vazala - vlastelina i njihovih podložnika – vazalnom lancu. Naziv feudalizam potječe od riječi <i>feod</i> – posjed i ukazuje na veliko značenje zemlje za obradu u feudalizmu. Vrhovno vlasništvo nad zemljom ima vladar, on pojedine dijelove dodjeljuje velikašima, koji ih daju svojim vazalima, a obrađuju ih njihovi podložnici. Zemljišni posjed – vlastelinstvo, osnova je srednjovjekovnog društva i ekonomije. Dijeli se na dva dijela: <i>alodij</i> i <i>rustikal</i>. Rustikal je podijeljen na mnogo malih jedinica: kmetskih selišta. Svi prinosi s alodija pripadaju vlastelinu, koji je i njegov neposredni vlasnik, dok je rustikal podijeljen seljacima koji ga obrađuju. Seljaci obrađuju vlastelinsku zemlju, to zovemo radnom rentom (ili tlakom), te daju dio prinosa sa svojih polja – to je naturalna renta i novac – novčanu rentu. Za uzvrat, vlastelini su svojim seljacima dužni pružiti zaštitu. Obrađivači su morali davati vlasteli i neka druga davanja, kojima je svrha bila i naglasiti ugled viših staleža. I crkva se financirala iz davanja seljaka kroz crkvenu desetinu.
-                        </p>
-                    </div>
-                </div>
-            </div>
+  <div class='modal-overlay w3-animate-opacity'>
+    <div class='moj-modal'>
+      <div>
+        <div class="w3-container">
+          <h1 class="naslov"><strong>Feudalno društvo</strong></h1>
+          <span onclick="location.href='index.html'" class="w3-button w3-display-topright iks">&times;</span>
+          <div style="width:50%; float:right; text-align:right"><img src="slike/feudalna-piramida.png" class="slike-tekst" usemap="#image-map">
+          </div>
+          <div style="width:50%;float:left">
+            <p class="tekst">Danas nam je pomalo teško zamisliti društvo u kakvom se živjelo u srednjem vijeku i odnose koji su tada vladali. Iako feudalizam obično poistovjećujemo sa srednjim vijekom, u Hrvatskoj i susjednim zemljama zadržao se sve do 19. stoljeća. Već
+              i stoga, bitno ga je upoznati.
+              <br> Feudalizam je utemeljen na odnosu između vladara i njegovih vazala te vazala - vlastelina i njihovih podložnika – vazalnom lancu. Naziv feudalizam potječe od riječi <i>feod</i> – posjed i ukazuje na veliko značenje zemlje za obradu
+              u feudalizmu. Vrhovno vlasništvo nad zemljom ima vladar, on pojedine dijelove dodjeljuje velikašima, koji ih daju svojim vazalima, a obrađuju ih njihovi podložnici. Zemljišni posjed – vlastelinstvo, osnova je srednjovjekovnog društva i ekonomije.
+              Dijeli se na dva dijela: <i>alodij</i> i <i>rustikal</i>. Rustikal je podijeljen na mnogo malih jedinica: kmetskih selišta. Svi prinosi s alodija pripadaju vlastelinu, koji je i njegov neposredni vlasnik, dok je rustikal podijeljen seljacima
+              koji ga obrađuju. Seljaci obrađuju vlastelinsku zemlju, to zovemo radnom rentom (ili tlakom), te daju dio prinosa sa svojih polja – to je naturalna renta i novac – novčanu rentu. Za uzvrat, vlastelini su svojim seljacima dužni pružiti zaštitu.
+              Obrađivači su morali davati vlasteli i neka druga davanja, kojima je svrha bila i naglasiti ugled viših staleža. I crkva se financirala iz davanja seljaka kroz crkvenu desetinu.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="footer2">
-        <div class="lijeva-strelica">
+  </div>
 
-        </div>
-        <div class="desna-strelica" style="float:none;"><a href="plemstvo.html">➵</a>
+  <div id="burgovi" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+      <div class="w3-container">
+        <span onclick="$('#burgovi').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+        <h1 class="naslov"><strong>BURGOVI</strong></h1>
+        <span onclick="location.href='index.html'" class="w3-button w3-display-topright iks">&times;</span>
 
+        <div style="width:50%; float:right; text-align:center; height:700px;"><a href="burgovi-2.html"><img src="slike/1-3_Vlastelinstvo-1573.png" class="slike-tekst"></a>
         </div>
+
+        <div style="width:50%;float:left; height:700px; overflow:auto">
+          <p class="tekst">
+            Vlastelinski grad, burg ili zamak, kako ga god želite zvati, je dom feudalca u srednjem vijeku. U njemu se stanovalo, iz njega se upravljalo posjedom, ali je imao zadatak i zaštiti svog vlasnika, s obzirom da su se nesuglasice često rješavale nasiljem.
+            Stoga su zidovi burga visoki i snažni te ojačani kulama. Na najvišemu mjestu gradskoga kompleksa obično je stajala tzv. <em>branič-kula</em>, koju, zanimljivo je, većina zagorskih gradova nema. Posebno se brinulo o zaštiti ulaza.
+            U slučaju opasnosti trebalo je spriječiti prilaz uvlačenjem ljestava, spuštanjem rešetke ili pak podizanjem mosta što je vodio preko opkopa.
+            <br> Život u takvim burgovima nije baš bio osobito ugodan, prozori su bili mali, zidovi vlažni, grijani su bili tek neki prostori, krevete su stanari štitili baldahinima (svodovima od tkanine) da bi im bilo udobnije spavati.
+            <br> S obzirom na često „dobre“ odnose sa susjedima, plemići su voljeli svoje domove graditi na strmim uzvisinama, odakle se moglo vidjeti tko im dolazi u goste. Gradovi smješteni u ravnici štitili su se opkopima ispunjenima vodom.
+            <br> U vanjskim dijelovima mogle su postojati staje, manji vrtovi i ostalo potrebno za svakodnevni život. Od velike važnosti, pogotovo u trenucima opsade, bila je opskrba vodom putem bunara koji je crpio podzemne vode ili cisterne u koju se
+            skupljala kišnica. Važan dio grada bila je i kapela.
+            <br> Vlastelinski se gradovi javljaju i razvijaju usporedo s razvojem feudalizma. Prvi su gradovi u Zagorju vjerojatno bili građeni od drva i zemlje te se nisu očuvali. Krajem 12. stoljeća započinje gradnja kamenih gradova, kojih je sve više
+            nakon provale Mongola 1242. godine, jer se pokazalo da samo kameni gradovi podignuti na teško pristupačnim uzvisinama omogućuju dobru zaštitu. Stoga je gradnja većine zagorskih gradova započeta u drugoj polovici 13. ili u 14. stoljeću, a u
+            15., i osobito 16. stoljeću, dograđivani su za ratovanje novim, vatrenim oružjem. Osim uobičajenih sukoba među feudalcima, u novome su vijeku gradove sve više ugrožavali i pobunjeni seljaci, a u to doba i Turci se povremeno pojavljuju u Zagorju.
+            Ipak, postupno sve stabilnije okolnosti potaknule su želju za udobnijim i raskošnijim stanovanjem. Teško dostupne gradove feudalci postupno napuštaju i prepuštaju ih propadanju i podižu novu vrstu feudalnih rezidencija – dvorce.<br><br>
+            <img src="slike/1-7_0_naslovna_Burgovi.png" style="width:100%;">
+          </p>
+        </div>
+
+      </div>
     </div>
-
-    <map name="image-map">
-        <area target="" alt="Burgovi" title="Burgovi" href="burgovi.html" coords="183,252,580,328" shape="rect">
+  </div>
+  <map name="image-map">
+        <area target="" alt="Burgovi" title="Burgovi" coords="183,252,580,328" shape="rect" onclick='$("#burgovi").show();'>
         <area target="" alt="Purgari" title="Purgari" href="purgari.html" coords="93,551,490,624" shape="rect">
         <area target="" alt="Kmetovi" title="Kmetovi" href="kmetovi.html" coords="1108,937,1476,1010" shape="rect">
         <area target="" alt="Plemstvo" title="Plemstvo" href="plemstvo.html" coords="1066,311,1495,377" shape="rect">
     </map>
-    <script>
-        $('img[usemap]').imageMap();
-    </script>
+  <script>
+    $('img[usemap]').imageMap();
+  </script>
 </body>
 
 </html>
