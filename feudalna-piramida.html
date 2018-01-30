@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/w3.css">
   <link rel="stylesheet" type="text/css" href="css/stil.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
   <script src="js/image-map.js" type="text/javascript"></script>
   <style>
@@ -28,13 +29,13 @@
 </head>
 
 <body>
+  <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home"><i class="fa fa-fort-awesome" aria-hidden="true"></i></span>
 
   <div class='modal-overlay w3-animate-opacity'>
     <div class='moj-modal'>
       <div>
         <div class="w3-container">
           <h1 class="naslov"><strong>Feudalno društvo</strong></h1>
-          <span onclick="location.href='index.html'" class="w3-button w3-display-topright iks">&times;</span>
           <div style="width:50%; float:right; text-align:right"><img src="slike/feudalna-piramida.png" class="slike-tekst" usemap="#image-map">
           </div>
           <div style="width:50%;float:left">
@@ -57,7 +58,6 @@
       <div class="w3-container">
         <span onclick="$('#burgovi').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
         <h1 class="naslov"><strong>BURGOVI</strong></h1>
-        <span onclick="location.href='index.html'" class="w3-button w3-display-topright iks">&times;</span>
 
         <div style="width:50%; float:right; text-align:center; height:700px;"><a href="burgovi-2.html"><img src="slike/1-3_Vlastelinstvo-1573.png" class="slike-tekst"></a>
         </div>
@@ -82,11 +82,109 @@
       </div>
     </div>
   </div>
+
+  <div id="purgovi" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+      <div class="w3-container">
+        <span onclick="$('#purgovi').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+        <h1 class="naslov"><strong>PURGARI</strong></h1>
+        <div style="width:50%; float:right; text-align:center;"><img src="slike/purgari.png" class="slike-tekst">
+        </div>
+
+        <div style="width:50%;float:left; overflow:auto">
+          <p class="tekst">
+            Purgari (purger, purgar, od njem. riječi Bürger, građanin) su članovi povlaštenih trgovačkih općina. Mogli su imati različite feudalne terete, no i ove građane najniže vrste zemaljska gospoda nazivaju plemenitim purgarima, a i oni sami se često tako zovu.
+            <br> Stanovnici trgovišta Donje Stubice i Podsuseda nazivali su se u 16. st. i građanima (cives) i kmetovima (coloni), što pokazuje da se njihov položaj mijenjao i da se položaj purgara nastojao izjednačiti s položajem kmetova.
+            <br> Iako se njihov položaj pogoršavao, purgari su na susjedgradsko-stubičkom vlastelinstvu u 16. st. još uvijek činili zasebnu kategoriju podložnika. Donjostubički su 1566. plaćali veće novčane daće nego kmetovi. Stanovnici susjedgradskog
+            trgovišta (Podsuseda) prema urbaru iz 1566. nisu davali redovitu daću u novcu i naturi. Njihova se radna renta sastojala od specijalnih poslova u vlastelinskom gospodarstvu: morali su nositi poštu, voditi brigu o brodu na Savi i obrađivati
+            vlastelinski vrt. Njihov je najteži teret bila dužnost prodaje vlastelinskog vina.
+            <br> <br>
+            <img src="slike/purgari-2.png" style="width:100%;">
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="plemstvo" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+      <div class="w3-container">
+        <span onclick="$('#plemstvo').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+        <h1 class="naslov"><strong>PLEMSTVO</strong></h1>
+        <div style="width:50%; float:right; text-align:center; height:700px;"><img src="slike/plemstvo.png" class="slike-tekst">
+        </div>
+
+        <div style="width:50%;float:left; height:700px; overflow:auto; padding-right: 20px;">
+          <p class="tekst">
+            Plemstvo je u feudalnom društvu društveno - staleška kategorija, koja se u gospodarskom smislu temelji na posjedovanju zemlje i radne snage na njoj, a u političkom životu plemstvo sudjeluje u diobi javne vlasti, a uz to ima ulogu profesionalne vojske.
+            Ili, jednostavnije rečeno - plemići su oni koji imaju posjed na kojem drugi rade, a imaju i određena zakonska prava koja ih razlikuju od ostalih ljudi.<br> Na početku 16. stoljeća u Kraljevini Slavoniji bilo je između 850 i 950
+            feudalnih posjednika, na čijim je posjedima bilo 25 do 30 000 kmetskih obitelji. Među njima, 5 - 6% velikaša (<em>magnates</em>) držalo je oko 75% poreznih dimova. Među velikaše ubrajamo nasljedne knezove (grofove), barune i crkvene velikodostojanstvenike.
+            Najbrojnija skupina feudalnih posjednika kod nas je srednje i niže plemstvo. Oni su činili oko 95% posjednika, ali im je pripadalo samo nešto više od 25% feudalnog zemljišnog posjeda – poreznih dimova. Ova je skupina imala važnu ulogu u političkom
+            i društvenom životu. Njezin se udio u feudalnom zemljišnom fondu počeo povećavati potkraj 16. stoljeća, kada su se na mnogim starim plemićkim posjedima počele stvarati kurije sa zasebnim posjedima, koje plemići uzimaju u zalog od vlastelina
+            za određene poslove i zasluge. <br><br>
+            <img src="slike/plemstvo-2.png" style="width:100%;">
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="kmetovi" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+      <div class="w3-container">
+        <span onclick="$('#kmetovi').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+        <h1 class="naslov"><strong>KMETOVI</strong></h1>
+        <div style="width:50%; float:right; text-align:center;"><img src="slike/kmetovi.png" class="slike-tekst">
+        </div>
+
+        <div style="width:50%;float:left; overflow:auto; padding-right: 20px;">
+          <p class="tekst">
+            Kmetovi (coloni, jobagiones) su činili osnovnu grupu zavisnih seljaka. Razlika u njihovoj imovini mogla je biti velika. Staleško kmetstvo vezano je uz zemlju (kmeštinu) koja se tretira kao vlastelinska zemlja te za čiju obradu kmet daje davanja u naturi,
+            novcu (daće), radu (tlaka) i službi na imanju, dvorcu ili vojsci. Tobožnji zakupnički odnos zemlje od strane kmeta nema zaštitnih ustanova te kmet u praksi ostaje izložen potpunoj samovolji gospodara koji često uključuje i teško zlostavljanje
+            zbog najmanjih prijestupa u podmirivanju obveza. Ublažavanje položaja kmetova donose tek urbari Marije Terezije, a kmetstvo se kao podložnički odnos ukida uredbama Hrvatskog sabora 1848., kada kmeština postaje maleni seljački posjed. <br>
+
+
+          </p>
+          <ul class="tekst">
+            <li><strong>Želiri ili inkvilini</strong> (lat. inquilinus, stanovnik, najamnik, želir je stari hrvatski naziv) Po hrvatsko-ugarskom privatnom pravu kmet koji nema zemlju ili posjeduje manje od jedne osmine selišta. Inkvilini bez vlastite kuće
+              nazivali su se subinkvilini ili želiri beskućnici. </li>
+            <li><strong>Gornjaci</strong> (mantanistae, montales, gorschaki) su posebna kategorija zavisnih seljaka – siromašni seljaci koji su se bavili isključivo vinogradarstvom i živjeli u vinogradima gdje su sagradili svoje kuće. Mogu se smatrati posebnom
+              vrstom želira. Činili su dosta brojnu grupu podložnika na vlastelinstvima u Zagorju. </li>
+          </ul>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="slobodnjaci" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+      <div class="w3-container">
+        <span onclick="$('#slobodnjaci').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+        <h1 class="naslov"><strong>SLOBODNJACI</strong></h1>
+        <div style="width:50%; float:right; text-align:center;"><img src="slike/slobodnjaci.png" class="slike-tekst">
+        </div>
+
+        <div style="width:50%;float:left; overflow:auto; padding-right: 20px;">
+          <p class="tekst">
+            Slobodnjaci (libertini) su podložnici koji su zbog obavljanja različitih poslova na vlastelinstvima bili djelomično ili u cjelini oslobođeni davanja feudalne rente. To su mogli biti dužnosnici seoskih općina (seoski suci, vojvode, tekliči), seljaci koji
+            su služili kao stražari (vigiles, portarii), vlastelinski službenici (spanus), radnici na alodima (mercenarii) i različiti obrtnici. <br> Libertini su bili oslobođeni feudalnih tereta tako dugo dok su obavljali službe i poslove
+            za svog vlastelina. Nisu, dakle, imali nasljedni status. U 16. st. počinje se javljati i druga grupa slobodnjaka, slobodnjaci s nasljednim povlasticama. Tu su grupu slobodnjaka činili u pravilu novi doseljenici na vlastelinstvima. U doba naseljavanja
+            opustošenih krajeva u prvoj polovici 17. stoljeća slobodnjaci te vrste postat će na mnogim vlastelinstvima veoma brojna grupa podložnika.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <map name="image-map">
         <area target="" alt="Burgovi" title="Burgovi" coords="183,252,580,328" shape="rect" onclick='$("#burgovi").show();'>
-        <area target="" alt="Purgari" title="Purgari" href="purgari.html" coords="93,551,490,624" shape="rect">
-        <area target="" alt="Kmetovi" title="Kmetovi" href="kmetovi.html" coords="1108,937,1476,1010" shape="rect">
-        <area target="" alt="Plemstvo" title="Plemstvo" href="plemstvo.html" coords="1066,311,1495,377" shape="rect">
+        <area target="" alt="Purgari" title="Purgari" coords="93,551,490,624" shape="rect"  onclick='$("#purgovi").show();'>
+        <area target="" alt="Kmetovi" title="Kmetovi"  coords="1108,937,1476,1010" shape="rect" onclick='$("#kmetovi").show();'>
+        <area target="" alt="Plemstvo" title="Plemstvo" coords="1066,311,1495,377" shape="rect" onclick='$("#plemstvo").show();'>
     </map>
   <script>
     $('img[usemap]').imageMap();

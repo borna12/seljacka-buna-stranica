@@ -4,17 +4,19 @@
             padding: 0;
             background-color: #25180F;
         }
-        
+
         @font-face {
             font-family: nyala;
             src: url(nyala.ttf);
         }
-        
+
         @font-face {
             font-family: gabriola;
             src: url(Gabriola.ttf);
         }
-        
+
+        strong{color: rgb(104, 0, 2);}
+
         #naslovnica {
             position: fixed;
             top: 0;
@@ -26,37 +28,37 @@
             margin: auto;
             overflow: auto;
         }
-        
+
         .naslov {
             font-family: nyala;
             text-transform: uppercase;
             color: rgb(104, 0, 2);
         }
-        
+
         .tekst {
             font-family: gabriola;
             font-size: 20px;
             text-align: justify
         }
-        
+
         .w3-container {
             height: 100%;
             display: table-cell;
             vertical-align: middle;
         }
-        
+
         .slike-tekst {
             max-width: 100%;
         }
-        
+
         .w3-modal {
             padding-top: 0;
         }
-        
+
         .w3-modal-content {
             display: table;
         }
-        
+
         .iks {
             color: rgb(104, 0, 2);
             font-family: nyala;
@@ -65,15 +67,22 @@
             font-weight: 600;
             position: fixed;
         }
-        
+
         .iks:hover {
             background: none
         }
-        
+
+        .home{color: rgb(104, 0, 2);
+        font-family: nyala;
+        font-size: 40px;
+        line-height: 0.5;
+        font-weight: 600;
+        position: fixed;}
+
         .w3-animate-zoom-out {
             animation: animatezoom2 0.6s;
         }
-        
+
         @keyframes animatezoom2 {
             from {
                 transform: scale(1)
@@ -82,13 +91,13 @@
                 transform: scale(0)
             }
         }
-        
+
         @media (min-width: 993px) {
             .w3-modal-content {
                 width: 1200px;
             }
         }
-        
+
         ::-webkit-scrollbar {
             width: 0px;
             /* remove scrollbar space */
@@ -96,11 +105,11 @@
             /* optional: just make scrollbar invisible */
         }
         /* optional: show position indicator in red */
-        
+
         ::-webkit-scrollbar-thumb {
             background: #FF0000;
         }
-        
+
         .prozor {
             background: #DCD1BA;
             position: fixed;
@@ -109,20 +118,20 @@
             left: 50%;
             border-radius: 5px;
         }
-        
+
         .ikona {
             font-size: 60px;
             cursor: pointer;
         }
-        
+
         .ikona:hover {
             color: rgb(104, 0, 2)
         }
-        
+
         .ikona:active {
             color: rgb(104, 0, 2)
         }
-        
+
         p:first-letter {
             color: rgb(104, 0, 2);
             float: left;
