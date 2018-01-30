@@ -10,6 +10,8 @@
     <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="js/image-map.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="js/index.js" type="text/javascript"></script>
+
     <style>
         html,
         body {
@@ -19,12 +21,17 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        
+        .poravnaj {
+            margin: auto;
+            display: block;
+        }
     </style>
 </head>
 
 <body>
-  <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home"><i class="fa fa-fort-awesome" aria-hidden="true"></i></span>
-  <span onclick="location.href='feudalna-piramida.html'" class="w3-button w3-display-topright iks">&times;</span>
+    <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home"><i class="fa fa-fort-awesome" aria-hidden="true"></i></span>
+    <span onclick="location.href='feudalna-piramida.html'" class="w3-button w3-display-topright iks">&times;</span>
 
     <div id="omot" class='modal-overlay w3-animate-opacity'>
         <img id="naslovnica" src="slike/Burgovi02.png" / usemap="#image-map">
@@ -53,7 +60,7 @@
         </div>
     </div>
     <div id="tabor" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor" >
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container">
                 <span onclick="$('#tabor').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>VELIKI TABOR</strong></h1>
@@ -88,7 +95,7 @@
                     <br> Utvrde Susedgrad, Donja i Gornja Stubica (koja se nalazila odmah pokraj zgrade današnjeg Muzeja) bile su tri najvažnije utvrde na golemom Susedgradsko – stubičkom vlastelinstvu koje se protezalo na sjevernim obroncima Medvednice. Upravo na tom vlastelinstvu započela je Velika seljačka buna.
                     <br>
                     <br>
-                    <img src="slike/dONJASTUBICA.png" class="slike-tekst">
+                    <img src="slike/dONJASTUBICA.png" class="slike-tekst poravnaj">
 
                 </p>
 
@@ -122,11 +129,11 @@
     </div>
 
     <map name="image-map">
-        <area target="" alt="Veliki tabor" title="Veliki tabor" coords="466,104,723,152" shape="rect" onclick='$(".w3-modal-content").removeClass("w3-animate-zoom-out");$("#tabor").show();'>
-        <area target="" alt="Cesargrad" title="Cesargrad" coords="627,310,841,356" shape="rect" onclick='$(".w3-modal-content").removeClass("w3-animate-zoom-out");$("#cesargrad").show();'>
-        <area target="" alt="Medvedgrad" title="Medvedgrad" coords="1155,886,1410,924" shape="rect" onclick='$(".w3-modal-content").removeClass("w3-animate-zoom-out");$("#medvedgrad").show();'>
-        <area target="" alt="Susedgrad" title="Susedgrad" coords="784,1096,1001,1128" shape="rect" onclick='$(".w3-modal-content").removeClass("w3-animate-zoom-out");$("#susedgrad").show();'>
-        <area target="" alt="Donja stubica" title="Donja stubica" coords="1132,383,1412,421" shape="rect" onclick='$(".w3-modal-content").removeClass("w3-animate-zoom-out");$("#stubica").show();'>
+        <area target="" alt="Veliki tabor" title="Veliki tabor" coords="257,19,506,63" shape="rect" onclick='$("#tabor").show();'>
+        <area target="" alt="Cesargrad" title="Cesargrad" coords="415,227,627,262" shape="rect" onclick='$("#cesargrad").show();'>
+        <area target="" alt="Medvedgrad" title="Medvedgrad" coords="943,799,1193,836" shape="rect" onclick='$("#medvedgrad").show();'>
+        <area target="" alt="Susedgrad" title="Susedgrad" coords="573,1003,798,1047" shape="rect" onclick='$("#susedgrad").show();'>
+        <area target="" alt="Donja stubica" title="Donja stubica" coords="922,296,1201,331" shape="rect" onclick='$("#stubica").show();'>
     </map>
     <script>
         $('img[usemap]').imageMap();
