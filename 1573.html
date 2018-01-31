@@ -21,6 +21,15 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        
+        .por-slika {
+            position: absolute;
+            top: 50%;
+            display: block;
+            margin: auto;
+            left: 50%;
+            transform: translate(50%, -50%);
+        }
     </style>
 </head>
 
@@ -28,7 +37,7 @@
     <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home"><i class="fa fa-fort-awesome" aria-hidden="true"></i></span>
 
     <div id="omot" class='modal-overlay w3-animate-opacity'>
-        <img id="naslovnica" src="slike/1573_01.png" usemap="#image-map" />
+        <img id="naslovnica" src="slike/1573_01.png" usemap="#image-map" style='width:100%;height:auto;z-index:-1;' />
 
     </div>
 
@@ -38,11 +47,11 @@
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container" style="display:block;">
                 <span onclick="$('#seljacke-karta').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>SELJAČKA BUNA 1573.</strong></h1>
+                <h1 class="naslov"><strong>Velika seljačka buna (muška punta, 1573.)</strong></h1>
 
                 <div style="overflow:auto; height:300px">
                     <p class="tekst">
-                        Vođa Seljačke bune Matija Ambroz Gubec spominje se u selu Hižakovcu (Vrhovcu) na stubičkom vlastelinstvu u popisima crkvene desetine i urbaru. U vrijeme bune imao je vjerojatno 35 godina. Gubec je vodio pripreme za bunu i predvodio dio seljačke vojske u Hrvatskome zagorju te je, tvrde pojedini sudionici, proglašen seljačkim kraljem. Ostali istaknuti vođe bune bili su Ivan Pasanec, Ivan Mogadić i Ilija Gregurić. Velika seljačka buna, muška punta ili "seljački rat", kako su ga nazivali suvremenici, započeo je na susedgradsko-stubičkim posjedima Franje Tahyja. To je bila treća buna od kada je 1564. godine Tahy protupravno kupio polovicu vlastelinstva.
+                        Vođa Seljačke bune Matija Ambroz Gubec spominje se u selu Hižakovcu (Vrhovcu) na stubičkom vlastelinstvu u popisima crkvene desetine i urbaru. U vrijeme bune imao je vjerojatno 35 godina. Gubec je vodio pripreme za bunu i predvodio dio seljačke vojske u Hrvatskome zagorju te je, tvrde pojedini sudionici, proglašen seljačkim kraljem. Ostali istaknuti vođe bune bili su Ivan Pasanec, Ivan Mogadić i Ilija Gregurić. Hrvatsko-slovenska Seljačka buna, Velika seljačka buna, muška punta ili "seljački rat", kako su ga nazivali suvremenici, započeo je na susedgradsko-stubičkim posjedima Franje Tahyja. To je bila treća buna od kada je 1564. godine Tahy protupravno kupio polovicu vlastelinstva.
                         <br>
                         <br> Uzroci bune nalaze se u pogoršanju položaja seljaka i smetnjama koje se stavljaju pred seljačku trgovinu, dok su direktan povod bile borbe među vlastelom, koja je pri tom seljake naoružala kao i zlodjela Franje Tahyja i njegovog sina Gabrijela. Seljaci kao svoje ciljeve ističu borbu za stare pravice, rušenje feudalnog poretka, stvaranje samostalne seljačke države sa sjedištem u Zagrebu te preuzimanje ubiranja poreza i obrane od Turaka.
                         <br>
@@ -67,9 +76,14 @@
                 <h1 class="naslov"><strong>TIJEK BUNE</strong></h1>
                 <br>
                 <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
-                    <img src="slike/1573_03.png" class="slike-tekst" style="max-width: 100%;">
+                    <img src="slike/1573_03.png" class="slike-tekst" style="    position: relative;
+    top: 50%;
+    display: block;
+    margin: auto;
+    right: 50%;
+    transform: translate(50%, 50%);">
                 </div>
-                <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block; height:900px">
+                <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;">
 
 
 
@@ -100,7 +114,7 @@
                 <h1 class="naslov"><strong>GUBEC-BEG</strong></h1>
                 <br>
                 <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
-                    <img src="slike/gubec.png" class="slike-tekst" style="max-width: 100%;">
+                    <img src="slike/gubec.png" class='slike-tekst por-slika poravnaj' style="max-width: 100%;">
                 </div>
                 <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;">
 
@@ -115,7 +129,6 @@
 
 
                 </div>
-                <img src="slike/Bitka.png" style="max-width:60%;display:block;margin:auto;" />
 
             </div>
         </div>
@@ -123,7 +136,7 @@
 
     <div id="tahy" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
-            <div class="w3-container" style="display:block; height:1000px;">
+            <div class="w3-container" style="display:block;">
                 <span onclick='$("#tahy").fadeOut(600);' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>FRANJO TAHY</strong></h1>
                 <br>
@@ -132,14 +145,13 @@
                     <br>
                     <span class="ikona" onclick='$("#tahy").fadeOut(600);$("#tahy-2").show();$("#video").trigger("play");'><i class="fa fa-video-camera" aria-hidden="true"></i></span>
                 </div>
-                <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;height:900px; overflow:auto">
+                <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;overflow:auto">
 
                     <p class="tekst">
                         Franjo Tahy (1526.-1573.) pripadao je velikaškoj porodici ugarskog podrijetla koja je posjede u Slavoniji stekla već u drugoj polovici 15. stoljeća. Njegov otac Ivan Tahy bio je 1524./25. godine hrvatsko-slavonsko-dalmatinski ban. Franji je bilo 10 godina kada je Ivan umro. Odgojen je u vojničkoj službi, najviše u borbama s Turcima. U mladosti je bio zapovjednik carske vojske u južnoj Ugarskoj te Sigeta i Kanjiže. Bio je vladarev savjetnik i majstor carskih konjušara u Ugarskoj. Sredinom 16. stoljeća Turci su zauzeli njegove posjede u Ugarskoj i Slavoniji. Zbog vojnih zasluga imao je jak oslonac na habsburškom dvoru te se povezao s najuglednijim velikaškim obiteljima u Hrvatskoj. Po svojoj ženi Jeleni Zrinskoj već je kao vrlo mlad postao šurjak Nikole Zrinskoga.
                         <br>
                         <br> Godine 1564. kupio je polovicu susedgradsko-stubičkog vlastelinstva. Idućih godina sukobljavao se s obitelji Henning, posjednicima druge polovice vlastelinstva te sa seljacima koji su tražili da se Tahy udalji s vlastelinstva i da se uvede komorska uprava. Njegovi postupci dali su povod za tri seljačke bune (1567./68., 1571./72. i 1573.). Vladareva komisija saslušala je 1567. godine 508 svjedoka u istrazi protiv Tahyja te sastavila zapisnik dugačak šest i pol metara, no, unatoč svemu, nije mu se ništa dogodilo. Iako su suvremenici smatrali da su glavni uzrok Seljačke bune 1573. godine bili Tahyjevi postupci, novija istraživanja pokazuju da su dublji uzroci bili ekonomske prirode. Tahy je i nakon bune, iako teško bolestan, nastavio zlostavljati seljake.
                     </p>
-                    <img src="slike/Bitka.png" style="max-width:70%;display:block;margin:auto;" />
 
                 </div>
 
@@ -173,7 +185,6 @@
 
                 <p class="tekst">
                     Ilija Gregorić (Ribnik kraj Karlovca, o. 1520 – Zagreb, 1574.) je bio glavni vojni zapovjednik u Seljačkoj buni. Sudjelovao je u borbama protiv Turaka iz čijega je zarobljeništva dva puta uspio pobjeći, zbog čega je dobio nadimak Prebeg (Pribeg). Oko 1550. naselio se u Brdovcu na Susedgradsko-stubičkom vlastelinstvu. Tu je imao posjed, bavio se trgovinom i služio kao vojnik na granici. Posjed mu je oduzeo Tahy. Godine 1572. zbog svoga vojničkog znanja i, čini se, veza sa žumberačkim uskocima, pokretači Bune izabiru ga za glavnoga vojnog zapovjednika. Potkraj siječnja 1573. između Susedgrada, Brdovca i Stubice skupila se brojna pobunjenička vojska s njim na čelu. Gregorić se s dijelom pobunjenika 4. veljače 1573., nakon što je odvojio dio koji je trebao napasti Krško, zaputio od Videma prema Sevnici. Zbog neuspjeha pregovora sa žumberačkim uskocima te doznavši za poraz ustanika kraj Krškog (5. veljače) odustao je od prvotnog cilja – Celja i krenuo prema Hrvatskoj. Na tom putu 8. veljače kraj Šentpetra (Bistrica na Sutli) vojska štajerskih staleža potpuno je razbila pobunjenike, dok se Gregorić spasio bijegom. Uhvaćen je oko 20. veljaće 1573. u okolici Jasenovca te odveden u Beč na saslušavanje. Njegove su izjave u istražnom postupku sačuvane i dragocjen su izvor podataka o Buni. Nakon završetka istrage vraćen je u Zagreb, gdje je najvjerojatnije u drugoj polovici 1574. pogubljen.</p>
-                <img src="slike/Bitka.png" style="max-width:70%;display:block;margin:auto;" />
                 <br>
             </div>
 
@@ -185,14 +196,9 @@
             <div class="w3-container" style="display:block;">
                 <span onclick='$("#thurn").fadeOut(600);' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>JOŠT JOSIP THURN</strong></h1>
-
                 <p class="tekst">
                     Jošt Josip (Jobst Joseph) Thurn (Loka, Slovenija, 4. XII. 1537. – Bleiburg, Austrija, 14. IX. 1621.) isticao se u sukobima s Osmanlijama, posebno 1566. kraj Novigrada na Uni. Godine 1570. bio je imenovan vrhovnim zapovjednikom uskoka. Za Seljačke bune 1573. pobijedio je seljačku vojsku kraj Krškog. Od 1576. bio je poslanik kranjskih staleža na carskom saboru u Regensburgu i član komisije za provođenje radova oko izgradnje utvrde Karlovac, a od 1584. vrhovni zapovjednik hrvatske i primorske granice sa sjedištem u Karlovcu. Iste je godine u dolini Močila kraj Slunja sudjelovao u velikoj pobjedi nad Ferhad-pašom Sokolovićem.</p>
-                <img src="slike/Bitka.png" style="max-width:80%;display:block;margin:auto;" />
-                <br>
             </div>
-
-
         </div>
     </div>
 
@@ -202,25 +208,30 @@
                 <span onclick="$('#stubicke').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>BITKA KOD STUBIČKIH TOPLICA</strong></h1>
                 <br>
-                <div style="overflow:auto; height:400px">
-                    <p class="tekst"><img src='slike/nikola.png' style="float:left;padding:10px"> Nikola Istvanffy u svom djelu Historium de rebus unagaricas libri XXXIV opisao je Bitku kod Stubičkih Toplica. Kad su dakle s najvećom žurbom sakupili oko 800 konjanika i doveli iz posada u tabor čete, koja je kraljevina na javni trošak izdržavala za obranu Kupe, brzo krenuše prema Stubici. Čim je Gubec opazio, kako idu na njega, naredio svojima, da pograbe oružje, osokoli ih s malo riječi i povede u borbu govoreći, da će im taj dan i ta bitka donijeti čast i slobodu, ako iz nje izađu kao pobjednici; ako naprotiv pobijeđeni udare u bijeg, da se ne bože spomenuti nikakva vrsta okrutnosti i sramotnih muka kojih se oni ne bi morali bojati od surovih i podivljalih plemića. Stoga neka svojski nastoje da se pokažu junacima i da se prisebno i hrabro služe oružjem, pa neka budu svjesni, da im treba ili sjajno pobijediti ili očekivati: "Jao pobijeđenima!" Na protivnoj strani vojskovođe plemstva tako svrstaše vojsku, da su pješake s puškama smjestili u sredinu, a konjanike podijelili na oba krila i naložili im, da bez ikakva krzmanja jurišaju i da se ne daju zaplašiti ni brojem ni mnoštvom neprijatelja. Da su ti ljudi, ako je po volji bogovima, prešli od oranja, kopanja i sličnih poljskih radova na vojevanje ili, radije, na izvršavanje razbojničkih djela. Uostalom, da je zbog tih navika njihov način života gadan i sramotan, a u ratovanju nema kod njih nikakva zapta, nikakve otpornosti, nikakve snage. Kada bolji dio njihove vojske, ako ga tu uopće ima, sakupljen među kranjskim pustahijama, kockarima i palikućama, ugleda neobične mačeve, rane i krv, sramotno će udariti u bijeg. Kad su se uz obostranu jaku viku obje vojske sudarile zbijenim redovima, Gupčevi su se ljudi protiv očekivanja dugo borili s neodlučnim ishodim, tako da je poginulo nekoliko naših pogođenih zrnom, među njima Ladislav Plodvin, zapovjednik konjaništva. Ali kad su bili oštro pritiješnjeni i ubijani s jedne strane od pješadije i puškom oboružanih vojnika, a s druge od kopljanika na konju, najposlije ih plemstvo, jače i nadmoćnije, koliko po svojoj pravednoj stvari, toliko po oružju, prisililo da uzmaknu i da napokon bez reda nagnu u bijeg. Na bijegu su širom bili pobijani ili od reda zarobljeni, a tek malo njih spasilo se u najskrovitijim skloništima po šumama i brdima. Ostali, koje su svakog dana očekivali kao saveznike i drugove, dočuvši za seljački poraz i uplašivši se zbog pobjede plemstva, razbježaše se, kako je tko mogao.
-                    </p>
+                <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
+                    <img src="slike/nikola.png" class='slike-tekst por-slika poravnaj' style="max-width: 100%;">
                 </div>
-                <br>
-                <img src="slike/Bitka.png" style="height:400px;display:block;margin:auto;" onclick='$("#seljacke-karta").fadeOut(600);$("#seljacke-karta-2").show();' />
+                <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;">
+
+                    <div class="tekst" style="height:450px; overflow:auto;">
+
+                        Nikola Istvanffy u svom djelu Historium de rebus unagaricas libri XXXIV opisao je Bitku kod Stubičkih Toplica. Kad su dakle s najvećom žurbom sakupili oko 800 konjanika i doveli iz posada u tabor čete, koja je kraljevina na javni trošak izdržavala za obranu Kupe, brzo krenuše prema Stubici. Čim je Gubec opazio, kako idu na njega, naredio svojima, da pograbe oružje, osokoli ih s malo riječi i povede u borbu govoreći, da će im taj dan i ta bitka donijeti čast i slobodu, ako iz nje izađu kao pobjednici; ako naprotiv pobijeđeni udare u bijeg, da se ne bože spomenuti nikakva vrsta okrutnosti i sramotnih muka kojih se oni ne bi morali bojati od surovih i podivljalih plemića. Stoga neka svojski nastoje da se pokažu junacima i da se prisebno i hrabro služe oružjem, pa neka budu svjesni, da im treba ili sjajno pobijediti ili očekivati: "Jao pobijeđenima!" Na protivnoj strani vojskovođe plemstva tako svrstaše vojsku, da su pješake s puškama smjestili u sredinu, a konjanike podijelili na oba krila i naložili im, da bez ikakva krzmanja jurišaju i da se ne daju zaplašiti ni brojem ni mnoštvom neprijatelja. Da su ti ljudi, ako je po volji bogovima, prešli od oranja, kopanja i sličnih poljskih radova na vojevanje ili, radije, na izvršavanje razbojničkih djela. Uostalom, da je zbog tih navika njihov način života gadan i sramotan, a u ratovanju nema kod njih nikakva zapta, nikakve otpornosti, nikakve snage. Kada bolji dio njihove vojske, ako ga tu uopće ima, sakupljen među kranjskim pustahijama, kockarima i palikućama, ugleda neobične mačeve, rane i krv, sramotno će udariti u bijeg. Kad su se uz obostranu jaku viku obje vojske sudarile zbijenim redovima, Gupčevi su se ljudi protiv očekivanja dugo borili s neodlučnim ishodim, tako da je poginulo nekoliko naših pogođenih zrnom, među njima Ladislav Plodvin, zapovjednik konjaništva. Ali kad su bili oštro pritiješnjeni i ubijani s jedne strane od pješadije i puškom oboružanih vojnika, a s druge od kopljanika na konju, najposlije ih plemstvo, jače i nadmoćnije, koliko po svojoj pravednoj stvari, toliko po oružju, prisililo da uzmaknu i da napokon bez reda nagnu u bijeg. Na bijegu su širom bili pobijani ili od reda zarobljeni, a tek malo njih spasilo se u najskrovitijim skloništima po šumama i brdima. Ostali, koje su svakog dana očekivali kao saveznike i drugove, dočuvši za seljački poraz i uplašivši se zbog pobjede plemstva, razbježaše se, kako je tko mogao.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
     <map name="image-map">
-        <area target="" alt="Velika seljačka buna" title="Velika seljačka buna" coords="411,89,771,121" shape="rect" onclick='$("#seljacke-karta").show();'>
-        <area target="" alt="Franjo Tahy" title="Franjo Tahy" coords="910,142,1084,176" shape="rect" onclick='$("#tahy").show();'>
-        <area target="" alt="Gubec-beg" title="Gubec-beg" coords="173,288,315,314" shape="rect" onclick='$("#gupec").show();'>
-        <area target="" alt="Ilija Gregorić" title="Ilija Gregorić" coords="335,357,534,386" shape="rect" onclick='$("#ilija").show();'>
-        <area target="" alt="Oružje" title="Oružje" coords="560,466,655,497" shape="rect">
-        <area target="" alt="Bitka kod stubičkih toplica" title="Bitka kod stubičkih toplica" coords="583,302,835,353" shape="rect" onclick='$("#stubicke").show();'>
-        <area target="" alt="Josip Jošt Turn" title="Josip Jošt Turn" coords="739,214,966,243" shape="rect" onclick='$("#thurn").show();'>
+        <area target="" alt="Velika seljačka buna" title="Velika seljačka buna" coords="531,160,1112,221" shape="rect" onclick='$("#seljacke-karta").show();'>
+        <area target="" alt="Franjo Tahy" title="Franjo Tahy" coords="1362,200,1637,256" shape="rect" onclick='$("#tahy").show();'>
+        <area target="" alt="Gubec-beg" title="Gubec-beg" coords="128,379,365,428" shape="rect" onclick='$("#gupec").show();'>
+        <area target="" alt="Ilija Gregorić" title="Ilija Gregorić" coords="365,474,675,522" shape="rect" onclick='$("#ilija").show();'>
+        <area target="" alt="Oružje" title="Oružje" coords="776,686,939,740" shape="rect">
+        <area target="" alt="Bitka kod stubičkih toplica" title="Bitka kod stubičkih toplica" coords="1025,408,1431,504" shape="rect" onclick='$("#stubicke").show();'>
+        <area target="" alt="Josip Jošt Turn" title="Josip Jošt Turn" coords="1224,304,1597,359" shape="rect" onclick='$("#thurn").show();'>
+
     </map>
 
 
