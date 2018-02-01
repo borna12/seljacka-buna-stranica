@@ -37,7 +37,7 @@
     <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home"><i class="fa fa-fort-awesome" aria-hidden="true"></i></span>
 
     <div id="omot" class='modal-overlay w3-animate-opacity'>
-        <img id="naslovnica" src="slike/1573_01.png" usemap="#image-map" style='width:100%;height:auto;z-index:-1;' />
+        <img id="naslovnica" src="slike/1573_01.png" usemap="#image-map" style='width:100%;height:auto;z-index:-1;max-height:initial;' />
 
     </div>
 
@@ -59,10 +59,8 @@
                     </p>
                 </div>
                 <br>
-
-                <img src="slike/karta-seljacke.png" style="height:580px;display:block;margin:auto;" onclick='$("#seljacke-karta").fadeOut(600);$("#seljacke-karta-2").show();' />
-
-
+                <div style='text-align:center;'><strong class="tekst" style="font-size:24px;" onclick='localStorage.setItem("buna", "radi");window.location.href="karta-bune.html"'><u>Pritisnite za pregled karte </u><i class="fa fa-search" aria-hidden="true"></i></strong></div>
+                <img src="slike/karta-seljacke.png" style="height:580px;display:block;margin:auto;" onclick='localStorage.setItem("buna", "radi");window.location.href="karta-bune.html"' />
             </div>
         </div>
     </div>
@@ -75,18 +73,10 @@
                 <span onclick='$("#seljacke-karta-2").fadeOut(600);$("#seljacke-karta").show();' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>TIJEK BUNE</strong></h1>
                 <br>
-                <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
-                    <img src="slike/1573_03.png" class="slike-tekst" style="    position: relative;
-    top: 50%;
-    display: block;
-    margin: auto;
-    right: 50%;
-    transform: translate(50%, 50%);">
+                <div style="width:100%; text-align:center;">
+                    <img src="slike/1573_03.png" class="slike-tekst">
                 </div>
                 <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;">
-
-
-
                     <ol class="tekst" style='-webkit-padding-start: 0px;'>
                         <li>Početak Seljačke bune s prvim pobunjenim vlastelinstvima, osvajanje Cesargrada i kretanje seljačkog odreda Ivana Pasanca prema Savi.</li>
                         <li> Ustanička vojska pod vodstvom Ilije Gregorića i ustanički odred pod zapovjedništvom Nikole Kupinića započinju pohod u slovenske pokrajine. Slovenska mjesta sudjeluju u Buni, a vojska Matije Gupca kreće prema Krapini.</li>
@@ -97,11 +87,6 @@
 
                     <img src='slike/kata-bune.png' style='max-width:100%;' />
                 </div>
-                <br>
-
-                <img src="slike/karta-seljacke.png" style="max-height:60%;display:block;margin:auto;" />
-
-
             </div>
         </div>
     </div>
@@ -141,9 +126,9 @@
                 <h1 class="naslov"><strong>FRANJO TAHY</strong></h1>
                 <br>
                 <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
-                    <img src="slike/tahy.png" class="slike-tekst" style="max-width: 100%;">
+                    <img src="slike/tahy.png" class="slike-tekst" style="max-width: 90%;">
                     <br>
-                    <span class="ikona" onclick='$("#tahy").fadeOut(600);$("#tahy-2").show();$("#video").trigger("play");'><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                    <span class="ikona" onclick='$("#tahy").fadeOut(600);$("#tahy-2").show();'><i class="fa fa-video-camera" aria-hidden="true"></i></span>
                 </div>
                 <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;overflow:auto">
 
@@ -163,14 +148,12 @@
     <div id="tahy-2" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container" style="display:block;">
-                <span onclick='$("#tahy-2").fadeOut(600); $("#tahy").show(); $("#video")[0].currentTime = 0;$("#video")[0].pause();' class="w3-button w3-display-topright iks">&times;</span>
+                <span onclick='$("#tahy-2").fadeOut(600); $("#tahy").show(); $("#video")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>"Tahyjev" sunčani sat i mjerenje vremena</strong></h1>
-                <video controls="controls" id='video' style="max-width:100%;padding-bottom:15px;">
+                <video controls="controls" id='video' style="max-width:100%;padding-bottom:15px;" poster='video/tahy.jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
                     <source src="video/Sequence 01_x264_001.mp4" type="video/mp4" />
                     <source src="video/Sequence-01.webm" type="video/webm" />
                 </video>
-
-
             </div>
 
 
@@ -214,7 +197,6 @@
                 <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;">
 
                     <div class="tekst" style="height:450px; overflow:auto;">
-
                         Nikola Istvanffy u svom djelu Historium de rebus unagaricas libri XXXIV opisao je Bitku kod Stubičkih Toplica. Kad su dakle s najvećom žurbom sakupili oko 800 konjanika i doveli iz posada u tabor čete, koja je kraljevina na javni trošak izdržavala za obranu Kupe, brzo krenuše prema Stubici. Čim je Gubec opazio, kako idu na njega, naredio svojima, da pograbe oružje, osokoli ih s malo riječi i povede u borbu govoreći, da će im taj dan i ta bitka donijeti čast i slobodu, ako iz nje izađu kao pobjednici; ako naprotiv pobijeđeni udare u bijeg, da se ne bože spomenuti nikakva vrsta okrutnosti i sramotnih muka kojih se oni ne bi morali bojati od surovih i podivljalih plemića. Stoga neka svojski nastoje da se pokažu junacima i da se prisebno i hrabro služe oružjem, pa neka budu svjesni, da im treba ili sjajno pobijediti ili očekivati: "Jao pobijeđenima!" Na protivnoj strani vojskovođe plemstva tako svrstaše vojsku, da su pješake s puškama smjestili u sredinu, a konjanike podijelili na oba krila i naložili im, da bez ikakva krzmanja jurišaju i da se ne daju zaplašiti ni brojem ni mnoštvom neprijatelja. Da su ti ljudi, ako je po volji bogovima, prešli od oranja, kopanja i sličnih poljskih radova na vojevanje ili, radije, na izvršavanje razbojničkih djela. Uostalom, da je zbog tih navika njihov način života gadan i sramotan, a u ratovanju nema kod njih nikakva zapta, nikakve otpornosti, nikakve snage. Kada bolji dio njihove vojske, ako ga tu uopće ima, sakupljen među kranjskim pustahijama, kockarima i palikućama, ugleda neobične mačeve, rane i krv, sramotno će udariti u bijeg. Kad su se uz obostranu jaku viku obje vojske sudarile zbijenim redovima, Gupčevi su se ljudi protiv očekivanja dugo borili s neodlučnim ishodim, tako da je poginulo nekoliko naših pogođenih zrnom, među njima Ladislav Plodvin, zapovjednik konjaništva. Ali kad su bili oštro pritiješnjeni i ubijani s jedne strane od pješadije i puškom oboružanih vojnika, a s druge od kopljanika na konju, najposlije ih plemstvo, jače i nadmoćnije, koliko po svojoj pravednoj stvari, toliko po oružju, prisililo da uzmaknu i da napokon bez reda nagnu u bijeg. Na bijegu su širom bili pobijani ili od reda zarobljeni, a tek malo njih spasilo se u najskrovitijim skloništima po šumama i brdima. Ostali, koje su svakog dana očekivali kao saveznike i drugove, dočuvši za seljački poraz i uplašivši se zbog pobjede plemstva, razbježaše se, kako je tko mogao.
                     </div>
                 </div>
@@ -237,6 +219,9 @@
 
     <script>
         $('img[usemap]').imageMap();
+        if (localStorage.getItem("buna") == "radi") {
+            $("#seljacke-karta").show();
+        }
     </script>
 </body>
 

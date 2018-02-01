@@ -150,5 +150,13 @@
             display: block;
             margin: auto;
         }
-.lijevi-div{width:50%;float:left;}
-.desni-div{width:50%;float:right;}
+        
+        .lijevi-div {
+            width: 50%;
+            float: left;
+        }
+        
+        .desni-div {
+            width: 50%;
+            float: right;
+        }

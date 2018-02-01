@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Muzej seljačkih buna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/stil.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/image-map.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="js/index.js" type="text/javascript"></script>
+    <style>
+        html,
+        body {
+            background: url(css/podloga2.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+        }
+        
+        #uvodni-tekst {
+            width: 30%;
+            overflow: auto;
+            padding-left: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        strong {
+            color: rgb(104, 0, 2);
+        }
+        
+        #naslovnica {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: inherit;
+            right: 0;
+            height: 100%;
+            margin: auto;
+            overflow: auto;
+        }
+        
+        u {
+            cursor: pointer
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="omot" class='modal-overlay w3-animate-opacity'>
+        <img id="naslovnica" src="slike/kata-bune.png" usemap="#image-map" />
+
+        <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home"><i class="fa fa-fort-awesome" aria-hidden="true"></i></span>
+        <span onclick="location.href='1573.html'" class="w3-button w3-display-topright home">&times;</span>
+
+    </div>
+
+    <div id="uvodni-tekst" style='overflow:hidden;'>
+        <h1 class="naslov"><strong>TIJEK BUNE</strong></h1>
+        <ol class="tekst">
+            <li>Početak Seljačke bune s prvim pobunjenim vlastelinstvima, osvajanje Cesargrada i kretanje seljačkog odreda Ivana Pasanca prema Savi.</li>
+            <li> Ustanička vojska pod vodstvom Ilije Gregorića i ustanički odred pod zapovjedništvom Nikole Kupinića započinju pohod u slovenske pokrajine. Slovenska mjesta sudjeluju u Buni, a vojska Matije Gupca kreće prema Krapini.</li>
+            <li> Organiziranje i kretanje feudalnih vojski i prvi porazi seljaka u bitkama kod Krškog i Keresinca. Pobuna seljaka pod vodstvom Pavla Šterca.
+                <li> Poraz seljačkog odreda Ilije Gregorića u bitki kod Šenpetra i nadiranje vojske podbana Alapića, štajerskog plemića i konjanika Nikole Zrinskog u Hrvatsko zagorje. Povlačenje ustanika prema Stubičkim Toplicama.</li>
+                <li> Dolazak krajišnika iz Varaždina i bitka kod Stubičkih Toplica u kojoj je poražena glavna ustanička vojska i kojom je završena oružana pobuna hrvatskih i slovenskih seljaka 9. veljače 1573. godine.</li>
+        </ol>
+        <img src="slike/1573_03.png" style="margin-right:10px;max-width:90%">
+    </div>
+
+    <div id="tridesetnica" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#tridesetnica").fadeOut(600);' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Tridesetnica</strong></h1>
+                <p class="tekst">
+                    Tridesetnica (tricesima) je u početku vrsta poreza koja je na prostoru Hrvatsko-Ugarskoga Kraljevstva bila na snazi od kraja 12. stoljeća. Bio je to porez koji se davao kralju kao sajmišna pristojba. Kasnije se tridesetnicom nazivao porez koji se plaćao kao carinska pristojba, koja je postala temeljnim oblikom carine što se plaćao na točno utvrđenim mjestima koja zovemo tridesetničkom postajom ili harmicom. Ubirali su je dužnosnici nazivani tridesetničari, ili pak zakupnici. Pripadala je u regalna prava vladara. U početku su ju plaćali samo stranci, a kasnije i domaći trgovci. Od nje su bili oslobođeni plemići, a poslije i pripadnici slobodnih kraljevskih gradova. Od 14. st. do 18. st. postojala je posebna uprava hrvatskih tridesetnica na čelu s glavnim tridesetničarom , kojega je postavljao kralj. Harmicom se nazivalo i mjesto na kojem se ubirala carina (tridesetnica), kao što svjedoči stari naziv glavnog gradskog trga u Zagrebu.
+                    <br> Tridesetnica se ubirala pri uvozu, izvozu ili provozu robe. Harmica nije uvijek nužno iznosila trideseti dio vrijednosti robe na koju se plaćala.
+
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="mitnice" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#mitnice").fadeOut(600);' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>MITNICE</strong></h1>
+                <p class="tekst"> Mitnice ili malte (taloni) bila su mjesta na kojima se plaćalo za prolaz. Daća koja se naplaćivala zvala se maltarina (tributum telonii), trgovina ili cestarina. Naplaćivali su ju feudalni posjednici za prijelaz ljudi i prijevoz robe preko svojih posjeda. Podizanje malti odobravao je kralj, jer se smatralo da je pravo pobiranja maltarine (jus telonii) kraljevski regal.
+                    <br> Vlastelin je mogao podizati mitnicu i ubirati mintičarinu na temelju posebne kraljevske povlastice, ali su ih feudalci često podizali bez kraljeve dozvole. Tako je npr. istragom u Kraljevini Slavoniji 1349. god. otkriveno pedesetak nelegalnih mitnica.
+                    <br> Mitnice su otežavale razvoj trgovine koju su vodili građani i seljaci jer plemići nisu bili obvezni plaćati maltarinu.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="trgovci" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style=" display:block;">
+                <span onclick="$('#trgovci').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>TRGOVCI</strong></h1>
+                <br>
+                <div class="tekst lijevi-div">
+                    Srednjovjekovni trgovac je čovjek prašnih nogu – prisiljen putovati kako bi našao robu i kupce. Trgovci koji su sudjelovali u lokalnoj razmjeni nazivali su se po robi kojom su trgovali – solari, suknari, platnari ili pak kramari, ako su prodavali različitu robu na malo. U gradićima su trgovci prodavali robu u dućanima koji su se uglavnom sastojali od jedne prostorije s dvokrilnim vratima. Jedno je krilo služilo kao ulaz u dućan, a donja polovica drugog krila bila je zidić na kojem se izlagala roba.
+                    <br> U našim <strong onclick='$("#trgovci").fadeOut(600);$("#trgovista").show();work=0'><u>srednjovjekovnim gradovima trgovci</u></strong> su ekonomski najjača skupina. Nerijetko su podrijetlom bili stranci. Potkraj srednjega vijeka istaknuti trgovci približavaju se patricijskim obiteljima. Ne ograničavaju se na trgovinu, već se bave i novčarstvom, kupuju nekretnine i stvaraju velike zemljišne posjede pa čak i vlastite knjižnice.
+                </div>
+                <div class="desni-div"> <img src="slike/trgovci-2.png" style='max-width:60%;display:block;margin:auto' /></div>
+
+                <br>
+                <img src="slike/trgovci.png" style="display:block;margin:auto;" />
+            </div>
+        </div>
+    </div>
+
+    <div id="trgovista" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style=" display:block;">
+                <span onclick="if(work==0){$('#trgovista').fadeOut(600);$('#trgovci').show();}else{$('#trgovista').fadeOut(600)}" class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>TRGOVIŠTA</strong></h1>
+                <br>
+
+                <div class="tekst lijevi-div">
+
+                    Kao rezultat razvoj robno-novčanih odnosa i podjele rada unutar društva u kontinentalnim krajevima srednjovjekovne Hrvatske i Slavonije nastaju gradska naselja čiji se stanovnici pretežno bave obrtom i trgovinom. Gradska naselja nastaju na važnijim komunikacijama i kao podgrađa kraljevskih i vlastelinskih tvrđava. Za njihov su razvoj važne povlastice koje su dobivali od vladara ili feudalnog gospodara. Tim se poveljama utvrđivao pravni položaj gradskog naselja i unutrašnji odnosi u gradskoj općini.
+
+                    <br>Povlasticama je započinjalo novo razdoblje u životu gradova, a njihovi stanovnici poseban pravni status. Stanovnici gradova često su novi naseljenici, ali su ponekad gradske povlastice davane i selima u kojima se počela razvijati obrtnička proizvodnja.
+                </div>
+                <div class="desni-div"><img src="slike/Trgovista-2.png" style='max-width:50%;display:block;margin:auto' /></div>
+
+
+                <img src="slike/Trgovista.png" style="display:block;margin:auto;padding-bottom:10px;padding-top:20px" />
+            </div>
+        </div>
+    </div>
+    <map name="image-map">
+        <area target="" alt="Tridesetnička postaja" title="Tridesetnička postaja" coords="1013,1541,1466,1601" shape="rect" onclick='$("#tridesetnica").show();'>
+        <area target="" alt="Vlastelinska Mitnica" title="Vlastelinska Mitnica" coords="1040,1627,1452,1666" shape="rect" onclick='$("#mitnice").show();'>
+    </map>
+
+    <script>
+        $('img[usemap]').imageMap();
+    </script>
+</body>
+
+</html>
