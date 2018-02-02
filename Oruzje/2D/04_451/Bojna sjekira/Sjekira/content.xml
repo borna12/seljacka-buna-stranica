@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence maxHeight="1856" maxWidth="2784" name="a_">
+  <img seq="0" ext="jpg" name="a_0_0">
+    <scales>
+      <scale width="2784" cols="3" tile_width="928" tile_height="928" height="1856" rows="2" value="100.0" name="100.0%"/>
+      <scale width="1392" cols="2" tile_width="696" tile_height="928" height="928" rows="1" value="50.0" name="50.0%"/>
+      <scale width="1024" cols="1" tile_width="1024" tile_height="682" height="682" rows="1" value="36.8" name="36.8%"/>
+      <scale width="768" cols="1" tile_width="768" tile_height="512" height="512" rows="1" value="27.6" name="27.6%"/>
+      <scale width="512" cols="1" tile_width="512" tile_height="341" height="341" rows="1" value="18.4" name="18.4%"/>
+      <scale width="256" cols="1" tile_width="256" tile_height="170" height="170" rows="1" value="9.2" name="9.2%"/>
+      <scale width="128" cols="1" tile_width="128" tile_height="85" height="85" rows="1" value="4.6" name="4.6%"/>
+    </scales>
+  </img>
+  <img seq="1" ext="jpg" name="a_0_1"/>
+  <img seq="2" ext="jpg" name="a_0_2"/>
+  <img seq="3" ext="jpg" name="a_0_3"/>
+  <img seq="4" ext="jpg" name="a_0_4"/>
+  <img seq="5" ext="jpg" name="a_0_5"/>
+  <img seq="6" ext="jpg" name="a_0_6"/>
+  <img seq="7" ext="jpg" name="a_0_7"/>
+  <img seq="8" ext="jpg" name="a_0_8"/>
+  <img seq="9" ext="jpg" name="a_0_9"/>
+  <img seq="10" ext="jpg" name="a_0_10"/>
+  <img seq="11" ext="jpg" name="a_0_11"/>
+  <img seq="12" ext="jpg" name="a_0_12"/>
+  <img seq="13" ext="jpg" name="a_0_13"/>
+  <img seq="14" ext="jpg" name="a_0_14"/>
+  <img seq="15" ext="jpg" name="a_0_15"/>
+  <img seq="16" ext="jpg" name="a_0_16"/>
+  <img seq="17" ext="jpg" name="a_0_17"/>
+  <img seq="18" ext="jpg" name="a_0_18"/>
+  <img seq="19" ext="jpg" name="a_0_19"/>
+  <img seq="20" ext="jpg" name="a_0_20"/>
+  <img seq="21" ext="jpg" name="a_0_21"/>
+  <img seq="22" ext="jpg" name="a_0_22"/>
+  <img seq="23" ext="jpg" name="a_0_23"/>
+  <description></description>
+</sequence>
