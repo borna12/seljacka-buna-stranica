@@ -7,7 +7,12 @@ $(document).ready(function() {
             $("div").animate({
                 scrollTop: 0
             }, "fast");
-            $("#video")[0].load();
+            $("video")[0].load();
+            $("video")[1].load();
+            $("video")[2].load();
+            $("video")[3].load();
+            $("video")[4].load();
+            $("video")[5].load();
 
         }
     });
