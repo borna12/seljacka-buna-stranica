@@ -69,12 +69,36 @@
             <li>Početak Seljačke bune s prvim pobunjenim vlastelinstvima, osvajanje Cesargrada i kretanje seljačkog odreda Ivana Pasanca prema Savi.</li>
             <li> Ustanička vojska pod vodstvom Ilije Gregorića i ustanički odred pod zapovjedništvom Nikole Kupinića započinju pohod u slovenske pokrajine. Slovenska mjesta sudjeluju u Buni, a vojska Matije Gupca kreće prema Krapini.</li>
             <li> Organiziranje i kretanje feudalnih vojski i prvi porazi seljaka u bitkama kod Krškog i Keresinca. Pobuna seljaka pod vodstvom Pavla Šterca.
-                <li> Poraz seljačkog odreda Ilije Gregorića u bitki kod Šenpetra i nadiranje vojske podbana Alapića, štajerskog plemića i konjanika Nikole Zrinskog u Hrvatsko zagorje. Povlačenje ustanika prema Stubičkim Toplicama.</li>
-                <li> Dolazak krajišnika iz Varaždina i bitka kod Stubičkih Toplica u kojoj je poražena glavna ustanička vojska i kojom je završena oružana pobuna hrvatskih i slovenskih seljaka 9. veljače 1573. godine.</li>
+                <br>
+                <br>
+                <strong onclick='$("#video-4").show();'><u>Pregledajte videozapis</u></strong> <i class="fa fa-video-camera" aria-hidden="true"></i>.
+                <br>
+                <br>
+            </li>
+
+            <li> Poraz seljačkog odreda Ilije Gregorića u bitki kod Šenpetra i nadiranje vojske podbana Alapića, štajerskog plemića i konjanika Nikole Zrinskog u Hrvatsko zagorje. Povlačenje ustanika prema Stubičkim Toplicama.
+                <br>
+                <br>
+                <strong onclick='$("#video-5").show();'><u>Pregledajte videozapis</u></strong> <i class="fa fa-video-camera" aria-hidden="true"></i>.
+                <br>
+                <br>
+            </li>
+            <li> Dolazak krajišnika iz Varaždina i bitka kod Stubičkih Toplica u kojoj je poražena glavna ustanička vojska i kojom je završena oružana pobuna hrvatskih i slovenskih seljaka 9. veljače 1573. godine.</li>
         </ol>
         <img src="slike/1573_03.png" style="margin-right:10px;max-width:90%">
     </div>
-
+    <div id="video-5" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#video-5").fadeOut(600); $("#video5")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Bitka kod Stubičkih Toplica</strong></h1>
+                <video controls="controls" id='video5' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_05_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
+                    <source src="video/VTS_05_1_x264.mp4" type="video/mp4" />
+                    <source src="video/VTS_05_1_VP8.webm" type="video/webm" />
+                </video>
+            </div>
+        </div>
+    </div>
     <div id="tridesetnica" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container" style="display:block;">
@@ -143,6 +167,20 @@
             </div>
         </div>
     </div>
+
+    <div id="video-4" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#video-4").fadeOut(600); $("#video4")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Tijek bune</strong></h1>
+                <video controls="controls" id='video4' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_04_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
+                    <source src="video/VTS_04_1_x264.mp4" type="video/mp4" />
+                    <source src="video/VTS_04_1_VP8.webm" type="video/webm" />
+                </video>
+            </div>
+        </div>
+    </div>
+
     <map name="image-map">
         <area target="" alt="Tridesetnička postaja" title="Tridesetnička postaja" coords="1013,1541,1466,1601" shape="rect" onclick='$("#tridesetnica").show();'>
         <area target="" alt="Vlastelinska Mitnica" title="Vlastelinska Mitnica" coords="1040,1627,1452,1666" shape="rect" onclick='$("#mitnice").show();'>

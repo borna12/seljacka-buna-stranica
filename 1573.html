@@ -49,18 +49,22 @@
                 <span onclick="$('#seljacke-karta').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>Velika seljačka buna (muška punta, 1573.)</strong></h1>
 
-                <div style="overflow:auto; height:300px">
-                    <p class="tekst">
+                <div style="overflow:auto; height:600px">
+                    <div class="tekst">
                         Vođa Seljačke bune Matija Ambroz Gubec spominje se u selu Hižakovcu (Vrhovcu) na stubičkom vlastelinstvu u popisima crkvene desetine i urbaru. U vrijeme bune imao je vjerojatno 35 godina. Gubec je vodio pripreme za bunu i predvodio dio seljačke vojske u Hrvatskome zagorju te je, tvrde pojedini sudionici, proglašen seljačkim kraljem. Ostali istaknuti vođe bune bili su Ivan Pasanec, Ivan Mogadić i Ilija Gregurić. Hrvatsko-slovenska Seljačka buna, Velika seljačka buna, muška punta ili "seljački rat", kako su ga nazivali suvremenici, započeo je na susedgradsko-stubičkim posjedima Franje Tahyja. To je bila treća buna od kada je 1564. godine Tahy protupravno kupio polovicu vlastelinstva.
                         <br>
+                        <div class="ikona" onclick='$("#seljacke-karta").fadeOut(600);$("#video-3").show();' style="text-align:center"><img src="video/VTS_03_1_VP8 (ikona).jpg" style="width:100%"/></div>
                         <br> Uzroci bune nalaze se u pogoršanju položaja seljaka i smetnjama koje se stavljaju pred seljačku trgovinu, dok su direktan povod bile borbe među vlastelom, koja je pri tom seljake naoružala kao i zlodjela Franje Tahyja i njegovog sina Gabrijela. Seljaci kao svoje ciljeve ističu borbu za stare pravice, rušenje feudalnog poretka, stvaranje samostalne seljačke države sa sjedištem u Zagrebu te preuzimanje ubiranja poreza i obrane od Turaka.
                         <br>
+
+                        <div class="ikona" onclick='$("#seljacke-karta").fadeOut(600);$("#video-2").show();' style="text-align:center"><img src="video/VTS_02_1_VP8 (ikona).jpg" /></div>
+
                         <br> Znak za početak oružanog ustanka dan je u noći s 27. na 28. Siječnja 1573., a prva veća ustanička akcija bila je napad na Cesargrad. Istodobno izbijaju pobune na desetak velikih vlastelinstava u Hrvatskoj i slovenskim pokrajinama zbog čega se buna ponekad zove i Hrvatsko-slovenska seljačka buna. Biskup i ban Juraj Drašković moli kralja da hitno poduzme mjere za ugušivanje bune, a pomoć je zatražena i od uskočkog kapetana Thurna. Štajerski staleži objavili su opću mobilizaciju. Nakon poraza seljaka u bitkama kod Krškog i kod Kerestinca, ustanički odredi svladani su i u Planini, Jurkloštru i kod Jastrebarskog. Sedmoga dana veljače ban Drašković okuplja u Zagrebu vojsku za napad na ustanike u Zagorju. Alapić kreće s vojskom protiv ustanika koji se povlače pema Stubici.
-                    </p>
+                    </div>
                 </div>
                 <br>
                 <div style='text-align:center;'><strong class="tekst" style="font-size:24px;" onclick='localStorage.setItem("buna", "radi");window.location.href="karta-bune.html"'><u>Pritisnite za pregled karte </u><i class="fa fa-search" aria-hidden="true"></i></strong></div>
-                <img src="slike/karta-seljacke.png" style="height:580px;display:block;margin:auto;" onclick='localStorage.setItem("buna", "radi");window.location.href="karta-bune.html"' />
+                <img src="slike/karta-seljacke.png" style="height:280px;display:block;margin:auto;" onclick='localStorage.setItem("buna", "radi");window.location.href="karta-bune.html"' />
             </div>
         </div>
     </div>
@@ -151,12 +155,74 @@
                 <span onclick='$("#tahy-2").fadeOut(600); $("#tahy").show(); $("#video")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>"Tahyjev" sunčani sat i mjerenje vremena</strong></h1>
                 <video controls="controls" id='video' style="max-width:100%;padding-bottom:15px;" poster='video/tahy.jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
-                    <source src="video/Sequence 01_x264_001.mp4" type="video/mp4" />
+                    <source src="video/Sequence-01.mp4" type="video/mp4" />
                     <source src="video/Sequence-01.webm" type="video/webm" />
                 </video>
             </div>
 
 
+        </div>
+    </div>
+
+
+    <div id="video-2" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#video-2").fadeOut(600); $("#seljacke-karta").show(); $("#video2")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Velika seljačka buna 1573.</strong></h1>
+                <video controls="controls" id='video2' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_02_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
+                    <source src="video/VTS_02_1_x264.mp4" type="video/mp4" />
+                    <source src="video/VTS_02_1_VP8.webm" type="video/webm" />
+                </video>
+            </div>
+        </div>
+    </div>
+    <div id="video-3" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#video-3").fadeOut(600); $("#seljacke-karta").show(); $("#video3")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Velika seljačka buna 1573.</strong></h1>
+                <video controls="controls" id='video3' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_03_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
+                    <source src="video/VTS_03_1_x264.mp4" type="video/mp4" />
+                    <source src="video/VTS_03_1_VP8.webm" type="video/webm" />
+                </video>
+            </div>
+        </div>
+    </div>
+    <div id="video-4" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#video-4").fadeOut(600); $("#tahy").show(); $("#video4")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Tijek bune</strong></h1>
+                <video controls="controls" id='video4' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_04_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
+                    <source src="video/VTS_04_1_x264.mp4" type="video/mp4" />
+                    <source src="video/VTS_04_1_VP8.webm" type="video/webm" />
+                </video>
+            </div>
+        </div>
+    </div>
+    <div id="video-5" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#video-5").fadeOut(600); $("#tahy").show(); $("#video5")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Bitka kod Stubičkih Toplica</strong></h1>
+                <video controls="controls" id='video5' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_05_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
+                    <source src="video/VTS_05_1_x264.mp4" type="video/mp4" />
+                    <source src="video/VTS_05_1_VP8.webm" type="video/webm" />
+                </video>
+            </div>
+        </div>
+    </div>
+    <div id="video-6" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#video-6").fadeOut(600); $("#stubicke").show(); $("#video6")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Velika seljačka buna 1573.</strong></h1>
+                <video controls="controls" id='video6' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_06_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
+                    <source src="video/VTS_06_1_x264.mp4" type="video/mp4" />
+                    <source src="video/VTS_06_1_VP8.webm" type="video/webm" />
+                </video>
+            </div>
         </div>
     </div>
 
@@ -192,7 +258,8 @@
                 <h1 class="naslov"><strong>BITKA KOD STUBIČKIH TOPLICA</strong></h1>
                 <br>
                 <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
-                    <img src="slike/nikola.png" class='slike-tekst por-slika poravnaj' style="max-width: 100%;">
+                    <img src="slike/nikola.png" class='slike-tekst poravnaj' style="max-width: 100%;"><br><br>
+                    <span class="ikona" onclick="$('#stubicke').fadeOut(600);$('#video-6').show()"><i class="fa fa-video-camera" aria-hidden="true"></i></span><br><br>
                 </div>
                 <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;">
 
