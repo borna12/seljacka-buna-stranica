@@ -12,6 +12,10 @@
     <script src="js/image-map.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <script src="js/index.js" type="text/javascript"></script>
+    <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <script src="js/lightslider.js"></script>
+
     <style>
         html,
         body {
@@ -30,6 +34,19 @@
             left: 50%;
             transform: translate(50%, -50%);
         }
+        
+        #navcontainer ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+        
+        #navcontainer ul li {
+            display: inline;
+        }
+        
+        #navcontainer img{height: 50px;}
     </style>
 </head>
 
@@ -53,7 +70,7 @@
                     <div class="tekst">
                         Vođa Seljačke bune Matija Ambroz Gubec spominje se u selu Hižakovcu (Vrhovcu) na stubičkom vlastelinstvu u popisima crkvene desetine i urbaru. U vrijeme bune imao je vjerojatno 35 godina. Gubec je vodio pripreme za bunu i predvodio dio seljačke vojske u Hrvatskome zagorju te je, tvrde pojedini sudionici, proglašen seljačkim kraljem. Ostali istaknuti vođe bune bili su Ivan Pasanec, Ivan Mogadić i Ilija Gregurić. Hrvatsko-slovenska Seljačka buna, Velika seljačka buna, muška punta ili "seljački rat", kako su ga nazivali suvremenici, započeo je na susedgradsko-stubičkim posjedima Franje Tahyja. To je bila treća buna od kada je 1564. godine Tahy protupravno kupio polovicu vlastelinstva.
                         <br>
-                        <div class="ikona" onclick='$("#seljacke-karta").fadeOut(600);$("#video-3").show();' style="text-align:center"><img src="video/VTS_03_1_VP8 (ikona).jpg" style="width:100%"/></div>
+                        <div class="ikona" onclick='$("#seljacke-karta").fadeOut(600);$("#video-3").show();' style="text-align:center"><img src="video/VTS_03_1_VP8 (ikona).jpg" style="width:100%" /></div>
                         <br> Uzroci bune nalaze se u pogoršanju položaja seljaka i smetnjama koje se stavljaju pred seljačku trgovinu, dok su direktan povod bile borbe među vlastelom, koja je pri tom seljake naoružala kao i zlodjela Franje Tahyja i njegovog sina Gabrijela. Seljaci kao svoje ciljeve ističu borbu za stare pravice, rušenje feudalnog poretka, stvaranje samostalne seljačke države sa sjedištem u Zagrebu te preuzimanje ubiranja poreza i obrane od Turaka.
                         <br>
 
@@ -128,9 +145,9 @@
                 <span onclick='$("#tahy-2").fadeOut(600); $("#tahy").show(); $("#video")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>"Tahyjev" sunčani sat i mjerenje vremena</strong></h1>
                 <video controls="controls" id='video' style="max-width:100%;padding-bottom:15px;" poster='video/tahy.jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
-                   <source src="video/Sequence-01.webm" type="video/webm" />
+                    <source src="video/Sequence-01.webm" type="video/webm" />
                     <source src="video/Sequence-01.mp4" type="video/mp4" />
-                    
+
                 </video>
             </div>
 
@@ -145,9 +162,9 @@
                 <span onclick='$("#video-2").fadeOut(600); $("#seljacke-karta").show(); $("#video2")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>Velika seljačka buna 1573.</strong></h1>
                 <video controls="controls" id='video2' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_02_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
-                   <source src="video/VTS_02_1_VP8.webm" type="video/webm" />
+                    <source src="video/VTS_02_1_VP8.webm" type="video/webm" />
                     <source src="video/VTS_02_1_x264.mp4" type="video/mp4" />
-                    
+
                 </video>
             </div>
         </div>
@@ -170,9 +187,9 @@
                 <span onclick='$("#video-4").fadeOut(600); $("#tahy").show(); $("#video4")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>Tijek bune</strong></h1>
                 <video controls="controls" id='video4' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_04_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
-                   <source src="video/VTS_04_1_VP8.webm" type="video/webm" />
+                    <source src="video/VTS_04_1_VP8.webm" type="video/webm" />
                     <source src="video/VTS_04_1_x264.mp4" type="video/mp4" />
-                    
+
                 </video>
             </div>
         </div>
@@ -183,9 +200,9 @@
                 <span onclick='$("#video-5").fadeOut(600); $("#tahy").show(); $("#video5")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>Bitka kod Stubičkih Toplica</strong></h1>
                 <video controls="controls" id='video5' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_05_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
-                   <source src="video/VTS_05_1_VP8.webm" type="video/webm" />
+                    <source src="video/VTS_05_1_VP8.webm" type="video/webm" />
                     <source src="video/VTS_05_1_x264.mp4" type="video/mp4" />
-                    
+
                 </video>
             </div>
         </div>
@@ -196,9 +213,9 @@
                 <span onclick='$("#video-6").fadeOut(600); $("#stubicke").show(); $("#video6")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>Velika seljačka buna 1573.</strong></h1>
                 <video controls="controls" id='video6' style="max-width:100%;padding-bottom:15px;" poster='video/VTS_06_1_VP8 (ikona).jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
-                         <source src="video/VTS_06_1_VP8.webm" type="video/webm" />
+                    <source src="video/VTS_06_1_VP8.webm" type="video/webm" />
                     <source src="video/VTS_06_1_x264.mp4" type="video/mp4" />
-              
+
                 </video>
             </div>
         </div>
@@ -229,6 +246,69 @@
         </div>
     </div>
 
+
+    <div id="oruzje" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="display:block;">
+                <span onclick='$("#oruzje").fadeOut(600);' class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Oružje</strong></h1>
+                <p class="tekst">Vojnu snagu Hrvatske 16. st. sačinjavale su čete najamnika, a u posebnim slučajevima sazivao se i opći zemaljski ustanak – insurekcija. Najamnici se dijele na pješake (haramije) i laku konjicu (husare). Uz domaće stanovništvo, javljaju se među paćenicima i brojni prebjezi s turskog područja, koji se nazivaju raznim imenima, a najčešće uskocima.
+                    <br> U prvoj polovini 16. st. oprema i naoružanje lakog konjanika sastoji se od pancira, <strong><u>kacige</u></strong>, štita, <strong><u>koplja</u></strong> i sablje. U drugoj polovini stoljeća laki konjanik – husar opremljen je oklopom ili pancirom, šišakom (kacigom), štitom, kopljem, sabljom, bodežom, batom (<strong><u>buzdovanom</u></strong>) ili <strong><u>sjekiricom</u></strong>. Zavisno od materijalnih mogućnosti, laki konjanik se mogao naoružati i puškom. Postojale su i cijele čete konjanika naoružane samo puškama. <strong><u>Franjo Tahy</u></strong> prikazan je na nadgrobnoj ploči u kompletnoj plemićkoj opremi.
+                    <br> O naoružanju pješaka nemamo iscrpnih podataka. Pojedini pješaci su bili strijelci, a većina pješačkog naoružanja bilo je hladno oružje. Njemački najamnici bili su naoružani kopljima, <strong><u>helebardama</u></strong>, <strong><u>nadžacima</u></strong>, o pojasu im je vidio <strong><u>mač</u></strong>, a u pojas im je bio utaknut bodež. U prvim borbenim redovima bili su dvostruko plaćeni odredi naoružani teškim mačevima – dvoručnjacima. Zadatak im je bio lomiti koplja i nanositi gubitke neprijateljskog navali.
+                    <br> Nemamo sigurnih podataka čime su bili naoružani seljaci za vrijeme Seljačke bune. Suci istražitelji pitali su većinom za vatreno oružje. Prema izvještaju zagrabačkog biskupa Jurja Draškovića seljaci su bili „... ratoborni, dobro naoružani, većinom izvježbani na granici...“. Seljaci su bili brojčano nadmoćniji. Naoružali su se oruđem kojim su se služili u radu u polju ili pri kućnim poslovima – kosama, vilama na dva ili tri kraka, srpovima, rankunima ili <strong><u>gizernama</u></strong>, sjekirama (<strong><u>bradvama</u></strong>), mlatovima i kijačama (drvenim okovanim batinama). Jedan od seljačkih vođa navodi da su seljaci imali 20 teških pušaka i jedan falkonet na kotačima. Seoski kovači svakako su znali izraditi jednostavnije oružje, kao što je na primjer koplje, a seljaci su često bili naoružani i dugim noževima, tzv. <strong><u>kordama</u></strong>.
+                </p>
+                <div id="navcontainer">
+
+                    <ul>
+                        <li>
+                            <a href="Oruzje/01_2096%20(1).jpg" class="html5lightbox" title="nes" data-group="mygroup" data-thumbnail="Oruzje/01_2096%20(1).jpg" title=""><img src="Oruzje/01_2096%20(1).jpg"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/02_414-2.jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/02_414.jpg" title=""><img src="Oruzje/02_414.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/02_724 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/02_724 (1).jpg" title=""><img src="Oruzje/02_414.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/03_264 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/03_264 (1).jpg" title=""><img src="Oruzje/03_264 (1).jpg"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/04_451 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/04_451 (1).jpg" title=""><img src="Oruzje/04_451 (1).jpg"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/06_662 (1).JPG" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/06_662 (1).JPG" title=""><img src="Oruzje/06_662 (1).JPG"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/08_706 (1).JPG" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/08_706 (1).JPG" title=""><img src="Oruzje/08_706 (1).JPG"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/09_416.jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/09_416.jpg" title=""><img src="Oruzje/09_416.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/10a_1307 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/10a_1307 (1).jpg" title=""><img src="Oruzje/10a_1307 (1).jpg"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/10a_1307 (3).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/10a_1307 (3).jpg" title=""><img src="Oruzje/10a_1307 (3).jpg"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/11a_431 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/11a_431 (1).jpg" title=""><img src="Oruzje/11a_431 (1).jpg"></a>
+                        </li>
+                        <li>
+                            <a href="Oruzje/11b_434 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/11b_434 (1).jpg" title=""><img src="Oruzje/11b_434 (1).jpg"></a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <!--<a href="Oruzje/01_2096%20(1).jpg" class="html5lightbox" title="nes" data-group="mygroup" data-thumbnail="Oruzje/01_2096%20(1).jpg" width="600" data-height="400" title=""><img src="Oruzje/01_2096%20(1).jpg"></a>
+
+                
+                The Modal/Lightbox -->
+
+            </div>
+        </div>
+    </div>
+
     <div id="stubicke" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container" style=" display:block;">
@@ -236,8 +316,12 @@
                 <h1 class="naslov"><strong>BITKA KOD STUBIČKIH TOPLICA</strong></h1>
                 <br>
                 <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
-                    <img src="slike/nikola.png" class='slike-tekst poravnaj' style="max-width: 100%;"><br><br>
-                    <span class="ikona" onclick="$('#stubicke').fadeOut(600);$('#video-6').show()"><i class="fa fa-video-camera" aria-hidden="true"></i></span><br><br>
+                    <img src="slike/nikola.png" class='slike-tekst poravnaj' style="max-width: 100%;">
+                    <br>
+                    <br>
+                    <span class="ikona" onclick="$('#stubicke').fadeOut(600);$('#video-6').show()"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                    <br>
+                    <br>
                 </div>
                 <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;">
 
@@ -255,7 +339,7 @@
         <area target="" alt="Franjo Tahy" title="Franjo Tahy" coords="1362,200,1637,256" shape="rect" onclick='$("#tahy").show();'>
         <area target="" alt="Gubec-beg" title="Gubec-beg" coords="128,379,365,428" shape="rect" onclick='$("#gupec").show();'>
         <area target="" alt="Ilija Gregorić" title="Ilija Gregorić" coords="365,474,675,522" shape="rect" onclick='$("#ilija").show();'>
-        <area target="" alt="Oružje" title="Oružje" coords="776,686,939,740" shape="rect">
+        <area target="" alt="Oružje" title="Oružje" coords="776,686,939,740" shape="rect" onclick='$("#oruzje").show();'>
         <area target="" alt="Bitka kod stubičkih toplica" title="Bitka kod stubičkih toplica" coords="1025,408,1431,504" shape="rect" onclick='$("#stubicke").show();'>
         <area target="" alt="Josip Jošt Turn" title="Josip Jošt Turn" coords="1224,304,1597,359" shape="rect" onclick='$("#thurn").show();'>
 
@@ -267,7 +351,13 @@
         if (localStorage.getItem("buna") == "radi") {
             $("#seljacke-karta").show();
         }
+
+        var html5lightbox_options = {
+            watermark: "",
+            watermarklink: ""
+        };
     </script>
+
 </body>
 
 </html>
