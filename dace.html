@@ -22,12 +22,10 @@
     }
 
     .listac {
-      top: 50%;
       position: relative;
-      transform: translateY(-50%);
+      transform: translateY(100%);
+      bottom: 0;
     }
-
-
   </style>
 </head>
 
@@ -82,39 +80,43 @@
   <div id="vteret" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
       <div class="w3-container">
-        <span onclick="$('#vteret').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+        <span onclick="$('#vteret').fadeOut(600);odabir='uvod'" class="w3-button w3-display-topright iks">&times;</span>
 
 
         <div class="wrapper">
           <div>
-            <ul id="linkovi">
+            <ul class="linkovi">
             </ul>
           </div>
           <div style="margin-left: 80px;">
-            <p class="tekst">        <h1 class="naslov"><strong>VLASTELINSKI TERETI</strong></h1>
+            <p class="tekst">
+              <h1 class="naslov zamjnas"><strong>VLASTELINSKI TERETI</strong></h1>
 
             </p>
           </div>
-          <div ></div>
+          <div></div>
         </div>
         <div class="wrapper">
           <div class="box b">
-            <ul id="linkovi">
-              <li style='padding-top:0'>UVOD
+            <ul class="linkovi">
+              <li style='padding-top:0' onclick="odabir='uvod'">UVOD
 
-                <li onclik="odabir='tlaka'">TLAKA</li>
+                <li onclick="odabir='tlaka'">TLAKA</li>
 
-                <li onclik="odabir='novac'">NOVČANA RENTA</li>
+                <li onclick="odabir='novac'">NOVČANA RENTA</li>
 
-                <li onclik="odabir='naturalna'">NATURALNA RENTA</li>
+                <li onclick="odabir='naturalna'">NATURALNA RENTA</li>
             </ul>
           </div>
           <div class="box a" style="margin-left: 80px;">
-            <p class="tekst">
-              Daće su podavanja koja je kmet, tj. podložnik obvezan plaćati svojemu feudalnom gospodaru kao naknadu za uživanje zemlje. Često se spekulira s veličinom davanja u prošlosti uspoređujući ih sa stanjem danas, pri čemu se tvrdi da su davanja nekada bila manja. Usporedbu je zapravo vrlo teško napraviti. Ono što bi možda prvo trebalo uzeti u obzir je da su davanja bila različita na različitim posjedima. Na jednom je npr. gornica bila značajan teret, a na drugom se uopće nije ubirala. Postojala su brojna oslobođenja od pojedinih daća, ali s druge strane i brojne daće koje se nisu ubirale na svim posjedima. I iznosi i način ubiranja bili su različiti na pojedinim posjedima, a i podložni promjenama tijekom vremena. Na našem području osim toga nisu dovoljno proučene mjere koje su se koristile tijekom feudalnog razdoblja, a ni kretanje cijena bez kojih je nemoguće napraviti odgovarajuće usporedbe.
+            <p class="tekst zamjetek">
+              Daće su podavanja koja je kmet, tj. podložnik obvezan plaćati svojemu feudalnom gospodaru kao naknadu za uživanje zemlje. Često se spekulira s veličinom davanja u prošlosti uspoređujući ih sa stanjem danas, pri čemu se tvrdi da su davanja nekada bila
+              manja. Usporedbu je zapravo vrlo teško napraviti. Ono što bi možda prvo trebalo uzeti u obzir je da su davanja bila različita na različitim posjedima. Na jednom je npr. gornica bila značajan teret, a na drugom se uopće nije ubirala. Postojala
+              su brojna oslobođenja od pojedinih daća, ali s druge strane i brojne daće koje se nisu ubirale na svim posjedima. I iznosi i način ubiranja bili su različiti na pojedinim posjedima, a i podložni promjenama tijekom vremena. Na našem području
+              osim toga nisu dovoljno proučene mjere koje su se koristile tijekom feudalnog razdoblja, a ni kretanje cijena bez kojih je nemoguće napraviti odgovarajuće usporedbe.
             </p>
           </div>
-          <div class="box c"> <img src="slike/d-uvod.png" class="slike-tekst listac poravnaj" style="max-width: 100%;"></div>
+          <div class="box c"> <img src="slike/d-uvod.png" class="slike-tekst listac poravnaj zamjeslik" style="max-width: 100%;"></div>
         </div>
 
 
@@ -189,9 +191,44 @@
         <area target="" alt="Vlastelinska prava" title="Vlastelinska prava" coords="3495,2191,4542,3093" shape="rect" onclick='$("#vrprava").show();'>
     </map>
   <script>
+    odabir = 'uvod'
     $('img[usemap]').imageMap();
 
-  $('#linkovi').click(function(){if })
+    $('.linkovi').click(function() {
+
+      if (odabir == 'tlaka') {
+        $('.zamjnas').html('TLAKA');
+        $('.zamjetek').html(
+          'Tlaka (služba, rabota) je obveza kmetova na besplatan rad. Služila ponajprije za obradu vlastelinova alodijalnog zemljišta. Bila je određena brojem radnih dana ljudi i stoke koje je davalo jedno kmetsko selište. Bila je regulirana urbarom za pojedino vlastelinstvo, a u 18. st. marijaterezijanskim urbarima na jedinstven način za šira područja. Na više mjesta tlaka je određivana kao kolektivna dužnost svih podložnika ili pojedinih seoskih općina da obrade određene poljoprivredne površine. Tako određena tlaka nije bila velika. Radne dužnosti zavisnih seljaka po pojedinim vlastelinstvima bile su različite, a važan oblik radne rente bila je i obveza prijevoza dobara za vlastelina. <br><br><em> U urbarima Susedgrada i Donje Stubice iz 1566. tlaka se uopće ne spominje.U svakom slučaju, na susjedgadsko - stubičkim posjedima tlaka nije bila glavni teret kmetova.Može se izračunati da je vlastelinstvo oko 16 % svojih ukupnih prihoda realiziralo upotrebom tlake </em>'
+        );
+        $('.zamjeslik').attr("src", "slike/tlaka.png");
+        $('.zamjeslik').css("transform", "translateY(100%)");
+
+      } else if (odabir == 'novac') {
+        $('.zamjnas').html('NOVČANA RENTA');
+        $('.zamjetek').html(
+          'Novčanu rentu su činile redovite i izvanredne novčane daće i desetinske daće u novcu. Najznačajniji oblici te vrste daće ubirali su se najčešće na blagdane Sv. Jurja i Sv. Martina pa se stoga  nazivaju jurjevšćina i martinšćina.<br><br>Marturina ili kunovina je vrsta daće koja isprva plaćana u naturi, točnije u kuninim kožama, a kasnije je pretvorena u novćanu rentu. Dvije trećine marturine su pripadale vladaru, a jedna vlastelinu. Vladar je ujedno mogao sveukupan prihod prepustiti vlastelinu ili nekom od kraljevskih dužnosnika. Ta vrsta poreza plaćala se do početka 16. st. </em>'
+        );
+        $('.zamjeslik').attr("src", "slike/n-rentu.png");
+        $('.zamjeslik').css("transform", "translateY(50%)");
+      } else if (odabir == 'naturalna') {
+        $('.zamjnas').html('NATURALNA RENTA');
+        $('.zamjetek').html(
+          'Naturalne daće, tj. feudalna podavanja u naturi, u Hrvatskoj i Slavoniji se javljaju već u najstarijim izvorima. U 13. i 14. st. neke se naturalne daće počinju pretvarati (komutirati) u novčano podavanje. Na mnogim je mjestima važnost pojedinih naturalnih daća ovisila o strukturi poljoprivredne proizvodnje.<br><br>Najvažnija vinska daća bila je gornica. Određivala se prema veličini vinograda, obično prema broju kopača. <br><br><div style="padding-left:50px"><strong>Darovi</strong> (munera) su posebna vrsta redovnih naturalnih podavanja. Kmetovi su u različitim prilikama, obično tri puta godišnje morali svojoj vlasteli davati različite namirnice. Struktura darova razlikovala se od vlastelinstva do vlastelinstva, ali su se obično davali prema veličini selišta. <br><br>Zavisni seljaci najčešće su kao darove davali perad i proizvode peradarstva (piliće, kokoši, kopune, jaja) te neke stočarske proizvode (sir, suhe svinjske plećke). Uz svaki dar obično se morao dati hljeb ili pogača, odnosno određeni iznos u novcu.<br><br> </div>Osim obveza u radu i u proizvodima, postojalo je i skup podavanja različitih predmeta koji se ne proizvode na seljačkim posjedima, već se sabiru u prirodi. Među tim podavanjima na prvom je mjestu bila dužnost seljaka da feudalnoj gospodi daju drvo i različite proizvode od drveta.'
+        );
+        $('.zamjeslik').attr("src", "slike/tlaka.png");
+        $('.zamjeslik').css("transform", "translateY(100%)");
+
+
+      } else {
+        $('.zamjnas').html('VLASTELINSKI TERETI');
+        $('.zamjetek').html(
+          'Daće su podavanja koja je kmet, tj. podložnik obvezan plaćati svojemu feudalnom gospodaru kao naknadu za uživanje zemlje. Često se spekulira s veličinom davanja u prošlosti uspoređujući ih sa stanjem danas, pri čemu se tvrdi da su davanja nekada bila manja. Usporedbu je zapravo vrlo teško napraviti. Ono što bi možda prvo trebalo uzeti u obzir je da su davanja bila različita na različitim posjedima. Na jednom je npr. gornica bila značajan teret, a na drugom se uopće nije ubirala. Postojala su brojna oslobođenja od pojedinih daća, ali s druge strane i brojne daće koje se nisu ubirale na svim posjedima. I iznosi i način ubiranja bili su različiti na pojedinim posjedima, a i podložni promjenama tijekom vremena. Na našem području osim toga nisu dovoljno proučene mjere koje su se koristile tijekom feudalnog razdoblja, a ni kretanje cijena bez kojih je nemoguće napraviti odgovarajuće usporedbe.'
+        );
+        $('.zamjeslik').attr("src", "slike/d-uvod.png");
+        $('.zamjeslik').css("transform", "translateY(100%)");
+      }
+    })
   </script>
 
 </body>

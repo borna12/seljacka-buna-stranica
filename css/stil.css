@@ -34,6 +34,7 @@
           font-family: nyala;
           text-transform: uppercase;
           color: rgb(104, 0, 2);
+          font-weight: bold;
         }
 
         .tekst {
@@ -42,7 +43,9 @@
           text-align: justify
         }
 
-        .prozor .tekst{font-size: 36px;}
+        .prozor .tekst {
+          font-size: 36px;
+        }
 
         .w3-container {
           height: 100%;
@@ -187,7 +190,7 @@
         .w3-display-topleft {
           top: 5%;
           left: 5%;
-          z-index: 10;
+          z-index: 1;
         }
 
         .siroki {
@@ -201,26 +204,28 @@
         }
 
         .box {
-
           padding: 20px;
           font-size: 150%;
         }
 
-        #linkovi {
-
+        .linkovi {
           left: 0;
           overflow: auto;
           width: 25%;
           font-family: nyala;
           position: absolute;
           top: 30;
-          padding-top:0;
+          padding-top: 0;
         }
 
-       ul {
+     ul {
           list-style-type: none;
           font-size: 40px;
           color: rgb(104, 0, 2);
-
         }
-        ul li{padding-top: 10px;padding-bottom: 10px; text-decoration: underline;}
+
+        ul li {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-decoration: underline;
+        }
