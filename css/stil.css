@@ -161,11 +161,25 @@
             float: right;
         }
         
-        .html5-title-caption, .html5-title-prefix {
+        .html5-title-caption,
+        .html5-title-prefix {
             font-family: gabriola;
             font-size: 30px;
         }
-
-.html5-elem-data-box{max-height: none!important}
-.html5-elem-wrap,.html5-elem-data-box{background-color: rgb(254, 251, 218)!important}
-.html5-elem-box{border-radius: 5px}
+        
+        .html5-elem-data-box {
+            max-height: none!important
+        }
+        
+        .html5-elem-wrap,
+        .html5-elem-data-box {
+            background-color: rgb(254, 251, 218)!important
+        }
+        
+        .html5-elem-box {
+            border-radius: 5px
+        }
+        
+        .trisestpet {
+            text-align: right
+        }
