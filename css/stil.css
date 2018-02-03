@@ -1,185 +1,226 @@
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #25180F;
+        html, body {
+          margin: 50px;
+          padding: 0;
+          background-color: #25180F;
         }
-        
+
         @font-face {
-            font-family: nyala;
-            src: url(nyala.ttf);
+          font-family: nyala;
+          src: url(nyala.ttf);
         }
-        
+
         @font-face {
-            font-family: gabriola;
-            src: url(Gabriola.ttf);
+          font-family: gabriola;
+          src: url(Gabriola.ttf);
         }
-        
+
         strong {
-            color: rgb(104, 0, 2);
+          color: rgb(104, 0, 2);
         }
-        
+
         #naslovnica {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            max-width: 100%;
-            max-height: 100%;
-            margin: auto;
-            overflow: auto;
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          max-width: 100%;
+          max-height: 100%;
+          margin: auto;
+          overflow: auto;
         }
-        
+
         .naslov {
-            font-family: nyala;
-            text-transform: uppercase;
-            color: rgb(104, 0, 2);
+          font-family: nyala;
+          text-transform: uppercase;
+          color: rgb(104, 0, 2);
         }
-        
+
         .tekst {
-            font-family: gabriola;
-            font-size: 20px;
-            text-align: justify
+          font-family: gabriola;
+          font-size: 27px;
+          text-align: justify
         }
-        
+
+        .prozor .tekst{font-size: 36px;}
+
         .w3-container {
-            height: 100%;
-            display: table-cell;
-            vertical-align: middle;
+          height: 100%;
+          display: table-cell;
+          vertical-align: middle;
         }
-        
+
         .slike-tekst {
-            max-width: 100%;
+          max-width: 100%;
         }
-        
+
         .w3-modal {
-            padding-top: 0;
+          padding-top: 0;
         }
-        
+
         .w3-modal-content {
-            display: table;
+          display: table;
         }
-        
+
         .iks {
-            color: rgb(104, 0, 2);
-            font-family: nyala;
-            font-size: 60px;
-            line-height: 0.5;
-            font-weight: 600;
-            position: fixed;
+          color: rgb(104, 0, 2);
+          font-family: nyala;
+          font-size: 60px;
+          line-height: 0.5;
+          font-weight: 600;
+          position: fixed;
         }
-        
+
         .iks:hover {
-            background: none
+          background: none
         }
-        
+
         .home {
-            color: rgb(104, 0, 2);
-            font-family: nyala;
-            font-size: 40px;
-            line-height: 0.5;
-            font-weight: 600;
-            position: fixed;
+          color: rgb(104, 0, 2);
+          font-family: nyala;
+          font-size: 60px;
+          line-height: 0.5;
+          font-weight: 600;
+          position: fixed;
         }
-        
+
         .w3-animate-zoom-out {
-            animation: animatezoom2 0.6s;
+          animation: animatezoom2 0.6s;
         }
-        
+
         @keyframes animatezoom2 {
-            from {
-                transform: scale(1)
-            }
-            to {
-                transform: scale(0)
-            }
+          from {
+            transform: scale(1)
+          }
+          to {
+            transform: scale(0)
+          }
         }
-        
+
         @media (min-width: 993px) {
-            .w3-modal-content {
-                width: 1200px;
-            }
+          .w3-modal-content {
+            width: 1200px;
+          }
         }
-        
+
         ::-webkit-scrollbar {
-            width: 0px;
-            /* remove scrollbar space */
-            background: transparent;
-            /* optional: just make scrollbar invisible */
+          width: 0px;
+          /* remove scrollbar space */
+          background: transparent;
+          /* optional: just make scrollbar invisible */
         }
+
         /* optional: show position indicator in red */
-        
+
         ::-webkit-scrollbar-thumb {
-            background: #FF0000;
+          background: #FF0000;
         }
-        
+
         .prozor {
-            background: rgb(254, 251, 218);
-            position: fixed;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            left: 50%;
-            border-radius: 5px;
+          background: rgb(254, 251, 218);
+          position: fixed;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%;
+          border-radius: 5px;
         }
-        
+
         .ikona {
-            font-size: 60px;
-            cursor: pointer;
+          font-size: 60px;
+          cursor: pointer;
         }
-        
+
         .ikona:hover {
-            color: rgb(104, 0, 2)
+          color: rgb(104, 0, 2)
         }
-        
+
         .ikona:active {
-            color: rgb(104, 0, 2)
+          color: rgb(104, 0, 2)
         }
-        
+
         p:first-letter {
-            color: rgb(104, 0, 2);
-            float: left;
-            font-size: 75px;
-            line-height: 50px;
-            padding-top: 4px;
-            padding-right: 8px;
-            padding-left: 3px;
+          color: rgb(104, 0, 2);
+          float: left;
+          font-size: 75px;
+          line-height: 50px;
+          padding-top: 4px;
+          padding-right: 8px;
+          padding-left: 3px;
         }
-        
+
         .poravnaj {
-            display: block;
-            margin: auto;
+          display: block;
+          margin: auto;
         }
-        
+
         .lijevi-div {
-            width: 50%;
-            float: left;
+          width: 50%;
+          float: left;
         }
-        
+
         .desni-div {
-            width: 50%;
-            float: right;
+          width: 50%;
+          float: right;
         }
-        
-        .html5-title-caption,
-        .html5-title-prefix {
-            font-family: gabriola;
-            font-size: 30px;
+
+        .html5-title-caption, .html5-title-prefix {
+          font-family: gabriola;
+          font-size: 30px;
         }
-        
+
         .html5-elem-data-box {
-            max-height: none!important
+          max-height: none !important
         }
-        
-        .html5-elem-wrap,
-        .html5-elem-data-box {
-            background-color: rgb(254, 251, 218)!important
+
+        .html5-elem-wrap, .html5-elem-data-box {
+          background-color: rgb(254, 251, 218) !important
         }
-        
+
         .html5-elem-box {
-            border-radius: 5px
+          border-radius: 5px
         }
-        
+
         .trisestpet {
-            text-align: right
+          text-align: right
         }
+
+        .w3-display-topleft {
+          top: 5%;
+          left: 5%;
+          z-index: 10;
+        }
+
+        .siroki {
+          width: 2000px;
+        }
+
+        .wrapper {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: 300px minmax(200px, 1fr) 600px;
+        }
+
+        .box {
+
+          padding: 20px;
+          font-size: 150%;
+        }
+
+        #linkovi {
+
+          left: 0;
+          overflow: auto;
+          width: 25%;
+          font-family: nyala;
+          position: absolute;
+          top: 30;
+          padding-top:0;
+        }
+
+       ul {
+          list-style-type: none;
+          font-size: 40px;
+          color: rgb(104, 0, 2);
+
+        }
+        ul li{padding-top: 10px;padding-bottom: 10px; text-decoration: underline;}
