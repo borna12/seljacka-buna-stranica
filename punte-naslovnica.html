@@ -82,77 +82,8 @@
         .b {
             font-size: 27px;
         }
-        
-        .accordion {
-            width: 100%;
-            max-width: 360px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px;
-        }
-        
-        .accordion .link {
-            cursor: pointer;
-            display: block;
-            border-bottom: 1px solid #CCC;
-            position: relative;
-            -webkit-transition: all 0.4s ease;
-            -o-transition: all 0.4s ease;
-            transition: all 0.4s ease;
-        }
-        
-        .accordion li:last-child .link {
-            border-bottom: 0;
-        }
-        
-        .accordion li i {
-            -webkit-transition: all 0.4s ease;
-            -o-transition: all 0.4s ease;
-            transition: all 0.4s ease;
-        }
-        
-        .accordion li i.fa-chevron-down {
-            font-size: 27px;
-        }
-        
-        .accordion li.open i {}
-        
-        .accordion li.open i.fa-chevron-down {
-            -webkit-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            transform: rotate(180deg);
-        }
-        
-        .link i.fa-chevron-down {
-            -webkit-transform: rotate(360deg);
-            -ms-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-            transform: rotate(360deg);
-        }
-        
-        .accordion li.default .submenu {
-            display: block;
-        }
-        /**
- * Submenu
- -----------------------------*/
-        
-        .submenu {
-            display: none;
-        }
-        
-        .submenu li {
-            border-bottom: 1px solid #4b4a5e;
-        }
-        
-        .submenu a {
-            display: block;
-            text-decoration: none;
-            -webkit-transition: all 0.25s ease;
-            -o-transition: all 0.25s ease;
-            transition: all 0.25s ease;
-        }
+      
+        .zamjnas{text-align: center}
     </style>
 </head>
 
@@ -305,16 +236,9 @@
                 <span onclick="$('#historiografija-prava').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
 
 
-                <div class="wrapper">
-                    <div>
-
-                    </div>
-                    <div style="margin-left: 80px;">
-                        <p class="tekst"></p>
+               
                         <h1 class="naslov zamjnas"><strong>HISTORIOGRAFIJA</strong></h1>
-                    </div>
-                    <div></div>
-                </div>
+                    
                 <div class="wrapper-2">
                     <div class="box b">
                         <ul id="accordion" class="accordion">
@@ -334,7 +258,7 @@
                                 <ul class="submenu">
 
                                     <div class="link spasi">AUGUST ŠENOA<i class="fa fa-chevron-down close"></i></div>
-                                    <ul class="submenu">
+                                    <ul class="submenu mini">
                                         <li><a href="#">ILUSTRACIJE VLADIMIRA KIRINA</a></li>
                                         <li><a href="#">IZVANREDNO IZDANJE, 1973.</a></li>
 
@@ -350,7 +274,7 @@
                                     <li><a href="#">SELJAČKA BUNA U KIPARSTVU</a></li>
                                     <li><a href="#">NATJEČAJ ZA SPOMENIK SELJAČKOJ BUNI</a></li>
                                    <div class="link spasi">SPOMENIK AUGUSTA AUGUSTINČIĆA<i class="fa fa-chevron-down close"></i></div>
-                                    <ul class="submenu">
+                                    <ul class="submenu mini">
                                         <li><a href="#">IZGRADNJA</a></li>
                                         <li><a href="#">VIZUALIZACIJA</a></li>
 
@@ -361,41 +285,16 @@
                             <li>
                                 <div class="link glavni">MUZEJSKA DJELATNOST<i class="fa fa-chevron-down"></i></div>
                                 <ul class="submenu">
-                                    <li><a href="#">Google</a></li>
-                                    <li><a href="#">Bing</a></li>
-                                    <li><a href="#">Yahoo</a></li>
-                                    <li><a href="#">Otros buscadores</a></li>
+                                     <div class="link spasi">MUZEJ SELJAČKIH BUNA<i class="fa fa-chevron-down close"></i></div>
+                                     <ul class="submenu mini">
+                                        <li><a href="#">UREĐENJE DVORCA ORŠIĆ</a></li>
+                                        <li><a href="#">STALNI POSTAV - 1973.</a></li>
+                                        <li><a href="#">STALNI POSTAV - 2002.</a></li>
+                                    </ul>
+                                    <li><a href="#">IZLOŽBE U DRUGIM MUZEJIMA</a></li>
                                 </ul>
                             </li>
                         </ul>
-                        <!-- <ul class="linkovi" style="width:initial;position:relative;">
-                            <li style='padding-top:0' onclick="odabir='uvod'">HISTORIOGRAFIJA</li>
-
-                            <li onclick="odabir='uvod'" class='podlink'>ISTVANFFY</li>
-                            <li onclick="odabir='uvod'" class='podlink'>STJEPAN ANTOLJAK</li>
-                            <li onclick="odabir='uvod'" class='podlink'>JOSIP ADAMČEK</li>
-                            <li onclick="odabir='uvod'" class='podlink'>NADA KLAIĆ</li>
-                            <li onclick="odabir='tlaka'">KNJIŽEVNOST</li>
-                            <li onclick="odabir='uvod'" class='podlink'>AUGUST ŠENOA</li>
-                            <li onclick="odabir='uvod'" class='podpodlink'>ILUSTRACIJE VLADIMIRA KIRINA</li>
-                            <li onclick="odabir='uvod'" class='podpodlink'>IZVANREDNO IZDANJE, 1973.</li>
-                            <li onclick="odabir='uvod'" class='podlink'>OSTALI AUTORI</li>
-                            <li onclick="odabir='novac'">SLIKARSTVO</li>
-                            <li onclick="odabir='naturalna'">KIPARSTVO</li>
-                            <li onclick="odabir='uvod'" class='podlink'>SELJAČKA BUNA U KIPARSTVU</li>
-                            <li onclick="odabir='uvod'" class='podlink'>NATJEČAJ ZA SPOMENIK SELJAČKOJ BUNI</li>
-                            <li onclick="odabir='uvod'" class='podlink'>SPOMENIK AUGUSTA AUGUSTINČIĆA</li>
-                            <li onclick="odabir='uvod'" class='podpodlink'>IZGRADNJA</li>
-                            <li onclick="odabir='uvod'" class='podpodlink'>VIZUALIZACIJA</li>
-                            <li onclick="odabir='naturalna'">GLAZBA</li>
-                            <li onclick="odabir='naturalna'">MUZEJSKA DJELATNOST</li>
-                            <li onclick="odabir='uvod'" class='podlink'>MUZEJ SELJAČKIH BUNA</li>
-                            <li onclick="odabir='uvod'" class='podpodlink'>UREĐENJE DVORCA ORŠIĆ</li>
-                            <li onclick="odabir='uvod'" class='podpodlink'>STALNI POSTAV - 1973.</li>
-                            <li onclick="odabir='uvod'" class='podpodlink'>STALNI POSTAV - 2002.</li>
-                            <li onclick="odabir='uvod'" class='podlink'>IZLOŽBE U DRUGIM MUZEJIMA</li>
-
-                        </ul>-->
 
                     </div>
                     <div class="box a" style="margin-left: 80px;">
@@ -417,7 +316,7 @@
         <area target="" alt="Kiparstvo" title="Kiparstvo" coords="355,191,672,257" shape="rect">
         <area target="" alt="Slikarstvo" title="Slikarstvo" coords="959,195,1306,260" shape="rect">
         <area target="" alt="Glazba" title="Glazba" coords="1574,756,1797,824" shape="rect">
-        <area target="" alt="Historiografija" title="Historiografija" coords="77,979,583,1043" shape="rect" onclick="$('#historiografija-prava').show()">
+        <area target="" alt="Historiografija" title="Historiografija" coords="77,979,583,1043" shape="rect" onclick="$('.zamjnas').text('HISTOGRAFIJA');$('#historiografija-prava').show()">
         <area target="" alt="Knjizevnost" title="Knjizevnost" coords="290,1095,673,1169" shape="rect">
         <area target="" alt="Muzej" title="Muzej" coords="1022,1043,1684,1116" shape="rect">
     </map>
@@ -451,7 +350,7 @@
 
                 $next.slideToggle();
                 $this.parent().toggleClass('open');
-
+               
                 if ($this.hasClass('glavni')) {
                     $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
                     spasi = 0
@@ -482,10 +381,8 @@
                         spasi = 0
                     }
                 }
+                 $(".zamjnas").text($this.text());
 
-                /*if (!e.data.multiple) {
-                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-                };*/
             }
 
             var accordion = new Accordion($('#accordion'), false);

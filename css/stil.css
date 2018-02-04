@@ -243,3 +243,81 @@
         ul li {
             font-size: 27px;
         }
+        
+        .accordion {
+            width: 100%;
+            max-width: 360px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            padding-left: 0;
+        }
+        
+        .accordion .link {
+            cursor: pointer;
+            display: block;
+            border-bottom: 1px solid #CCC;
+            position: relative;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        
+        .accordion li:last-child .link {
+            border-bottom: 0;
+        }
+        
+        .accordion li i {
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        
+        .accordion li i.fa-chevron-down {
+            font-size: 27px;
+        }
+        
+        .accordion li.open i {}
+        
+        .accordion li.open i.fa-chevron-down {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        
+        .link i.fa-chevron-down {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+        
+        .accordion li.default .submenu {
+            display: block;
+        }
+        /**
+ * Submenu
+ -----------------------------*/
+        
+        .submenu {
+            display: none;
+        }
+        
+        .submenu li {
+            border-bottom: 1px solid #4b4a5e;
+        }
+        
+        .submenu a {
+            display: block;
+            text-decoration: none;
+            -webkit-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+            font-size: 32px;
+        }
+        
+        .spasi {
+            font-size: 32px;
+        }
+.mini a{font-size: 27px;}
