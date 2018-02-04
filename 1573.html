@@ -60,12 +60,12 @@
 
 
     <div id="seljacke-karta" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
             <div class="w3-container" style="display:block;">
                 <span onclick="$('#seljacke-karta').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>Velika seljačka buna (muška punta, 1573.)</strong></h1>
+                <h1 class="naslov"><strong>Velika seljačka buna (muška punta) 1573.</strong></h1>
 
-                <div style="overflow:auto; height:600px">
+                <div style="overflow:auto;">
                     <div class="tekst">
                         Vođa Seljačke bune Matija Ambroz Gubec spominje se u selu Hižakovcu (Vrhovcu) na stubičkom vlastelinstvu u popisima crkvene desetine i urbaru. U vrijeme bune imao je vjerojatno 35 godina. Gubec je vodio pripreme za bunu i predvodio dio seljačke vojske u Hrvatskome zagorju te je, tvrde pojedini sudionici, proglašen seljačkim kraljem. Ostali istaknuti vođe bune bili su Ivan Pasanec, Ivan Mogadić i Ilija Gregurić. Hrvatsko-slovenska Seljačka buna, Velika seljačka buna, muška punta ili "seljački rat", kako su ga nazivali suvremenici, započeo je na susedgradsko-stubičkim posjedima Franje Tahyja. To je bila treća buna od kada je 1564. godine Tahy protupravno kupio polovicu vlastelinstva.
                         <br>
@@ -113,7 +113,7 @@
     </div>
 
     <div id="tahy" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
             <div class="w3-container" style="display:block;">
                 <span onclick='$("#tahy").fadeOut(600);' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>FRANJO TAHY</strong></h1>
@@ -310,7 +310,7 @@
     </div>
 
     <div id="stubicke" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
             <div class="w3-container" style=" display:block;">
                 <span onclick="$('#stubicke').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>BITKA KOD STUBIČKIH TOPLICA</strong></h1>
@@ -323,9 +323,8 @@
                     <br>
                     <br>
                 </div>
-                <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;">
-
-                    <div class="tekst" style="height:450px; overflow:auto;">
+                <div style="width:50%;float:left; padding-left: 25px; display:block;">
+                    <div class="tekst">
                         Nikola Istvanffy u svom djelu Historium de rebus unagaricas libri XXXIV opisao je Bitku kod Stubičkih Toplica. Kad su dakle s najvećom žurbom sakupili oko 800 konjanika i doveli iz posada u tabor čete, koja je kraljevina na javni trošak izdržavala za obranu Kupe, brzo krenuše prema Stubici. Čim je Gubec opazio, kako idu na njega, naredio svojima, da pograbe oružje, osokoli ih s malo riječi i povede u borbu govoreći, da će im taj dan i ta bitka donijeti čast i slobodu, ako iz nje izađu kao pobjednici; ako naprotiv pobijeđeni udare u bijeg, da se ne bože spomenuti nikakva vrsta okrutnosti i sramotnih muka kojih se oni ne bi morali bojati od surovih i podivljalih plemića. Stoga neka svojski nastoje da se pokažu junacima i da se prisebno i hrabro služe oružjem, pa neka budu svjesni, da im treba ili sjajno pobijediti ili očekivati: "Jao pobijeđenima!" Na protivnoj strani vojskovođe plemstva tako svrstaše vojsku, da su pješake s puškama smjestili u sredinu, a konjanike podijelili na oba krila i naložili im, da bez ikakva krzmanja jurišaju i da se ne daju zaplašiti ni brojem ni mnoštvom neprijatelja. Da su ti ljudi, ako je po volji bogovima, prešli od oranja, kopanja i sličnih poljskih radova na vojevanje ili, radije, na izvršavanje razbojničkih djela. Uostalom, da je zbog tih navika njihov način života gadan i sramotan, a u ratovanju nema kod njih nikakva zapta, nikakve otpornosti, nikakve snage. Kada bolji dio njihove vojske, ako ga tu uopće ima, sakupljen među kranjskim pustahijama, kockarima i palikućama, ugleda neobične mačeve, rane i krv, sramotno će udariti u bijeg. Kad su se uz obostranu jaku viku obje vojske sudarile zbijenim redovima, Gupčevi su se ljudi protiv očekivanja dugo borili s neodlučnim ishodim, tako da je poginulo nekoliko naših pogođenih zrnom, među njima Ladislav Plodvin, zapovjednik konjaništva. Ali kad su bili oštro pritiješnjeni i ubijani s jedne strane od pješadije i puškom oboružanih vojnika, a s druge od kopljanika na konju, najposlije ih plemstvo, jače i nadmoćnije, koliko po svojoj pravednoj stvari, toliko po oružju, prisililo da uzmaknu i da napokon bez reda nagnu u bijeg. Na bijegu su širom bili pobijani ili od reda zarobljeni, a tek malo njih spasilo se u najskrovitijim skloništima po šumama i brdima. Ostali, koje su svakog dana očekivali kao saveznike i drugove, dočuvši za seljački poraz i uplašivši se zbog pobjede plemstva, razbježaše se, kako je tko mogao.
                     </div>
                 </div>
@@ -356,6 +355,24 @@
             watermark: "",
             watermarklink: ""
         };
+        
+        
+        $(document).ready(function() {
+    $("body").mouseup(function(e) {
+        var subject = $(".w3-modal");
+
+        if (e.target.id != subject.attr('class') && !subject.has(e.target).length) {
+            $("video")[0].load();
+            $("video")[1].load();
+            $("video")[2].load();
+            $("video")[3].load();
+            $("video")[4].load();
+            $("video")[5].load();
+
+        }
+    });
+});
+        
     </script>
 
 </body>
