@@ -82,6 +82,77 @@
         .b {
             font-size: 27px;
         }
+        
+        .accordion {
+            width: 100%;
+            max-width: 360px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+        
+        .accordion .link {
+            cursor: pointer;
+            display: block;
+            border-bottom: 1px solid #CCC;
+            position: relative;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        
+        .accordion li:last-child .link {
+            border-bottom: 0;
+        }
+        
+        .accordion li i {
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        
+        .accordion li i.fa-chevron-down {
+            font-size: 27px;
+        }
+        
+        .accordion li.open i {}
+        
+        .accordion li.open i.fa-chevron-down {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        
+        .link i.fa-chevron-down {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+        
+        .accordion li.default .submenu {
+            display: block;
+        }
+        /**
+ * Submenu
+ -----------------------------*/
+        
+        .submenu {
+            display: none;
+        }
+        
+        .submenu li {
+            border-bottom: 1px solid #4b4a5e;
+        }
+        
+        .submenu a {
+            display: block;
+            text-decoration: none;
+            -webkit-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+        }
     </style>
 </head>
 
@@ -246,7 +317,58 @@
                 </div>
                 <div class="wrapper-2">
                     <div class="box b">
-                        <ul class="linkovi" style="width:initial;position:relative;">
+                        <ul id="accordion" class="accordion">
+                            <li>
+                                <div class="link glavni">HISTORIOGRAFIJA<i class="fa fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li><a href="#">ISTVANFFY</a></li>
+                                    <li><a href="#">STJEPAN ANTOLJAK</a></li>
+                                    <li><a href="#">JOSIP ADAMČEK</a></li>
+                                    <li><a href="#">NADA KLAIĆ</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link glavni">KNJIŽEVNOST<i class="fa fa-chevron-down"></i></div>
+                                <ul class="submenu">
+
+                                    <div class="link spasi">AUGUST ŠENOA<i class="fa fa-chevron-down close"></i></div>
+                                    <ul class="submenu">
+                                        <li><a href="#">ILUSTRACIJE VLADIMIRA KIRINA</a></li>
+                                        <li><a href="#">IZVANREDNO IZDANJE, 1973.</a></li>
+
+                                    </ul>
+
+                                    <li><a href="#">OSTALI AUTORI</a></li>
+                                </ul>
+                            </li>
+                            <li ><div class="link glavni">SLIKARSTVO</div></li>
+                            <li>
+                                <div class="link glavni">KIPARSTVO<i class="fa fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li><a href="#">SELJAČKA BUNA U KIPARSTVU</a></li>
+                                    <li><a href="#">NATJEČAJ ZA SPOMENIK SELJAČKOJ BUNI</a></li>
+                                   <div class="link spasi">SPOMENIK AUGUSTA AUGUSTINČIĆA<i class="fa fa-chevron-down close"></i></div>
+                                    <ul class="submenu">
+                                        <li><a href="#">IZGRADNJA</a></li>
+                                        <li><a href="#">VIZUALIZACIJA</a></li>
+
+                                    </ul>
+                                </ul>
+                            </li>
+                            <li ><div class="link glavni">GLAZBA</div></li>
+                            <li>
+                                <div class="link glavni">MUZEJSKA DJELATNOST<i class="fa fa-chevron-down"></i></div>
+                                <ul class="submenu">
+                                    <li><a href="#">Google</a></li>
+                                    <li><a href="#">Bing</a></li>
+                                    <li><a href="#">Yahoo</a></li>
+                                    <li><a href="#">Otros buscadores</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- <ul class="linkovi" style="width:initial;position:relative;">
                             <li style='padding-top:0' onclick="odabir='uvod'">HISTORIOGRAFIJA</li>
 
                             <li onclick="odabir='uvod'" class='podlink'>ISTVANFFY</li>
@@ -273,14 +395,15 @@
                             <li onclick="odabir='uvod'" class='podpodlink'>STALNI POSTAV - 2002.</li>
                             <li onclick="odabir='uvod'" class='podlink'>IZLOŽBE U DRUGIM MUZEJIMA</li>
 
-                        </ul>
+                        </ul>-->
+
                     </div>
                     <div class="box a" style="margin-left: 80px;">
                         <p class="tekst zamjetek">
-                           
+
                         </p>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -300,7 +423,73 @@
     </map>
 
     <script>
+        var spasi = 0;
         $('img[usemap]').imageMap();
+        $(function() {
+
+            $('.close').click(function() {
+                $(this).toggleClass('rotate')
+            });
+
+            var Accordion = function(el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
+
+                // Variables privadas
+                var links = this.el.find('.link');
+                // Evento
+                links.on('click', {
+                    el: this.el,
+                    multiple: this.multiple
+                }, this.dropdown)
+            }
+
+            Accordion.prototype.dropdown = function(e) {
+                var $el = e.data.el;
+                $this = $(this),
+                    $next = $this.next();
+
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+
+                if ($this.hasClass('glavni')) {
+                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                    spasi = 0
+                    $('.close').css({
+                        "-webkit-transform": "rotate(360deg)",
+                        "-ms-transform": "rotate(360deg)",
+                        "-o-transform": "rotate(360deg)",
+                        "transform": "rotate(360deg)"
+                    })
+                }
+
+                if ($this.hasClass('spasi')) {
+                    if (spasi == 0) {
+                        $('.close.fa-chevron-down').css({
+                            "-webkit-transform": "rotate(180deg)",
+                            "-ms-transform": "rotate(180deg)",
+                            "-o-transform": "rotate(180deg)",
+                            "transform": "rotate(180deg)"
+                        });
+                        spasi = 1
+                    } else {
+                        $('.close.fa-chevron-down').css({
+                            "-webkit-transform": "rotate(360deg)",
+                            "-ms-transform": "rotate(360deg)",
+                            "-o-transform": "rotate(360deg)",
+                            "transform": "rotate(360deg)"
+                        });
+                        spasi = 0
+                    }
+                }
+
+                /*if (!e.data.multiple) {
+                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                };*/
+            }
+
+            var accordion = new Accordion($('#accordion'), false);
+        });
     </script>
 
 </body>
