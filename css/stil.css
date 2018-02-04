@@ -213,7 +213,7 @@
             
         }
         
-        .linkovi {
+        .linkovi, .linkovi2 {
             left: 0;
             overflow: auto;
             width: 25%;
