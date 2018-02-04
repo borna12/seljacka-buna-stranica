@@ -194,13 +194,18 @@
         
         .siroki {
             width: 1800px;
-            
         }
         
         .wrapper {
             display: grid;
             grid-gap: 10px;
             grid-template-columns: 300px minmax(200px, 1fr) 600px;
+        }
+        
+        .wrapper-2 {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
         }
         
         .box {
@@ -210,10 +215,10 @@
         
         .c {
             position: relative;
-            
         }
         
-        .linkovi, .linkovi2 {
+        .linkovi,
+        .linkovi2 {
             left: 0;
             overflow: auto;
             width: 25%;
@@ -223,17 +228,18 @@
             padding-top: 0;
         }
         
-       .box ul {
+        .box ul {
             list-style-type: none;
-            
             color: rgb(104, 0, 2);
         }
         
-       .box  ul li {
-           font-size: 40px;
+        .box ul li {
+            font-size: 40px;
             padding-top: 10px;
             padding-bottom: 10px;
             text-decoration: underline;
         }
-
-ul li{font-size: 27px;}
+        
+        ul li {
+            font-size: 27px;
+        }

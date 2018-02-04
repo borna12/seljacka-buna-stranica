@@ -158,10 +158,10 @@
     </div>
 
     <map name="image-map">
-        <area target="" alt="Vlastelinski teret" title="Vlastelinski teret" coords="185,172,1876,952" shape="rect" onclick='$("#vteret").show();'>
+        <area target="" alt="Vlastelinski teret" title="Vlastelinski teret" coords="185,172,1876,952" shape="rect" onclick='reset();$("#vteret").show();'>
         <area target="" alt="Javni teret" title="Javni teret" coords="2514,584,3658,1528" shape="rect" onclick='$("#teret").show();'>
         <area target="" alt="Podavanja crkvi" title="Podavanja crkvi" coords="3733,255,4417,1185" shape="rect" onclick='$("#crkva-p").show();'>
-        <area target="" alt="Vlastelinska prava" title="Vlastelinska prava" coords="3495,2191,4542,3093" shape="rect" onclick='$("#vrprava").show();'>
+        <area target="" alt="Vlastelinska prava" title="Vlastelinska prava" coords="3495,2191,4542,3093" shape="rect" onclick='reset();$("#vrprava").show();'>
     </map>
     <script>
         odabir = 'uvod'
@@ -253,13 +253,7 @@
             }
         })
 
-
-        $(document).ready(function() {
-            $("body").mouseup(function(e) {
-                var subject = $(".w3-modal");
-
-                if (e.target.id != subject.attr('class') && !subject.has(e.target).length) {
-                    $('.zamjnas2').html('VLADARSKA ILI REGALNA PRAVA');
+function reset(){ $('.zamjnas2').html('VLADARSKA ILI REGALNA PRAVA');
                     $('.zamjetek2').html(
                         'Regalna prava (<em>iura regalia</em>) su ovlasti koje u feudalnom razdoblju izvorno pripadaju vladaru. Velika ili bitna regalna prava obuhvaćala su vladareva vrhovnička ovlaštenja koja se ne mogu trajno ustupiti već vladar može samo povjeriti njihovo obavljanje drugoj osobi ili zajednici: zakonodavno pravo, pravo sudovanja, pravo kažnjavanja, pravo podjeljivanja državne časti i naslova ili slično. Prema novijoj doktrini ovdje pripadaju i neka od prava koja donose prihode, kao što su rudni regal, regal soli, kovanje novca, ubiranje carina, poštanski regal i drugo. Osim ovih postoje i mala ili sporedna regalna prava.'
                     );
@@ -268,10 +262,7 @@
                     $('.zamjetek').html(
                         'Daće su podavanja koja je kmet, tj. podložnik obvezan plaćati svojemu feudalnom gospodaru kao naknadu za uživanje zemlje. Često se spekulira s veličinom davanja u prošlosti uspoređujući ih sa stanjem danas, pri čemu se tvrdi da su davanja nekada bila manja. Usporedbu je zapravo vrlo teško napraviti. Ono što bi možda prvo trebalo uzeti u obzir je da su davanja bila različita na različitim posjedima. Na jednom je npr. gornica bila značajan teret, a na drugom se uopće nije ubirala. Postojala su brojna oslobođenja od pojedinih daća, ali s druge strane i brojne daće koje se nisu ubirale na svim posjedima. I iznosi i način ubiranja bili su različiti na pojedinim posjedima, a i podložni promjenama tijekom vremena. Na našem području osim toga nisu dovoljno proučene mjere koje su se koristile tijekom feudalnog razdoblja, a ni kretanje cijena bez kojih je nemoguće napraviti odgovarajuće usporedbe.'
                     );
-                    $('.zamjeslik').attr("src", "slike/d-uvod.png");
-                }
-            });
-        });
+                    $('.zamjeslik').attr("src", "slike/d-uvod.png");}
     </script>
 
 </body>
