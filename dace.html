@@ -2,234 +2,223 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Muzej seljačkih buna</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/w3.css">
-  <link rel="stylesheet" type="text/css" href="css/stil.css">
-  <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-  <script src="js/image-map.js" type="text/javascript"></script>
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <script src="js/index.js" type="text/javascript"></script>
-  <style>
-    html,
-    body {
-      background: url(css/podloga2.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .listac {
-      position: relative;
-      transform: translateY(100%);
-      bottom: 0;
-    }
-  </style>
+    <meta charset="utf-8">
+    <title>Muzej seljačkih buna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/stil.css">
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/image-map.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script src="js/index.js" type="text/javascript"></script>
+    <style>
+        html,
+        body {
+            background: url(css/podloga2.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        .listac {
+            position: absolute;
+            bottom: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
-  <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home"><i class="fa fa-fort-awesome" aria-hidden="true"></i></span>
+    <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home"><i class="fa fa-fort-awesome" aria-hidden="true"></i></span>
 
-  <div id="omot" class='modal-overlay w3-animate-opacity'>
-    <img id="naslovnica" src="slike/Dace01.png" / usemap="#image-map">
-  </div>
-
-
-
-  <div id="crkva-p" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
-      <div class="w3-container">
-        <span onclick="$('#crkva-p').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-        <h1 class="naslov"><strong>PODAVANJA CRKVI</strong></h1>
-        <br>
-
-        <p class="tekst">
-          Crkva je u načelu smatrala da joj pripada deset posto svih poljoprivrednih proizvoda. U praksi, crkva je pobirala deset posto svih žitarica, a posebne desetinske daće bile su desetina vina, desetina svinja i desetina pčela. Već u 13. stoljeću, zbog problema
-          sa skladištenjem i prijevozom, desetina se počinje pretvarati u novčano davanje.
-          <img src="slike/p-crkvi.png" class='slike-tekst poravnaj'>
-        </p>
-
-      </div>
+    <div id="omot" class='modal-overlay w3-animate-opacity'>
+        <img id="naslovnica" src="slike/Dace01.png" / usemap="#image-map">
     </div>
-  </div>
 
 
-  <div id="teret" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
-      <div class="w3-container">
-        <span onclick="$('#teret').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-        <h1 class="naslov"><strong>Javni teret</strong></h1>
-        <br>
-        <img src="slike/j-teret.png" class="slike-tekst poravnaj" style='float:right;max-width: 50%; padding-left:20px'>
 
+    <div id="crkva-p" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container">
+                <span onclick="$('#crkva-p').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>PODAVANJA CRKVI</strong></h1>
+                <br>
 
-        <p class="tekst">
-          Osim davanja vlastelinu i crkvi, seljaci su morali plaćati i poreze. Kraljevski porez (dica) u 16. st. nije bio niti izuzetno velik niti izuzetno težak teret. Također, na ime zemaljskog poreza (dimnica) ubirani su relativno mali iznosi. Uz ova dva, plaćao
-          se i porez za uzdržavanje haramija.
-          <br>
-          <br> Uz novčane obveze, u javne terete seljaka ulazila je i obveza javnih radova.
-        </p>
+                <p class="tekst">
+                    Crkva je u načelu smatrala da joj pripada deset posto svih poljoprivrednih proizvoda. U praksi, crkva je pobirala deset posto svih žitarica, a posebne desetinske daće bile su desetina vina, desetina svinja i desetina pčela. Već u 13. stoljeću, zbog problema sa skladištenjem i prijevozom, desetina se počinje pretvarati u novčano davanje.
+                    <img src="slike/p-crkvi.png" class='slike-tekst poravnaj'>
+                </p>
 
-
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <div id="vteret" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
-      <div class="w3-container">
-        <span onclick="$('#vteret').fadeOut(600);odabir='uvod'" class="w3-button w3-display-topright iks">&times;</span>
 
 
-        <div class="wrapper">
-          <div>
-            <ul class="linkovi">
-            </ul>
-          </div>
-          <div style="margin-left: 80px;">
-            <p class="tekst">
-              <h1 class="naslov zamjnas"><strong>VLASTELINSKI TERETI</strong></h1>
+    <div id="teret" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container">
+                <span onclick="$('#teret').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Javni teret</strong></h1>
+                <br>
+                <img src="slike/j-teret.png" class="slike-tekst poravnaj" style='float:right;max-width: 50%; padding-left:20px'>
 
-            </p>
-          </div>
-          <div></div>
+
+                <p class="tekst">
+                    Osim davanja vlastelinu i crkvi, seljaci su morali plaćati i poreze. Kraljevski porez (dica) u 16. st. nije bio niti izuzetno velik niti izuzetno težak teret. Također, na ime zemaljskog poreza (dimnica) ubirani su relativno mali iznosi. Uz ova dva, plaćao se i porez za uzdržavanje haramija.
+                    <br>
+                    <br> Uz novčane obveze, u javne terete seljaka ulazila je i obveza javnih radova.
+                </p>
+
+
+            </div>
         </div>
-        <div class="wrapper">
-          <div class="box b">
-            <ul class="linkovi">
-              <li style='padding-top:0' onclick="odabir='uvod'">UVOD
-
-                <li onclick="odabir='tlaka'">TLAKA</li>
-
-                <li onclick="odabir='novac'">NOVČANA RENTA</li>
-
-                <li onclick="odabir='naturalna'">NATURALNA RENTA</li>
-            </ul>
-          </div>
-          <div class="box a" style="margin-left: 80px;">
-            <p class="tekst zamjetek">
-              Daće su podavanja koja je kmet, tj. podložnik obvezan plaćati svojemu feudalnom gospodaru kao naknadu za uživanje zemlje. Često se spekulira s veličinom davanja u prošlosti uspoređujući ih sa stanjem danas, pri čemu se tvrdi da su davanja nekada bila
-              manja. Usporedbu je zapravo vrlo teško napraviti. Ono što bi možda prvo trebalo uzeti u obzir je da su davanja bila različita na različitim posjedima. Na jednom je npr. gornica bila značajan teret, a na drugom se uopće nije ubirala. Postojala
-              su brojna oslobođenja od pojedinih daća, ali s druge strane i brojne daće koje se nisu ubirale na svim posjedima. I iznosi i način ubiranja bili su različiti na pojedinim posjedima, a i podložni promjenama tijekom vremena. Na našem području
-              osim toga nisu dovoljno proučene mjere koje su se koristile tijekom feudalnog razdoblja, a ni kretanje cijena bez kojih je nemoguće napraviti odgovarajuće usporedbe.
-            </p>
-          </div>
-          <div class="box c"> <img src="slike/d-uvod.png" class="slike-tekst listac poravnaj zamjeslik" style="max-width: 100%;"></div>
-        </div>
-
-
-
-      </div>
-
     </div>
-  </div>
-  </div>
-  <div id="vrprava" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
-      <div class="w3-container" style="height:1000px;">
-        <span onclick="$('#vrprava').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-        <h1 class="naslov"><strong>VLADARSKA ILI REGALNA PRAVA</strong></h1>
-        <br>
-        <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
-          <img src="slike/vr-prava.png" class="slike-tekst" style="max-width: 80%;">
-        </div>
-        <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block; height:900px">
-          <p class="tekst">
-            Regalna prava (iura regalia) su ovlasti koje u feudalnom razdoblju izvorno pripadaju vladaru. Velika ili bitna regalna prava obuhvaćala su vladareva vrhovnička ovlaštenja koja se ne mogu trajno ustupiti već vladar može samo povjeriti njihovo obavljanje
-            drugoj osobi ili zajednici: zakonodavno pravo, pravo sudovanja, pravo kažnjavanja, pravo podjeljivanja državne časti i naslova ili slično. Prema novijoj doktrini ovdje pripadaju i neka od prava koja donose prihode, kao što su rudni regal,
-            regal soli, kovanje novca, ubiranje carina, poštanski regal i drugo. Osim ovih postoje i mala ili sporedna regalna prava.
-            <br>
-            <br> <strong>Patronatsko pravo</strong>
-            <br> Među važnijim regalnim pravima bilo je i patronatsko pravo vlastelina nad svim crkvama i crkvenim ustanovama koje su se nalazile na području njegovih posjeda. Tim je pravom vlastelin ostvarivao utjecaj na postavljanje župnika na svom
-            vlastelinstvu i kontrolirao njihovu djelatnost. Seoski su župnici bili i materijalno ovisni o svojim patronima.
-            <br>
-            <br> Svi su župnički posjedi (plebanti) zapravo bili vazalni posjedi vlastelinstva na kojem su nastali. Niži je kler na vlastelinstvima uživao mala feudalna imanja. Materijalna ovisnost i patronatsko pravo povezali su najniže crkvene institucije
-            – župne crkve s interesima vlastelinstva.
-            <br> Patronatsko se pravo u izvorima pojavljuje kao dio feudalnog vlasništva.
-            <br>
-            <br> Na susedgradsko-stubičkom vlastelinstvu seoski je kler došao u sukob s Tahyjem zbog njegove sekularizacije crkvenih posjeda. Čini se da je sekularizacija posjeda župnih crkvi u drugoj polovici 16. st. bila dosta raširena pojava.
-            <br>
-            <br> <strong>Pravo krčmarenja</strong>
-            <br> Na temelju ovog prava zemaljska su gospoda ostvarivala monopol i na lokalnom tržištu vina.
-            <br>
-            <br> Pravo krčmarenja odnosno pravo vinotočja regulira vlastelinsku trgovinu vina na malo. Vlastelinsko pravo vinotočja odigralo je u 16. st. dosta veliku ulogu u potiskivanju seljačke trgovine vinom.
-            <br>
-            <br> <strong>Pravo brodarine</strong>
-            <br> Feudalni su posjednici uživali regalno pravo da na rijekama, koje protječu njihovim posjedima, podižu skele za prijevoz putnika i robe i naplaćuju brodarinu. Pravo pobiranja brodarine podjeljivano je kraljevskim privilegijima.
-            <br>
-            <br> Na mnogim vlastelinstvima ovo je važno regalno pravo. Brodovi, tj. riječni prijelazi, su imali veliku ulogu u prometu – zamjenjivali su mostove, kojih nije bilo ni na najvažnijim putovima.
-            <br>
-            <br> Brodovi na rijekama koje su presijecale trgovačke putove donosili su dosta velike prihode. Franjo Tahy je 1565. preoteo Ambrozu Gregorijancu skelu Jesenice nedaleko od Mokrica i prenio je nizvodno po Savi u blizinu Susedgrada. Komorski
-            su se tridesetničari tužili da je time nanesena šteta tridesetničkim prihodima, jer je promet usmjeren mimo tridesetničke postaje u Brdovcu. Tahy je izjavio da će brod premjestiti na staro mjesto ako mu se osigura polovica njegovih prihoda.
-            <br>
-            <br> <strong>Sajamsko pravo</strong>
-            <br> Pravo održavanja sajmova bilo je privilegirani regal. Feudalni posjednik dobivao je kraljevskim privilegijem pravo da na svom posjedu u određeno vrijeme održava sajam i pobire sajamske pristojbe. Takvim privilegijama podjeljivana su obično
-            prava održavanja godišnjih sajmova i tjednih trgova. Kraljevski gradovi i trgovišta dobivali su u pravilu sajamsko pravo svojim funkcionalnim poveljama.
-            <br>
-            <br> <strong>Pravo ribolova</strong>
-            <br> Vlastelin je na svojim posjedima uživao i isključivo pravo ribolova. To se pravo ostvarivalo rezerviranjem pojedinih rijeka za vlastelinski ribolov (fluvii interdicti, clarusae piscium) i pobiranjem daća od seljaka koji su uz dozvolu
-            lovili izvan tih zabrana.
-            <br>
-            <br> Na susedgradskom vlastelinstvu je npr. 1566. postojala vlastelinska clausura piscium na rijeci Savi.
-            <br>
-            <br> <strong>Pravo lova</strong>
-            <br> Regalno pravo lova bilo je vlastelinski benificij koji je pripadao svim feudalnim posjednicima. Feudalni je gospodar uživao isključivo pravo lova divljači na svom posjedu. Nažalost, o točnoj primjeni toga prava postoje podaci tek iz 17.
-            stoljeća.
 
-          </p>
-        </div>
+    <div id="vteret" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
+            <div class="w3-container">
+                <span onclick="$('#vteret').fadeOut(600);odabir='uvod'" class="w3-button w3-display-topright iks">&times;</span>
 
-      </div>
+
+                <div class="wrapper">
+                    <div>
+                        <ul class="linkovi">
+                        </ul>
+                    </div>
+                    <div style="margin-left: 80px;">
+                        <p class="tekst">
+                            <h1 class="naslov zamjnas"><strong>VLASTELINSKI TERETI</strong></h1>
+
+                        </p>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="wrapper">
+                    <div class="box b">
+                        <ul class="linkovi">
+                            <li style='padding-top:0' onclick="odabir='uvod'">UVOD
+
+                                <li onclick="odabir='tlaka'">TLAKA</li>
+
+                                <li onclick="odabir='novac'">NOVČANA RENTA</li>
+
+                                <li onclick="odabir='naturalna'">NATURALNA RENTA</li>
+                        </ul>
+                    </div>
+                    <div class="box a" style="margin-left: 80px;">
+                        <p class="tekst zamjetek">
+                            Daće su podavanja koja je kmet, tj. podložnik obvezan plaćati svojemu feudalnom gospodaru kao naknadu za uživanje zemlje. Često se spekulira s veličinom davanja u prošlosti uspoređujući ih sa stanjem danas, pri čemu se tvrdi da su davanja nekada bila manja. Usporedbu je zapravo vrlo teško napraviti. Ono što bi možda prvo trebalo uzeti u obzir je da su davanja bila različita na različitim posjedima. Na jednom je npr. gornica bila značajan teret, a na drugom se uopće nije ubirala. Postojala su brojna oslobođenja od pojedinih daća, ali s druge strane i brojne daće koje se nisu ubirale na svim posjedima. I iznosi i način ubiranja bili su različiti na pojedinim posjedima, a i podložni promjenama tijekom vremena. Na našem području osim toga nisu dovoljno proučene mjere koje su se koristile tijekom feudalnog razdoblja, a ni kretanje cijena bez kojih je nemoguće napraviti odgovarajuće usporedbe.
+                        </p>
+                    </div>
+                    <div class="box c"> <img src="slike/d-uvod.png" class="slike-tekst listac poravnaj zamjeslik" style="max-width: 100%;"></div>
+                </div>
+
+
+
+            </div>
+
+        </div>
     </div>
-  </div>
-  <map name="image-map">
+    </div>
+    <div id="vrprava" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container" style="height:1000px;">
+                <span onclick="$('#vrprava').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>VLADARSKA ILI REGALNA PRAVA</strong></h1>
+                <br>
+                <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
+                    <img src="slike/vr-prava.png" class="slike-tekst" style="max-width: 80%;">
+                </div>
+                <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block; height:900px">
+                    <p class="tekst">
+                        Regalna prava (iura regalia) su ovlasti koje u feudalnom razdoblju izvorno pripadaju vladaru. Velika ili bitna regalna prava obuhvaćala su vladareva vrhovnička ovlaštenja koja se ne mogu trajno ustupiti već vladar može samo povjeriti njihovo obavljanje drugoj osobi ili zajednici: zakonodavno pravo, pravo sudovanja, pravo kažnjavanja, pravo podjeljivanja državne časti i naslova ili slično. Prema novijoj doktrini ovdje pripadaju i neka od prava koja donose prihode, kao što su rudni regal, regal soli, kovanje novca, ubiranje carina, poštanski regal i drugo. Osim ovih postoje i mala ili sporedna regalna prava.
+                        <br>
+                        <br> <strong>Patronatsko pravo</strong>
+                        <br> Među važnijim regalnim pravima bilo je i patronatsko pravo vlastelina nad svim crkvama i crkvenim ustanovama koje su se nalazile na području njegovih posjeda. Tim je pravom vlastelin ostvarivao utjecaj na postavljanje župnika na svom vlastelinstvu i kontrolirao njihovu djelatnost. Seoski su župnici bili i materijalno ovisni o svojim patronima.
+                        <br>
+                        <br> Svi su župnički posjedi (plebanti) zapravo bili vazalni posjedi vlastelinstva na kojem su nastali. Niži je kler na vlastelinstvima uživao mala feudalna imanja. Materijalna ovisnost i patronatsko pravo povezali su najniže crkvene institucije – župne crkve s interesima vlastelinstva.
+                        <br> Patronatsko se pravo u izvorima pojavljuje kao dio feudalnog vlasništva.
+                        <br>
+                        <br> Na susedgradsko-stubičkom vlastelinstvu seoski je kler došao u sukob s Tahyjem zbog njegove sekularizacije crkvenih posjeda. Čini se da je sekularizacija posjeda župnih crkvi u drugoj polovici 16. st. bila dosta raširena pojava.
+                        <br>
+                        <br> <strong>Pravo krčmarenja</strong>
+                        <br> Na temelju ovog prava zemaljska su gospoda ostvarivala monopol i na lokalnom tržištu vina.
+                        <br>
+                        <br> Pravo krčmarenja odnosno pravo vinotočja regulira vlastelinsku trgovinu vina na malo. Vlastelinsko pravo vinotočja odigralo je u 16. st. dosta veliku ulogu u potiskivanju seljačke trgovine vinom.
+                        <br>
+                        <br> <strong>Pravo brodarine</strong>
+                        <br> Feudalni su posjednici uživali regalno pravo da na rijekama, koje protječu njihovim posjedima, podižu skele za prijevoz putnika i robe i naplaćuju brodarinu. Pravo pobiranja brodarine podjeljivano je kraljevskim privilegijima.
+                        <br>
+                        <br> Na mnogim vlastelinstvima ovo je važno regalno pravo. Brodovi, tj. riječni prijelazi, su imali veliku ulogu u prometu – zamjenjivali su mostove, kojih nije bilo ni na najvažnijim putovima.
+                        <br>
+                        <br> Brodovi na rijekama koje su presijecale trgovačke putove donosili su dosta velike prihode. Franjo Tahy je 1565. preoteo Ambrozu Gregorijancu skelu Jesenice nedaleko od Mokrica i prenio je nizvodno po Savi u blizinu Susedgrada. Komorski su se tridesetničari tužili da je time nanesena šteta tridesetničkim prihodima, jer je promet usmjeren mimo tridesetničke postaje u Brdovcu. Tahy je izjavio da će brod premjestiti na staro mjesto ako mu se osigura polovica njegovih prihoda.
+                        <br>
+                        <br> <strong>Sajamsko pravo</strong>
+                        <br> Pravo održavanja sajmova bilo je privilegirani regal. Feudalni posjednik dobivao je kraljevskim privilegijem pravo da na svom posjedu u određeno vrijeme održava sajam i pobire sajamske pristojbe. Takvim privilegijama podjeljivana su obično prava održavanja godišnjih sajmova i tjednih trgova. Kraljevski gradovi i trgovišta dobivali su u pravilu sajamsko pravo svojim funkcionalnim poveljama.
+                        <br>
+                        <br> <strong>Pravo ribolova</strong>
+                        <br> Vlastelin je na svojim posjedima uživao i isključivo pravo ribolova. To se pravo ostvarivalo rezerviranjem pojedinih rijeka za vlastelinski ribolov (fluvii interdicti, clarusae piscium) i pobiranjem daća od seljaka koji su uz dozvolu lovili izvan tih zabrana.
+                        <br>
+                        <br> Na susedgradskom vlastelinstvu je npr. 1566. postojala vlastelinska clausura piscium na rijeci Savi.
+                        <br>
+                        <br> <strong>Pravo lova</strong>
+                        <br> Regalno pravo lova bilo je vlastelinski benificij koji je pripadao svim feudalnim posjednicima. Feudalni je gospodar uživao isključivo pravo lova divljači na svom posjedu. Nažalost, o točnoj primjeni toga prava postoje podaci tek iz 17. stoljeća.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <map name="image-map">
         <area target="" alt="Vlastelinski teret" title="Vlastelinski teret" coords="185,172,1876,952" shape="rect" onclick='$("#vteret").show();'>
         <area target="" alt="Javni teret" title="Javni teret" coords="2514,584,3658,1528" shape="rect" onclick='$("#teret").show();'>
         <area target="" alt="Podavanja crkvi" title="Podavanja crkvi" coords="3733,255,4417,1185" shape="rect" onclick='$("#crkva-p").show();'>
         <area target="" alt="Vlastelinska prava" title="Vlastelinska prava" coords="3495,2191,4542,3093" shape="rect" onclick='$("#vrprava").show();'>
     </map>
-  <script>
-    odabir = 'uvod'
-    $('img[usemap]').imageMap();
+    <script>
+        odabir = 'uvod'
+        $('img[usemap]').imageMap();
 
-    $('.linkovi').click(function() {
+        $('.linkovi').click(function() {
 
-      if (odabir == 'tlaka') {
-        $('.zamjnas').html('TLAKA');
-        $('.zamjetek').html(
-          'Tlaka (služba, rabota) je obveza kmetova na besplatan rad. Služila ponajprije za obradu vlastelinova alodijalnog zemljišta. Bila je određena brojem radnih dana ljudi i stoke koje je davalo jedno kmetsko selište. Bila je regulirana urbarom za pojedino vlastelinstvo, a u 18. st. marijaterezijanskim urbarima na jedinstven način za šira područja. Na više mjesta tlaka je određivana kao kolektivna dužnost svih podložnika ili pojedinih seoskih općina da obrade određene poljoprivredne površine. Tako određena tlaka nije bila velika. Radne dužnosti zavisnih seljaka po pojedinim vlastelinstvima bile su različite, a važan oblik radne rente bila je i obveza prijevoza dobara za vlastelina. <br><br><em> U urbarima Susedgrada i Donje Stubice iz 1566. tlaka se uopće ne spominje.U svakom slučaju, na susjedgadsko - stubičkim posjedima tlaka nije bila glavni teret kmetova.Može se izračunati da je vlastelinstvo oko 16 % svojih ukupnih prihoda realiziralo upotrebom tlake </em>'
-        );
-        $('.zamjeslik').attr("src", "slike/tlaka.png");
-        $('.zamjeslik').css("transform", "translateY(100%)");
-
-      } else if (odabir == 'novac') {
-        $('.zamjnas').html('NOVČANA RENTA');
-        $('.zamjetek').html(
-          'Novčanu rentu su činile redovite i izvanredne novčane daće i desetinske daće u novcu. Najznačajniji oblici te vrste daće ubirali su se najčešće na blagdane Sv. Jurja i Sv. Martina pa se stoga  nazivaju jurjevšćina i martinšćina.<br><br>Marturina ili kunovina je vrsta daće koja isprva plaćana u naturi, točnije u kuninim kožama, a kasnije je pretvorena u novćanu rentu. Dvije trećine marturine su pripadale vladaru, a jedna vlastelinu. Vladar je ujedno mogao sveukupan prihod prepustiti vlastelinu ili nekom od kraljevskih dužnosnika. Ta vrsta poreza plaćala se do početka 16. st. </em>'
-        );
-        $('.zamjeslik').attr("src", "slike/n-rentu.png");
-        $('.zamjeslik').css("transform", "translateY(50%)");
-      } else if (odabir == 'naturalna') {
-        $('.zamjnas').html('NATURALNA RENTA');
-        $('.zamjetek').html(
-          'Naturalne daće, tj. feudalna podavanja u naturi, u Hrvatskoj i Slavoniji se javljaju već u najstarijim izvorima. U 13. i 14. st. neke se naturalne daće počinju pretvarati (komutirati) u novčano podavanje. Na mnogim je mjestima važnost pojedinih naturalnih daća ovisila o strukturi poljoprivredne proizvodnje.<br><br>Najvažnija vinska daća bila je gornica. Određivala se prema veličini vinograda, obično prema broju kopača. <br><br><div style="padding-left:50px"><strong>Darovi</strong> (munera) su posebna vrsta redovnih naturalnih podavanja. Kmetovi su u različitim prilikama, obično tri puta godišnje morali svojoj vlasteli davati različite namirnice. Struktura darova razlikovala se od vlastelinstva do vlastelinstva, ali su se obično davali prema veličini selišta. <br><br>Zavisni seljaci najčešće su kao darove davali perad i proizvode peradarstva (piliće, kokoši, kopune, jaja) te neke stočarske proizvode (sir, suhe svinjske plećke). Uz svaki dar obično se morao dati hljeb ili pogača, odnosno određeni iznos u novcu.<br><br> </div>Osim obveza u radu i u proizvodima, postojalo je i skup podavanja različitih predmeta koji se ne proizvode na seljačkim posjedima, već se sabiru u prirodi. Među tim podavanjima na prvom je mjestu bila dužnost seljaka da feudalnoj gospodi daju drvo i različite proizvode od drveta.'
-        );
-        $('.zamjeslik').attr("src", "slike/tlaka.png");
-        $('.zamjeslik').css("transform", "translateY(100%)");
+            if (odabir == 'tlaka') {
+                $('.zamjnas').html('TLAKA');
+                $('.zamjetek').html(
+                    'Tlaka (služba, rabota) je obveza kmetova na besplatan rad. Služila ponajprije za obradu vlastelinova alodijalnog zemljišta. Bila je određena brojem radnih dana ljudi i stoke koje je davalo jedno kmetsko selište. Bila je regulirana urbarom za pojedino vlastelinstvo, a u 18. st. marijaterezijanskim urbarima na jedinstven način za šira područja. Na više mjesta tlaka je određivana kao kolektivna dužnost svih podložnika ili pojedinih seoskih općina da obrade određene poljoprivredne površine. Tako određena tlaka nije bila velika. Radne dužnosti zavisnih seljaka po pojedinim vlastelinstvima bile su različite, a važan oblik radne rente bila je i obveza prijevoza dobara za vlastelina. <br><br><em> U urbarima Susedgrada i Donje Stubice iz 1566. tlaka se uopće ne spominje.U svakom slučaju, na susjedgadsko - stubičkim posjedima tlaka nije bila glavni teret kmetova.Može se izračunati da je vlastelinstvo oko 16 % svojih ukupnih prihoda realiziralo upotrebom tlake </em>'
+                );
+                $('.zamjeslik').attr("src", "slike/tlaka.png");
 
 
-      } else {
-        $('.zamjnas').html('VLASTELINSKI TERETI');
-        $('.zamjetek').html(
-          'Daće su podavanja koja je kmet, tj. podložnik obvezan plaćati svojemu feudalnom gospodaru kao naknadu za uživanje zemlje. Često se spekulira s veličinom davanja u prošlosti uspoređujući ih sa stanjem danas, pri čemu se tvrdi da su davanja nekada bila manja. Usporedbu je zapravo vrlo teško napraviti. Ono što bi možda prvo trebalo uzeti u obzir je da su davanja bila različita na različitim posjedima. Na jednom je npr. gornica bila značajan teret, a na drugom se uopće nije ubirala. Postojala su brojna oslobođenja od pojedinih daća, ali s druge strane i brojne daće koje se nisu ubirale na svim posjedima. I iznosi i način ubiranja bili su različiti na pojedinim posjedima, a i podložni promjenama tijekom vremena. Na našem području osim toga nisu dovoljno proučene mjere koje su se koristile tijekom feudalnog razdoblja, a ni kretanje cijena bez kojih je nemoguće napraviti odgovarajuće usporedbe.'
-        );
-        $('.zamjeslik').attr("src", "slike/d-uvod.png");
-        $('.zamjeslik').css("transform", "translateY(100%)");
-      }
-    })
-  </script>
+            } else if (odabir == 'novac') {
+                $('.zamjnas').html('NOVČANA RENTA');
+                $('.zamjetek').html(
+                    'Novčanu rentu su činile redovite i izvanredne novčane daće i desetinske daće u novcu. Najznačajniji oblici te vrste daće ubirali su se najčešće na blagdane Sv. Jurja i Sv. Martina pa se stoga  nazivaju jurjevšćina i martinšćina.<br><br>Marturina ili kunovina je vrsta daće koja isprva plaćana u naturi, točnije u kuninim kožama, a kasnije je pretvorena u novćanu rentu. Dvije trećine marturine su pripadale vladaru, a jedna vlastelinu. Vladar je ujedno mogao sveukupan prihod prepustiti vlastelinu ili nekom od kraljevskih dužnosnika. Ta vrsta poreza plaćala se do početka 16. st. </em>'
+                );
+                $('.zamjeslik').attr("src", "slike/n-rentu.png");
+            } else if (odabir == 'naturalna') {
+                $('.zamjnas').html('NATURALNA RENTA');
+                $('.zamjetek').html(
+                    'Naturalne daće, tj. feudalna podavanja u naturi, u Hrvatskoj i Slavoniji se javljaju već u najstarijim izvorima. U 13. i 14. st. neke se naturalne daće počinju pretvarati (komutirati) u novčano podavanje. Na mnogim je mjestima važnost pojedinih naturalnih daća ovisila o strukturi poljoprivredne proizvodnje.<br><br>Najvažnija vinska daća bila je gornica. Određivala se prema veličini vinograda, obično prema broju kopača. <br><br><div style="padding-left:50px"><strong>Darovi</strong> (munera) su posebna vrsta redovnih naturalnih podavanja. Kmetovi su u različitim prilikama, obično tri puta godišnje morali svojoj vlasteli davati različite namirnice. Struktura darova razlikovala se od vlastelinstva do vlastelinstva, ali su se obično davali prema veličini selišta. <br><br>Zavisni seljaci najčešće su kao darove davali perad i proizvode peradarstva (piliće, kokoši, kopune, jaja) te neke stočarske proizvode (sir, suhe svinjske plećke). Uz svaki dar obično se morao dati hljeb ili pogača, odnosno određeni iznos u novcu.<br><br> </div>Osim obveza u radu i u proizvodima, postojalo je i skup podavanja različitih predmeta koji se ne proizvode na seljačkim posjedima, već se sabiru u prirodi. Među tim podavanjima na prvom je mjestu bila dužnost seljaka da feudalnoj gospodi daju drvo i različite proizvode od drveta.'
+                );
+                $('.zamjeslik').attr("src", "slike/gornje-duznosti.png");
+
+
+
+            } else {
+                $('.zamjnas').html('VLASTELINSKI TERETI');
+                $('.zamjetek').html(
+                    'Daće su podavanja koja je kmet, tj. podložnik obvezan plaćati svojemu feudalnom gospodaru kao naknadu za uživanje zemlje. Često se spekulira s veličinom davanja u prošlosti uspoređujući ih sa stanjem danas, pri čemu se tvrdi da su davanja nekada bila manja. Usporedbu je zapravo vrlo teško napraviti. Ono što bi možda prvo trebalo uzeti u obzir je da su davanja bila različita na različitim posjedima. Na jednom je npr. gornica bila značajan teret, a na drugom se uopće nije ubirala. Postojala su brojna oslobođenja od pojedinih daća, ali s druge strane i brojne daće koje se nisu ubirale na svim posjedima. I iznosi i način ubiranja bili su različiti na pojedinim posjedima, a i podložni promjenama tijekom vremena. Na našem području osim toga nisu dovoljno proučene mjere koje su se koristile tijekom feudalnog razdoblja, a ni kretanje cijena bez kojih je nemoguće napraviti odgovarajuće usporedbe.'
+                );
+                $('.zamjeslik').attr("src", "slike/d-uvod.png");
+
+            }
+        })
+    </script>
 
 </body>
 
