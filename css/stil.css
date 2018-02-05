@@ -4,21 +4,21 @@
             padding: 0;
             background-color: #25180F;
         }
-
+        
         @font-face {
             font-family: nyala;
             src: url(nyala.ttf);
         }
-
+        
         @font-face {
             font-family: gabriola;
             src: url(Gabriola.ttf);
         }
-
+        
         strong {
             color: rgb(104, 0, 2);
         }
-
+        
         #naslovnica {
             position: fixed;
             top: 0;
@@ -30,38 +30,38 @@
             margin: auto;
             overflow: auto;
         }
-
+        
         .naslov {
             font-family: nyala;
             text-transform: uppercase;
             color: rgb(104, 0, 2);
             font-weight: bold;
         }
-
+        
         .tekst {
             font-family: gabriola;
             font-size: 27px;
             text-align: justify
         }
-
+        
         .w3-container {
             height: 100%;
             display: table-cell;
             vertical-align: middle;
         }
-
+        
         .slike-tekst {
             max-width: 100%;
         }
-
+        
         .w3-modal {
             padding-top: 0;
         }
-
+        
         .w3-modal-content {
             display: table;
         }
-
+        
         .iks {
             color: rgb(104, 0, 2);
             font-family: nyala;
@@ -71,11 +71,11 @@
             position: fixed;
             z-index: 1;
         }
-
+        
         .iks:hover {
             background: none
         }
-
+        
         .home {
             color: rgb(104, 0, 2);
             font-family: nyala;
@@ -84,11 +84,11 @@
             font-weight: 600;
             position: fixed;
         }
-
+        
         .w3-animate-zoom-out {
             animation: animatezoom2 0.6s;
         }
-
+        
         @keyframes animatezoom2 {
             from {
                 transform: scale(1)
@@ -97,13 +97,13 @@
                 transform: scale(0)
             }
         }
-
+        
         @media (min-width: 993px) {
             .w3-modal-content {
                 width: 1200px;
             }
         }
-
+        
         ::-webkit-scrollbar {
             width: 0px;
             /* remove scrollbar space */
@@ -111,11 +111,11 @@
             /* optional: just make scrollbar invisible */
         }
         /* optional: show position indicator in red */
-
+        
         ::-webkit-scrollbar-thumb {
             background: #FF0000;
         }
-
+        
         .prozor {
             background: #d6cab2;
             position: fixed;
@@ -124,20 +124,20 @@
             left: 50%;
             border-radius: 5px;
         }
-
+        
         .ikona {
             font-size: 60px;
             cursor: pointer;
         }
-
+        
         .ikona:hover {
             color: rgb(104, 0, 2)
         }
-
+        
         .ikona:active {
             color: rgb(104, 0, 2)
         }
-
+        
         p:first-letter {
             color: rgb(104, 0, 2);
             float: left;
@@ -147,76 +147,94 @@
             padding-right: 8px;
             padding-left: 3px;
         }
-
+        
         .poravnaj {
             display: block;
             margin: auto;
         }
-
+        
         .lijevi-div {
             width: 50%;
             float: left;
         }
-
+        
         .desni-div {
             width: 50%;
             float: right;
         }
-
+        
         .html5-title-caption,
         .html5-title-prefix {
             font-family: gabriola;
             font-size: 30px;
         }
-
+        
         .html5-elem-data-box {
             max-height: none !important
         }
-
+        
         .html5-elem-wrap,
         .html5-elem-data-box {
-            background-color: rgb(254, 251, 218) !important
+            background-color: rgb(214, 202, 178) !important
         }
-
+        
         .html5-elem-box {
             border-radius: 5px
         }
-
+        
         .trisestpet {
             text-align: right
         }
-
+        
         .w3-display-topleft {
             top: 5%;
             left: 5%;
             z-index: 1;
         }
-
+        
         .siroki {
             width: 1800px;
         }
-
+        
         .wrapper {
             display: grid;
             grid-gap: 10px;
             grid-template-columns: 300px minmax(200px, 1fr) 600px;
         }
-
+        
         .wrapper-2 {
             display: grid;
             grid-gap: 10px;
             grid-template-columns: minmax(300px, 500px) minmax(300px, 1fr);
         }
-
+        
+        .wrapper-3 {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: minmax(300px, 1fr) minmax(300px, 500px);
+        }
+        
+        .wrapper-4 {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
+        }
+        
+        .wrapper-5 {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+        }
+        
         .box {
             padding: 20px;
             font-size: 150%;
         }
-
+        
         .c {
             position: relative;
         }
-
+        
         .linkovi,
         .linkovi2 {
             left: 0;
@@ -227,23 +245,23 @@
             top: 30;
             padding-top: 0;
         }
-
+        
         .box ul {
             list-style-type: none;
             color: rgb(104, 0, 2);
         }
-
+        
         .box ul li {
             font-size: 40px;
             padding-top: 10px;
             padding-bottom: 10px;
             text-decoration: underline;
         }
-
+        
         ul li {
             font-size: 27px;
         }
-
+        
         .accordion {
             width: 100%;
             max-width: 360px;
@@ -252,7 +270,7 @@
             border-radius: 4px;
             padding-left: 0;
         }
-
+        
         .accordion .link {
             cursor: pointer;
             display: block;
@@ -262,52 +280,52 @@
             -o-transition: all 0.4s ease;
             transition: all 0.4s ease;
         }
-
+        
         .accordion li:last-child .link {
             border-bottom: 0;
         }
-
+        
         .accordion li i {
             -webkit-transition: all 0.4s ease;
             -o-transition: all 0.4s ease;
             transition: all 0.4s ease;
         }
-
+        
         .accordion li i.fa-chevron-down {
             font-size: 27px;
         }
-
+        
         .accordion li.open i {}
-
+        
         .accordion li.open i.fa-chevron-down {
             -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
             -o-transform: rotate(180deg);
             transform: rotate(180deg);
         }
-
+        
         .link i.fa-chevron-down {
             -webkit-transform: rotate(360deg);
             -ms-transform: rotate(360deg);
             -o-transform: rotate(360deg);
             transform: rotate(360deg);
         }
-
+        
         .accordion li.default .submenu {
             display: block;
         }
         /**
  * Submenu
  -----------------------------*/
-
+        
         .submenu {
             display: none;
         }
-
+        
         .submenu li {
-          /*  border-bottom: 1px solid #4b4a5e;*/
+            /*  border-bottom: 1px solid #4b4a5e;*/
         }
-
+        
         .submenu a {
             display: block;
             text-decoration: none;
@@ -316,11 +334,11 @@
             transition: all 0.25s ease;
             font-size: 32px;
         }
-
+        
         .spasi {
             font-size: 32px;
         }
-
+        
         .mini a {
             font-size: 27px;
         }
