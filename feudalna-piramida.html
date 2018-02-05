@@ -11,6 +11,7 @@
     <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="js/image-map.js" type="text/javascript"></script>
     <script src="js/index.js" type="text/javascript"></script>
+
     <style>
         html,
         body {
@@ -20,11 +21,18 @@
             -o-background-size: cover;
             background-size: cover;
         }
-
+        
         .moj-modal {
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
+        }
+        
+        .box img {
+            max-width: 100%;
+            height: 435px;
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
@@ -60,7 +68,9 @@
                     <a href="burgovi-2.html" style="text-decoration:none;" id="memorija"><img src="slike/1-3_Vlastelinstvo-1573.png" class="slike-tekst">
                         <br>
                         <strong class="tekst" style="font-size:24px;"><u>Pritisnite za pregled karte </u><i class="fa fa-search" aria-hidden="true"></i></strong></a>
-              <br><br><br> <img src="slike/1-7_0_naslovna_Burgovi.png" style="width:100%;"> </div>
+                    <br>
+                    <br>
+                    <br> <img src="slike/1-7_0_naslovna_Burgovi.png" style="width:100%;"> </div>
 
                 <div style="width: 60%;float:left;">
                     <p class="tekst">
@@ -88,20 +98,16 @@
             <div class="w3-container">
                 <span onclick="$('#purgovi').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>PURGARI</strong></h1>
-                <div style="width:50%; float:right; text-align:center;"><img src="slike/purgari.png" class="slike-tekst" style='max-width:70%'>
+                <div style="width:40%; float:right; text-align:center;padding-bottom:20px"><img src="slike/purgari.png" class="slike-tekst" style='max-width:100%;padding-top:30px'>
                 </div>
 
-                <div style="width:50%;float:left; overflow:auto">
+                <div style="width:60%;float:left; overflow:auto">
                     <p class="tekst">
                         Purgari (purger, purgar, od njem. riječi Bürger, građanin) su članovi povlaštenih trgovačkih općina. Mogli su imati različite feudalne terete, no i ove građane najniže vrste zemaljska gospoda nazivaju plemenitim purgarima, a i oni sami se često tako zovu.
                         <br>
-                        <br> Stanovnici <strong><u onclick='$("#trgovista").show();'>trgovišta</u></strong> Donje Stubice i Podsuseda nazivali su se u 16. st. i građanima (cives) i kmetovima (coloni), što pokazuje da se njihov položaj mijenjao i da se položaj purgara nastojao izjednačiti s položajem kmetova.
+                        <br> Stanovnici trgovišta Donje Stubice i Podsuseda nazivali su se u 16. st. i građanima (cives) i kmetovima (coloni), što pokazuje da se njihov položaj mijenjao i da se položaj purgara nastojao izjednačiti s položajem kmetova.
                         <br>
                         <br> Iako se njihov položaj pogoršavao, purgari su na susjedgradsko-stubičkom vlastelinstvu u 16. st. još uvijek činili zasebnu kategoriju podložnika. Donjostubički su 1566. plaćali veće novčane daće nego kmetovi. Stanovnici susjedgradskog trgovišta (Podsuseda) prema urbaru iz 1566. nisu davali redovitu daću u novcu i naturi. Njihova se radna renta sastojala od specijalnih poslova u vlastelinskom gospodarstvu: morali su nositi poštu, voditi brigu o brodu na Savi i obrađivati vlastelinski vrt. Njihov je najteži teret bila dužnost prodaje vlastelinskog vina.
-                        <br>
-                        <br>
-
-                        <img src="slike/purgari-2.png" style="width:100%;">
                     </p>
                 </div>
 
@@ -114,20 +120,19 @@
             <div class="w3-container">
                 <span onclick="$('#plemstvo').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>PLEMSTVO</strong></h1>
-                <div style="width:50%; float:right; text-align:center;"><img src="slike/plemstvo.png" class="slike-tekst">
+                <div style="width: 30%;float:right;text-align:center;"><img src="slike/plemstvo.png" style='width:100%'>
                 </div>
 
-                <div style="width:50%;float:left;  padding-right: 20px;">
-                    <div class="tekst">
-                        Plemstvo je u feudalnom društvu društveno - staleška kategorija, koja se u gospodarskom smislu temelji na posjedovanju zemlje i radne snage na njoj, a u političkom životu plemstvo sudjeluje u diobi javne vlasti, a uz to ima ulogu profesionalne vojske. Ili, jednostavnije rečeno - plemići su oni koji imaju posjed na kojem drugi rade, a imaju i određena zakonska prava koja ih razlikuju od ostalih ljudi.
-                        <br>
-                        <br> Na početku 16. stoljeća u Kraljevini Slavoniji bilo je između 850 i 950 feudalnih posjednika, na čijim je posjedima bilo 25 do 30 000 kmetskih obitelji. Među njima, 5 - 6% velikaša (<em>magnates</em>) držalo je oko 75% poreznih dimova. Među velikaše ubrajamo nasljedne knezove (grofove), barune i crkvene velikodostojanstvenike. Najbrojnija skupina feudalnih posjednika kod nas je srednje i niže plemstvo. Oni su činili oko 95% posjednika, ali im je pripadalo samo nešto više od 25% feudalnog zemljišnog posjeda – poreznih dimova. Ova je skupina imala važnu ulogu u političkom i društvenom životu. Njezin se udio u feudalnom zemljišnom fondu počeo povećavati potkraj 16. stoljeća, kada su se na mnogim starim plemićkim posjedima počele stvarati kurije sa zasebnim posjedima, koje plemići uzimaju u zalog od vlastelina za određene poslove i zasluge.
-                        <br>
-
-
-
+                <div style="width: 70%;float:left;padding-right: 20px;">
+                    <div>
+                        <p class="tekst">
+                            Plemstvo je u feudalnom društvu društveno - staleška kategorija, koja se u gospodarskom smislu temelji na posjedovanju zemlje i radne snage na njoj, a u političkom životu plemstvo sudjeluje u diobi javne vlasti, a uz to ima ulogu profesionalne vojske. Ili, jednostavnije rečeno - plemići su oni koji imaju posjed na kojem drugi rade, a imaju i određena zakonska prava koja ih razlikuju od ostalih ljudi.
+                            <br>
+                            <br> Na početku 16. stoljeća u Kraljevini Slavoniji bilo je između 850 i 950 feudalnih posjednika, na čijim je posjedima bilo 25 do 30 000 kmetskih obitelji. Među njima, 5 - 6% velikaša (<em>magnates</em>) držalo je oko 75% poreznih dimova. Među velikaše ubrajamo nasljedne knezove (grofove), barune i crkvene velikodostojanstvenike. Najbrojnija skupina feudalnih posjednika kod nas je srednje i niže plemstvo. Oni su činili oko 95% posjednika, ali im je pripadalo samo nešto više od 25% feudalnog zemljišnog posjeda – poreznih dimova. Ova je skupina imala važnu ulogu u političkom i društvenom životu. Njezin se udio u feudalnom zemljišnom fondu počeo povećavati potkraj 16. stoljeća, kada su se na mnogim starim plemićkim posjedima počele stvarati kurije sa zasebnim posjedima, koje plemići uzimaju u zalog od vlastelina za određene poslove i zasluge.
+                            <br>
+                        </p>
                     </div>
-                    <img src="slike/plemstvo-2.png" style="width:79%; padding-bottom:20px;">
+                    <img src="slike/plemstvo-2.png" style="padding-bottom:20px;" class='poravnaj' onclick="$('#plemstvo').fadeOut(600);$('#posude').show()">
                 </div>
 
             </div>
@@ -144,7 +149,7 @@
                 <p class="tekst">
                     Kmetovi (coloni, jobagiones) su činili osnovnu grupu zavisnih seljaka. Razlika u njihovoj imovini mogla je biti velika. Staleško kmetstvo vezano je uz zemlju (kmeštinu) koja se tretira kao vlastelinska zemlja te za čiju obradu kmet daje davanja u naturi, novcu (daće), radu (tlaka) i službi na imanju, dvorcu ili vojsci. Tobožnji zakupnički odnos zemlje od strane kmeta nema zaštitnih ustanova te kmet u praksi ostaje izložen potpunoj samovolji gospodara koji često uključuje i teško zlostavljanje zbog najmanjih prijestupa u podmirivanju obveza. Ublažavanje položaja kmetova donose tek urbari Marije Terezije, a kmetstvo se kao podložnički odnos ukida uredbama Hrvatskog sabora 1848., kada kmeština postaje maleni seljački posjed. </p>
 
-                <div style="width:50%; float:right; text-align:center;padding-bottom:20px;" >
+                <div style="width:50%; float:right; text-align:center;padding-bottom:20px;">
                     <img src="slike/gornjaci.png" class="slike-tekst" style="display:block;margin:auto;">
                     <ul class="tekst">
                         <li><strong>Gornjaci</strong> (mantanistae, montales, gorschaki) su posebna kategorija zavisnih seljaka – siromašni seljaci koji su se bavili isključivo vinogradarstvom i živjeli u vinogradima gdje su sagradili svoje kuće. Mogu se smatrati posebnom vrstom želira. Činili su dosta brojnu grupu podložnika na vlastelinstvima u Zagorju. </li>
@@ -156,6 +161,46 @@
                     <ul class="tekst">
                         <li><strong>Želiri ili inkvilini</strong> (lat. inquilinus, stanovnik, najamnik, želir je stari hrvatski naziv) Po hrvatsko-ugarskom privatnom pravu kmet koji nema zemlju ili posjeduje manje od jedne osmine selišta. Inkvilini bez vlastite kuće nazivali su se subinkvilini ili želiri beskućnici. </li>
                     </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="posude" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
+            <div class="w3-container">
+                <span onclick="$('#posude').fadeOut(600);$('#plemstvo').show()" class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov"><strong>Arheološki nalazi s „Tahyjevog“ stola</strong></h1>
+                <p class="tekst">
+                    Kako je izgledao dio stolnog posuđa kakvo su velikaši koristili u vrijeme Seljačke bune pokazuju predmeti otkriveni prilikom arheoloških istraživanja Starog grada u Donjoj Stubici.</p>
+                <div class="wrapper" style='grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr)'>
+                    <div class="box a"><img src="slike/Tahy-stol/1483.jpg" />
+                        <div class="tekst" style='padding-left: 77px;'>
+                            <br>Vrčić
+                            <br> lokalna izrada, 15.-16. st.
+                            <br> Inv. broj: MSB-1483
+                            <br> arheološko istraživanje, utvrda Donja Stubica - Stari grad
+                            <br>
+                        </div>
+                    </div>
+                    <div class="box b"><img src="slike/Tahy-stol/1558.jpg" />
+                        <div class="tekst" style='padding-left: 90px;'>
+                            <br>Vrčić
+                            <br> lokalna izrada, 15.-16. st.
+                            <br> Inv. broj: MSB-1558
+                            <br> arheološko istraživanje, utvrda Donja Stubica - Stari grad
+                            <br>
+                        </div>
+                    </div>
+                    <div class="box c"><img src="slike/Tahy-stol/1559.jpg" />
+                        <div class="tekst" style='padding-left: 70px;'>
+                            <br> Vrč
+                            <br>lokalna izrada, 15.-16. st.
+                            <br>Inv. broj: MSB-1559
+                            <br>arheološko istraživanje, utvrda Donja Stubica - Stari grad
+                            <br>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -186,10 +231,10 @@
             <div class="w3-container">
                 <span onclick="$('#slobodnjaci').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>SLOBODNJACI</strong></h1>
-                <div style="width:50%; float:right; text-align:center;padding-bottom:20px;"><img src="slike/slobodnjaci.png" class="slike-tekst">
+                <div style="width:40%; float:right; text-align:center;padding-left:10px;padding-top: 40px"><img src="slike/slobodnjaci.png" class="slike-tekst">
                 </div>
 
-                <div style="width:50%;float:left; overflow:auto; padding-right: 20px;">
+                <div style="width:60%;float:left; overflow:auto; padding-right: 20px;">
                     <p class="tekst">
                         Slobodnjaci (libertini) su podložnici koji su zbog obavljanja različitih poslova na vlastelinstvima bili djelomično ili u cjelini oslobođeni davanja feudalne rente. To su mogli biti dužnosnici seoskih općina (seoski suci, vojvode, tekliči), seljaci koji su služili kao stražari (vigiles, portarii), vlastelinski službenici (spanus), radnici na alodima (mercenarii) i različiti obrtnici.
                         <br>

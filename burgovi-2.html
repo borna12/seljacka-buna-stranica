@@ -122,6 +122,114 @@
                 </p>
             </div>
         </div>
+    </div> 
+       
+       <div id="pravi-pop" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+            <div class="w3-container">
+                <h1 class="naslov zamjnas">
+                </h1>
+                <br>
+                <div class="wrapper-2">
+                    <div class="box b">
+                        <ul id="accordion" class="accordion">
+                            <li>
+                                <div class="link glavni" onclick='odabir="gornja-s";tekstMijenja();'>GORNJA STUBICA
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <ul class="submenu">
+                                    <li onclick='odabir="arh-stub";tekstMijenja();'>
+                                        <a href="#">ARHEOLOŠKA ISTRAŽIVANJA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link glavni" onclick='odabir="d-stub";tekstMijenja()'>KNJIŽEVNOST
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <ul class="submenu">
+
+                                    <div class="link spasi" onclick='odabir="d-stub-arh";tekstMijenja()'>ARHEOLOŠKA ISTRAŽIVANJA
+                                        <i class="fa fa-chevron-down close"></i>
+                                    </div>
+                                    <ul class="submenu mini">
+                                        <li>
+                                            <a href="#" onclick='odabir="tahy";tekstMijenja()'>"TAHYJEV" SUNČANI SAT</a>
+                                        </li> 
+                                    </ul>
+
+                                    <li>
+                                        <a href="#">OSTALI AUTORI</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link glavni">SLIKARSTVO</div>
+                            </li>
+                            <li>
+                                <div class="link glavni">KIPARSTVO
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">SELJAČKA BUNA U KIPARSTVU</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">NATJEČAJ ZA SPOMENIK SELJAČKOJ BUNI</a>
+                                    </li>
+                                    <div class="link spasi">SPOMENIK AUGUSTA AUGUSTINČIĆA
+                                        <i class="fa fa-chevron-down close"></i>
+                                    </div>
+                                    <ul class="submenu mini">
+                                        <li>
+                                            <a href="#">IZGRADNJA</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">VIZUALIZACIJA</a>
+                                        </li>
+
+                                    </ul>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link glavni">GLAZBA</div>
+                            </li>
+                            <li>
+                                <div class="link glavni">MUZEJSKA DJELATNOST
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                                <ul class="submenu">
+                                    <div class="link spasi">MUZEJ SELJAČKIH BUNA
+                                        <i class="fa fa-chevron-down close"></i>
+                                    </div>
+                                    <ul class="submenu mini">
+                                        <li>
+                                            <a href="#">UREĐENJE DVORCA ORŠIĆ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">STALNI POSTAV - 1973.</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">STALNI POSTAV - 2002.</a>
+                                        </li>
+                                    </ul>
+                                    <li>
+                                        <a href="#">IZLOŽBE U DRUGIM MUZEJIMA</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="box a ucitaj">
+
+                    </div>
+
+                </div>
+                    <span onclick="$('#pravi-pop').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+                </p>
+            </div>
+        </div>
     </div>
     <div id="tabor" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
