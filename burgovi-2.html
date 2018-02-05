@@ -17,7 +17,7 @@
         body {
             background: rgb(214, 202, 178);
         }
-        
+
         .poravnaj {
             margin: auto;
             display: block;
@@ -26,7 +26,9 @@
 </head>
 
 <body>
-    <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home"><i class="fa fa-fort-awesome" aria-hidden="true"></i></span>
+    <span onclick="location.href='index.html'" class="w3-button w3-display-topleft home">
+        <i class="fa fa-fort-awesome" aria-hidden="true"></i>
+    </span>
     <span onclick="location.href='feudalna-piramida.html'" class="w3-button w3-display-topright iks" style="right: 5%;
             top: 5%;">&times;</span>
 
@@ -39,24 +41,39 @@
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container" style="display:block;">
                 <span onclick='$("#tahy").fadeOut(600);$("#stubica").show();' class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>FRANJO TAHY</strong></h1>
+                <h1 class="naslov">
+                    <strong>FRANJO TAHY</strong>
+                </h1>
                 <br>
                 <div style="width:50%; float:right; text-align:center;padding-left:20px; ">
                     <img src="slike/tahy.png" class="slike-tekst" style="max-width: 90%;">
                     <br>
-                    <span class="ikona" onclick='$("#tahy").fadeOut(600);$("#tahy-2").show();'><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                    <span class="ikona" onclick='$("#tahy").fadeOut(600);$("#tahy-2").show();'>
+                        <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    </span>
                 </div>
                 <div style="width:50%;float:left; padding-left: 25px; overflow:auto; display:block;overflow:auto">
 
                     <p class="tekst">
-                        Franjo Tahy (1526.-1573.) pripadao je velikaškoj porodici ugarskog podrijetla koja je posjede u Slavoniji stekla već u drugoj polovici 15. stoljeća. Njegov otac Ivan Tahy bio je 1524./25. godine hrvatsko-slavonsko-dalmatinski ban. Franji je bilo 10 godina kada je Ivan umro. Odgojen je u vojničkoj službi, najviše u borbama s Turcima. U mladosti je bio zapovjednik carske vojske u južnoj Ugarskoj te Sigeta i Kanjiže. Bio je vladarev savjetnik i majstor carskih konjušara u Ugarskoj. Sredinom 16. stoljeća Turci su zauzeli njegove posjede u Ugarskoj i Slavoniji. Zbog vojnih zasluga imao je jak oslonac na habsburškom dvoru te se povezao s najuglednijim velikaškim obiteljima u Hrvatskoj. Po svojoj ženi Jeleni Zrinskoj već je kao vrlo mlad postao šurjak Nikole Zrinskoga.
+                        Franjo Tahy (1526.-1573.) pripadao je velikaškoj porodici ugarskog podrijetla koja je posjede u Slavoniji stekla već u drugoj
+                        polovici 15. stoljeća. Njegov otac Ivan Tahy bio je 1524./25. godine hrvatsko-slavonsko-dalmatinski
+                        ban. Franji je bilo 10 godina kada je Ivan umro. Odgojen je u vojničkoj službi, najviše u borbama
+                        s Turcima. U mladosti je bio zapovjednik carske vojske u južnoj Ugarskoj te Sigeta i Kanjiže. Bio
+                        je vladarev savjetnik i majstor carskih konjušara u Ugarskoj. Sredinom 16. stoljeća Turci su zauzeli
+                        njegove posjede u Ugarskoj i Slavoniji. Zbog vojnih zasluga imao je jak oslonac na habsburškom dvoru
+                        te se povezao s najuglednijim velikaškim obiteljima u Hrvatskoj. Po svojoj ženi Jeleni Zrinskoj već
+                        je kao vrlo mlad postao šurjak Nikole Zrinskoga.
                         <br>
-                        <br> Godine 1564. kupio je polovicu susedgradsko-stubičkog vlastelinstva. Idućih godina sukobljavao se s obitelji Henning, posjednicima druge polovice vlastelinstva te sa seljacima koji su tražili da se Tahy udalji s vlastelinstva i da se uvede komorska uprava. Njegovi postupci dali su povod za tri seljačke bune (1567./68., 1571./72. i 1573.). Vladareva komisija saslušala je 1567. godine 508 svjedoka u istrazi protiv Tahyja te sastavila zapisnik dugačak šest i pol metara, no, unatoč svemu, nije mu se ništa dogodilo. Iako su suvremenici smatrali da su glavni uzrok Seljačke bune 1573. godine bili Tahyjevi postupci, novija istraživanja pokazuju da su dublji uzroci bili ekonomske prirode. Tahy je i nakon bune, iako teško bolestan, nastavio zlostavljati seljake.
+                        <br> Godine 1564. kupio je polovicu susedgradsko-stubičkog vlastelinstva. Idućih godina sukobljavao se
+                        s obitelji Henning, posjednicima druge polovice vlastelinstva te sa seljacima koji su tražili da
+                        se Tahy udalji s vlastelinstva i da se uvede komorska uprava. Njegovi postupci dali su povod za tri
+                        seljačke bune (1567./68., 1571./72. i 1573.). Vladareva komisija saslušala je 1567. godine 508 svjedoka
+                        u istrazi protiv Tahyja te sastavila zapisnik dugačak šest i pol metara, no, unatoč svemu, nije mu
+                        se ništa dogodilo. Iako su suvremenici smatrali da su glavni uzrok Seljačke bune 1573. godine bili
+                        Tahyjevi postupci, novija istraživanja pokazuju da su dublji uzroci bili ekonomske prirode. Tahy
+                        je i nakon bune, iako teško bolestan, nastavio zlostavljati seljake.
                     </p>
-
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -65,8 +82,11 @@
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container" style="display:block;">
                 <span onclick='$("#tahy-2").fadeOut(600); $("#tahy").show(); $("#video")[0].load();' class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>"Tahyjev" sunčani sat i mjerenje vremena</strong></h1>
-                <video controls="controls" id='video' style="max-width:100%;padding-bottom:15px;" poster='video/tahy.jpg' onclick="this.paused ? this.play() : this.pause();" controlsList="nodownload">
+                <h1 class="naslov">
+                    <strong>"Tahyjev" sunčani sat i mjerenje vremena</strong>
+                </h1>
+                <video controls="controls" id='video' style="max-width:100%;padding-bottom:15px;" poster='video/tahy.jpg' onclick="this.paused ? this.play() : this.pause();"
+                    controlsList="nodownload">
                     <source src="video/Sequence-01.mp4" type="video/mp4" />
                     <source src="video/Sequence-01.webm" type="video/webm" />
                 </video>
@@ -79,11 +99,27 @@
     <div id="medvedgrad" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container">
-                <h1 class="naslov"><strong>Medvedgrad</strong></h1>
+                <h1 class="naslov">
+                    <strong>Medvedgrad</strong>
+                </h1>
                 <br>
-                <p class="tekst">Medvedgrad je srednjovjekovna utvrda (burg) na južnim obroncima Medvednice, sjeverno od Zagreba. Ima dvije jake obrambene kule, zgrade za stanovanje, romaničko-gotičku kapelu sv. Filipa i Jakova, prostrano predvorje, a cijeli je kompleks okružen zidovima i opkopima. Premda je u historiografiji povremeno osporavano uvriježeno mišljenje da je Medvedgrad sagradio zagrebački biskup Filip, čini se da je zaista bio utemeljen 1247. radi obrane od Tatara, kao što svjedoči isprava iz te godine (tradicionalno čitana kao darovnica za Popov toranj). Pošto je 1262. prešao u posjed kralja Bele IV., Medvedgrad je često mijenjao gospodare, među kojima su bili zagrebački biskupi, hrvatsko-ugarski kraljevi, Babonići, ban Mikac Mihaljević, grofovi Celjski, ban I. Karlović, Zrinski, Erdődy. Utvrda je isprva bila središte skromna vlastelinstva, a u XV. stoljeću postala je središtem vlastelinstava Medvedgrad, Lukavec i Rakovec. Radi obrane od Osmanlija medvedgradska je utvrda bila obnovljena 1487. i 1574., a unutar nje bili su smješteni haramije radi obrane zagrebačke okolice od osmanskih provala. Kada je potkraj XVI. stoljeća središte vlastelinstva bilo preseljeno u Šestine, Medvedgrad je napušten. God. 1590. teško je bio oštećen u potresu, a već 1642. spominje se kao ruševina.</p>
+                <p class="tekst">Medvedgrad je srednjovjekovna utvrda (burg) na južnim obroncima Medvednice, sjeverno od Zagreba. Ima dvije
+                    jake obrambene kule, zgrade za stanovanje, romaničko-gotičku kapelu sv. Filipa i Jakova, prostrano predvorje,
+                    a cijeli je kompleks okružen zidovima i opkopima. Premda je u historiografiji povremeno osporavano uvriježeno
+                    mišljenje da je Medvedgrad sagradio zagrebački biskup Filip, čini se da je zaista bio utemeljen 1247.
+                    radi obrane od Tatara, kao što svjedoči isprava iz te godine (tradicionalno čitana kao darovnica za Popov
+                    toranj). Pošto je 1262. prešao u posjed kralja Bele IV., Medvedgrad je često mijenjao gospodare, među
+                    kojima su bili zagrebački biskupi, hrvatsko-ugarski kraljevi, Babonići, ban Mikac Mihaljević, grofovi
+                    Celjski, ban I. Karlović, Zrinski, Erdődy. Utvrda je isprva bila središte skromna vlastelinstva, a u
+                    XV. stoljeću postala je središtem vlastelinstava Medvedgrad, Lukavec i Rakovec. Radi obrane od Osmanlija
+                    medvedgradska je utvrda bila obnovljena 1487. i 1574., a unutar nje bili su smješteni haramije radi obrane
+                    zagrebačke okolice od osmanskih provala. Kada je potkraj XVI. stoljeća središte vlastelinstva bilo preseljeno
+                    u Šestine, Medvedgrad je napušten. God. 1590. teško je bio oštećen u potresu, a već 1642. spominje se
+                    kao ruševina.</p>
                 <img src="slike/MEDVEDGRAD.png" style="max-width:100%;height:500px;display:block;margin:auto">
-                <p> <span onclick="$('#medvedgrad').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span></p>
+                <p>
+                    <span onclick="$('#medvedgrad').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+                </p>
             </div>
         </div>
     </div>
@@ -91,16 +127,27 @@
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
             <div class="w3-container">
                 <span onclick="$('#tabor').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>VELIKI TABOR</strong></h1>
+                <h1 class="naslov">
+                    <strong>VELIKI TABOR</strong>
+                </h1>
                 <br>
                 <div style="width:50%; float:right; text-align:center; padding-left: 25px;">
                     <img src="slike/tabor.png" class="slike-tekst" style='padding-top: 20px;'>
                 </div>
                 <div style="width:50%;float:left">
                     <p class="tekst">
-                        Veliki Tabor se nalazi u najzapadnijem dijelu Zagorja, na pristupačnom uzvišenju. Građen je u doba kad više nije trebalo misliti samo o obrani, već se moglo težiti i izvjesnoj udobnosti. Ipak, svij dijelovi ovoga grada mogu preuzeti i obrambenu ulogu. Cijeli velikotaborski plato bio je zaštićen zidom. Nedaleko ulaza još uvijek stoji dobro očuvan peterokutni bastion, koji je nadzirao glavni prilaz gradu.
+                        Veliki Tabor se nalazi u najzapadnijem dijelu Zagorja, na pristupačnom uzvišenju. Građen je u doba kad više nije trebalo
+                        misliti samo o obrani, već se moglo težiti i izvjesnoj udobnosti. Ipak, svij dijelovi ovoga grada
+                        mogu preuzeti i obrambenu ulogu. Cijeli velikotaborski plato bio je zaštićen zidom. Nedaleko ulaza
+                        još uvijek stoji dobro očuvan peterokutni bastion, koji je nadzirao glavni prilaz gradu.
                         <br>
-                        <br> Posebnost Taboru daju široke kule povezane kratkim potezima zida, dok su uobičajeno duži potezi zida povezani kulama. Veliki Tabor je došao do naših dana s malo naknadnih izmjena i dogradnji, sačuvavši svoju izvornu skladnost. Podignut je po svemu sudeći poslije 1502. godine, nakon što je Ivaniš Korvin pripadnicima mađarske obitelji Ratkaj darovao posjed u zapadnome Zagorju. Grad se postupno širio, ponajviše u 16. stoljeću, ostavši glavnim sjedištem Ratkaja sve do kraja njihove loze 1793. godine. Poslije toga naizmjence je u državnom i privatnom vlasništvu, a između dva svjetska rata vlasnik mu je bio poznati slikar Oton Iveković.
+                        <br> Posebnost Taboru daju široke kule povezane kratkim potezima zida, dok su uobičajeno duži potezi
+                        zida povezani kulama. Veliki Tabor je došao do naših dana s malo naknadnih izmjena i dogradnji, sačuvavši
+                        svoju izvornu skladnost. Podignut je po svemu sudeći poslije 1502. godine, nakon što je Ivaniš Korvin
+                        pripadnicima mađarske obitelji Ratkaj darovao posjed u zapadnome Zagorju. Grad se postupno širio,
+                        ponajviše u 16. stoljeću, ostavši glavnim sjedištem Ratkaja sve do kraja njihove loze 1793. godine.
+                        Poslije toga naizmjence je u državnom i privatnom vlasništvu, a između dva svjetska rata vlasnik
+                        mu je bio poznati slikar Oton Iveković.
                         <br>
                         <br>
                         <img src="slike/tabor-2.png" style="max-width:100%;">
@@ -115,14 +162,27 @@
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container">
                 <span onclick="$('#cesargrad').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>CESARGRAD</strong></h1>
+                <h1 class="naslov">
+                    <strong>CESARGRAD</strong>
+                </h1>
                 <br>
                 <div style="width:50%; float:right; text-align:center; padding-left: 25px;">
                     <img src="slike/cesargrad.png" class="slike-tekst" style='padding-bottom: 20px;'>
                 </div>
                 <div style="width:50%;float:left">
                     <p class="tekst">
-                        Ostaci burga Cesargrada smješteni su na zapadnoj strani Cesarskog brda iznad uskog proboja Sutle zvanog Zelenjak, sjeverozapadno od Klanjca. Dio je graničnog niza gradova uz dolinu Sutle koji se proteže od Samobora do Trakošćana i Vinice, a uključuje i Susedgrad, Kostelgrad, Veliki Tabor i Vrbovec. Cesargrad se prvi put spominje 1399., kad kralj Žigmund (Sigismund) Luksemburški daruje celjskom knezu Hermanu II. velik dio današnje sjeverozapadne Hrvatske. Kralj Ladislav II. Jagelović potvrđuje vlasništvo nad Cesargradom Tomi Bakaču. Nakon Bakačeve smrti, sva imanja nasljeđuje njegov nećak Petar Erdödy. Tako je Cesargrad naposljetku postao vlasništvo jedne obitelji, i to jedne od tada najmoćnijih u Slavoniji. Nakon smrti Petra Erdödya 1567., nasljeđuje ga udovica mu Barbara Alapić s njihovom djecom. Cesargrad je stradao tijekom seljačke bune 1573., koja je upravo u tom gradu i počela. Pobunjeni su seljaci pod vodstvom Ilije Gregorića osvojili grad, oteli iz njega oružje i ubili cesargradskog kaštelana, a potom grad vjerojatno i spalili. Nakon gušenja seljačke bune, u posjed Cesargrada uvedena je Barbara Alapić sa sinovima Petrom i Tomom. Kako ona u njemu boravi već 1588., vjerojatno je bio obnovljen ubrzo nakon seljačke bune.
+                        Ostaci burga Cesargrada smješteni su na zapadnoj strani Cesarskog brda iznad uskog proboja Sutle zvanog Zelenjak, sjeverozapadno
+                        od Klanjca. Dio je graničnog niza gradova uz dolinu Sutle koji se proteže od Samobora do Trakošćana
+                        i Vinice, a uključuje i Susedgrad, Kostelgrad, Veliki Tabor i Vrbovec. Cesargrad se prvi put spominje
+                        1399., kad kralj Žigmund (Sigismund) Luksemburški daruje celjskom knezu Hermanu II. velik dio današnje
+                        sjeverozapadne Hrvatske. Kralj Ladislav II. Jagelović potvrđuje vlasništvo nad Cesargradom Tomi Bakaču.
+                        Nakon Bakačeve smrti, sva imanja nasljeđuje njegov nećak Petar Erdödy. Tako je Cesargrad naposljetku
+                        postao vlasništvo jedne obitelji, i to jedne od tada najmoćnijih u Slavoniji. Nakon smrti Petra Erdödya
+                        1567., nasljeđuje ga udovica mu Barbara Alapić s njihovom djecom. Cesargrad je stradao tijekom seljačke
+                        bune 1573., koja je upravo u tom gradu i počela. Pobunjeni su seljaci pod vodstvom Ilije Gregorića
+                        osvojili grad, oteli iz njega oružje i ubili cesargradskog kaštelana, a potom grad vjerojatno i spalili.
+                        Nakon gušenja seljačke bune, u posjed Cesargrada uvedena je Barbara Alapić sa sinovima Petrom i Tomom.
+                        Kako ona u njemu boravi već 1588., vjerojatno je bio obnovljen ubrzo nakon seljačke bune.
                     </p>
                 </div>
             </div>
@@ -133,12 +193,25 @@
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container">
                 <span onclick="$('#stubica').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>DONJA STUBICA</strong></h1>
+                <h1 class="naslov">
+                    <strong>DONJA STUBICA</strong>
+                </h1>
                 <br>
                 <p class="tekst">
-                    Utvrda Donja Stubica (Stari grad, <strong onclick="$('#stubica').fadeOut(600);$('#tahy').show()"><u>Tahyjev grad</u></strong>) smještena je na brežuljku u središtu naselja koje dominira Stubičkom kotlinom. Utvrdu je najvjerojatnije sagradio Ivan IV. Tóth, iz susedgradsko-donjostubičke loze Arlandija od ugarskog roda Aka, za zaštitu sjeveroistočnih dijelova prostranoga susedgradsko-stubičkog vlastelinstva. U dokumentima se utvrda prvi put spominje 1439. godine kao plemićki grad (castrum), koji je zajedno s drugim Ivanovim utvrdama i posjedima hrvatsko-ugarski kralj Albrecht II. Habsburgovac potvrdio njegovoj kćeri Dori Tóth, supruzi Nikole Hennyngha. Tijekom stoljeća izgled utvrde se mijenjao. Pojedine su zgrade bile građene od drva, druge od kamena, a sve je zajedno bilo okruženo vodom.
+                    Utvrda Donja Stubica (Stari grad,
+                    <strong onclick="$('#stubica').fadeOut(600);$('#tahy').show()">
+                        <u>Tahyjev grad</u>
+                    </strong>) smještena je na brežuljku u središtu naselja koje dominira Stubičkom kotlinom. Utvrdu je najvjerojatnije
+                    sagradio Ivan IV. Tóth, iz susedgradsko-donjostubičke loze Arlandija od ugarskog roda Aka, za zaštitu
+                    sjeveroistočnih dijelova prostranoga susedgradsko-stubičkog vlastelinstva. U dokumentima se utvrda prvi
+                    put spominje 1439. godine kao plemićki grad (castrum), koji je zajedno s drugim Ivanovim utvrdama i posjedima
+                    hrvatsko-ugarski kralj Albrecht II. Habsburgovac potvrdio njegovoj kćeri Dori Tóth, supruzi Nikole Hennyngha.
+                    Tijekom stoljeća izgled utvrde se mijenjao. Pojedine su zgrade bile građene od drva, druge od kamena,
+                    a sve je zajedno bilo okruženo vodom.
                     <br>
-                    <br> Utvrde Susedgrad te Donja i Gornja Stubica (koja se nalazila odmah pokraj zgrade današnjeg Muzeja) bile su tri najvažnije utvrde na golemom Susedgradsko – stubičkom vlastelinstvu koje se protezalo na sjevernim obroncima Medvednice. Upravo na tom vlastelinstvu započela je Velika seljačka buna.
+                    <br> Utvrde Susedgrad te Donja i Gornja Stubica (koja se nalazila odmah pokraj zgrade današnjeg Muzeja) bile
+                    su tri najvažnije utvrde na golemom Susedgradsko – stubičkom vlastelinstvu koje se protezalo na sjevernim
+                    obroncima Medvednice. Upravo na tom vlastelinstvu započela je Velika seljačka buna.
 
                     <br>
                     <br>
@@ -154,11 +227,19 @@
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container">
                 <span onclick="$('#gor-stub').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>Utvrda Samci; dvorac Oršić u Gornjoj Stubici</strong></h1>
+                <h1 class="naslov">
+                    <strong>Utvrda Samci; dvorac Oršić u Gornjoj Stubici</strong>
+                </h1>
                 <br>
                 <p class="tekst">
-                    U dokumentima se gornjostubička utvrda prvi put spominje 1476. godine kao posjed Doroteje od susedgradsko-donjostubičke grane Arlandijevaca od roda Aka i njezina sina Ivana Hennyngha od Susedgrada, međutim, vrlo je izgledno da je ona znatno starija. Sam toponim Samci (<em>Szancza</em>) prvi put se javlja u ispravi iz 1342. godine kao naziv posjeda, pa se može zaključiti da je posjed dobio ime po utvrdi, koju su na mjestu današnjega plemićkog kompleksa krajem 13. ili početkom 14. st. sagradili Arlandijevci od roda Aka.
-                    <br> Današnji dvorac Oršić su dali sagraditi Krsto Oršić i njegova supruga Josipa, rođena Zichy 1756. god. upravo na mjestu gdje se ranije nalazila srednjovjekovna utvrda Samci.
+                    U dokumentima se gornjostubička utvrda prvi put spominje 1476. godine kao posjed Doroteje od susedgradsko-donjostubičke grane
+                    Arlandijevaca od roda Aka i njezina sina Ivana Hennyngha od Susedgrada, međutim, vrlo je izgledno da
+                    je ona znatno starija. Sam toponim Samci (
+                    <em>Szancza</em>) prvi put se javlja u ispravi iz 1342. godine kao naziv posjeda, pa se može zaključiti da
+                    je posjed dobio ime po utvrdi, koju su na mjestu današnjega plemićkog kompleksa krajem 13. ili početkom
+                    14. st. sagradili Arlandijevci od roda Aka.
+                    <br> Današnji dvorac Oršić su dali sagraditi Krsto Oršić i njegova supruga Josipa, rođena Zichy 1756. god.
+                    upravo na mjestu gdje se ranije nalazila srednjovjekovna utvrda Samci.
 
                 </p>
 
@@ -170,10 +251,19 @@
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container">
                 <span onclick="$('#konscinja').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>Kaštel Konjščina</strong></h1>
+                <h1 class="naslov">
+                    <strong>Kaštel Konjščina</strong>
+                </h1>
                 <br>
                 <p class="tekst">
-                    Početak njezine izgradnje pada u zadnju četvrtinu XV. st., nakon što je hrvatsko-ugarski kralj Matija Korvin dopustio 1477. god. braći Kristoforu i Ivanu Konjskom da na posjedu Selnica – Sveti Dominik svoj stari drveni kaštel ili utvrdicu bolje utvrde. Do oko 1500. god. oni su dovršili izgradnju današnjega kamenog tornja, koji je za prijestolnoga rata između Ferdinanda I. Habsburgovca i Ivana Zapolje (1527–38) prešao u posjed Ferdinandova pristaše Jurja Vragovića. Kako se Konjščina nalazila na trasama kojima su Osmanlije prolazile u pljačkaške pohode prema Štajerskoj i drugim habsburškim pokrajinama, Juraj je oko tornja prije 1545. god. sagradio zemljane bedeme s bastionima i grabom, čime je Konjščina postala jedna od najstarijih renesansnih tvrđava na današnjemu hrvatskom prostoru
+                    Početak njezine izgradnje pada u zadnju četvrtinu XV. st., nakon što je hrvatsko-ugarski kralj Matija Korvin dopustio 1477.
+                    god. braći Kristoforu i Ivanu Konjskom da na posjedu Selnica – Sveti Dominik svoj stari drveni kaštel
+                    ili utvrdicu bolje utvrde. Do oko 1500. god. oni su dovršili izgradnju današnjega kamenog tornja, koji
+                    je za prijestolnoga rata između Ferdinanda I. Habsburgovca i Ivana Zapolje (1527–38) prešao u posjed
+                    Ferdinandova pristaše Jurja Vragovića. Kako se Konjščina nalazila na trasama kojima su Osmanlije prolazile
+                    u pljačkaške pohode prema Štajerskoj i drugim habsburškim pokrajinama, Juraj je oko tornja prije 1545.
+                    god. sagradio zemljane bedeme s bastionima i grabom, čime je Konjščina postala jedna od najstarijih renesansnih
+                    tvrđava na današnjemu hrvatskom prostoru
                 </p>
 
 
@@ -184,16 +274,27 @@
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
             <div class="w3-container">
                 <span onclick="$('#susedgrad').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov"><strong>SUSEDGRAD</strong></h1>
+                <h1 class="naslov">
+                    <strong>SUSEDGRAD</strong>
+                </h1>
                 <br>
                 <div style="width:50%; float:right; text-align:center;padding-left: 50px;">
                     <img src="slike/SUSEDGRAD-2.png" class="slike-tekst" style="max-width:80%;display:block;margin:auto;padding-top: 20px;">
                 </div>
                 <div style="width:50%;float:left; padding-left: 25px;">
                     <p class="tekst">
-                        Srednjovjekovni utvrđeni Susedgrad nalazi se na zapadnom dijelu Medvednice, u blizini ušća rijeke Krapine u Savu. Grad se uzdiže na strmom nepristupačnom brijegu (visine 192 m), koji je prirodnim usjekom odvojen od Medvedničkog gorja. Veličina i izgled uvjetovani su mu konfiguracijom terena. Grad se sastoji od unutrašnjeg, starijeg, i vanjskog, mlađeg, dijela.
+                        Srednjovjekovni utvrđeni Susedgrad nalazi se na zapadnom dijelu Medvednice, u blizini ušća rijeke Krapine u Savu. Grad se
+                        uzdiže na strmom nepristupačnom brijegu (visine 192 m), koji je prirodnim usjekom odvojen od Medvedničkog
+                        gorja. Veličina i izgled uvjetovani su mu konfiguracijom terena. Grad se sastoji od unutrašnjeg,
+                        starijeg, i vanjskog, mlađeg, dijela.
                         <br>
-                        <br> Susedgrad je do 1345. bio u kraljevu posjedu, a zatim vlasnikom postaje Nikola Gornjostubički od obitelji Toth. Obitelj Toth ostaje vlasnicima Susedgrada do 1439. kada nasljednica postaje Doroteja Toth, koja se udaje za Andriju Heninga, te tako Heningovci ulaze u posjed vlastelinstva. Među gospodarima Susedgrada posebice je ostao zapamćen Franjo Tahy (stekao ga je kupnjom), čija je vladavina 1573. godine bila povod velikoj seljačkoj buni pod vodstvom Matije Gupca. Seljačka buna izbila je pod zidinama Susedgrada, a njome su se okoristili članovi obitelji Hening koji su nakon bune iznova postali vlasnici grada.
+                        <br> Susedgrad je do 1345. bio u kraljevu posjedu, a zatim vlasnikom postaje Nikola Gornjostubički od
+                        obitelji Toth. Obitelj Toth ostaje vlasnicima Susedgrada do 1439. kada nasljednica postaje Doroteja
+                        Toth, koja se udaje za Andriju Heninga, te tako Heningovci ulaze u posjed vlastelinstva. Među gospodarima
+                        Susedgrada posebice je ostao zapamćen Franjo Tahy (stekao ga je kupnjom), čija je vladavina 1573.
+                        godine bila povod velikoj seljačkoj buni pod vodstvom Matije Gupca. Seljačka buna izbila je pod zidinama
+                        Susedgrada, a njome su se okoristili članovi obitelji Hening koji su nakon bune iznova postali vlasnici
+                        grada.
 
                         <br>
                         <br>
