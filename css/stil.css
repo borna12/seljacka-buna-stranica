@@ -225,6 +225,9 @@
             grid-gap: 10px;
             grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
         }
+
+
+       
         
         .box {
             padding: 20px;

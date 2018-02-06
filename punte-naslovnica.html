@@ -11,6 +11,7 @@
     <script src="js/image-map.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <script src="js/index.js" type="text/javascript"></script>
+    <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
     <style>
         html,
         body {
@@ -19,8 +20,9 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+                 font-family: gabriola
         }
-        
+        .w3-container{font-size: 27px}
         .wrapper {
             display: grid;
             grid-gap: 10px;
@@ -74,15 +76,25 @@
             font-size: 18px;
         }
         
-      
-        
         .b {
             font-size: 27px;
         }
         
-        .zamjnas {
-            text-align: center
+        .zamjnas {}
+        
+        .html5-title {
+            font-family: gabriola!important;
+            font-size: 20px!important;
         }
+        
+        .wrapper a {
+            text-decoration: none
+        }
+        
+        .naziv-knjige {
+            text-decoration: underline;
+        }
+        
     </style>
 </head>
 
@@ -98,81 +110,132 @@
 
 
     <div id="historiografija" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
             <div class="w3-container">
                 <span onclick="$('#historiografija').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
-                <h1 class="naslov">
-                    <strong>Historiografija</strong>
-                </h1>
-                <div class="wrapper">
-                    <div class="box a">
-                        <img src='slike/historiografija/1622%20Istvanffy.jpg' class="slikica">
-                        <div class="ime-autora">Nikola Istvanffy</div>
-                        <br>
-                        <div class="naziv-knjige">Historiarvm de rebvs Vngaricis Libri XXXIV.</div>
-                        <br>
-                        <div class="izdano">Coloniae Agrippinae (Köln): Sumptibus Antonij Hierati, 1622.</div>
-                    </div>
-                    <div class="box c">
-                        <img src='slike/historiografija/1956_Stjepan%20Antoljak%20(1).jpg' class="slikica" onclick="$('#antoljak').show();$('#historiografija').fadeOut(600);">
-                        <br>
-                        <div class="ime-autora">
-                            Stjepan Antoljak</div>
-                        <br>
-                        <div class="naziv-knjige">Bune pučana i seljaka u Hrvatskoj</div>
-                        <br>
-                        <div class="izdano">Zagreb: Matica hrvatska, 1956.</div>
+                <div class="wrapper-2">
+                    <div class="box tekst"></div>
+                    <div>
+                        <h1 class="naslov zamjnas">
+                    <strong>HISTORIOGRAFIJA (pritisnite naslovnicu za pregled galerije)</strong></h1></div>
+                </div>
+                <div class="wrapper-2">
+                    <div class="box tekst">
+                        <ul>
+                            <li onclick='odabir="pocetna";tekstMijenja()'>HISTORIOGRAFIJA</li>
 
-                    </div>
-                    <div class="box b">
-                        <img src='slike/historiografija/1967_Adamcek (1).jpg' class="slikica" onclick="$('#adamcek').show();$('#historiografija').fadeOut(600);">
-                        <div class="ime-autora">Josip Adamček</div>
-                        <br>
-                        <div class="naziv-knjige">Seljačka buna 1573.</div>
-                        <br>
-                        <div class="izdano">Donja Stubica: Odbor za proslavu 400 godišnjice Seljačke bune 1573, 1968.</div>
-                    </div>
 
-                    <div class="wrapper" style="grid-template-columns: 300px 300px 300px minmax(250px, 300px);">
+                            <li onclick='odabir="antolja";tekstMijenja()' style='padding-left:50px'>
+                                STJEPAN ANTOLJAK
+                            </li>
+                            <li onclick='odabir="adamcek";tekstMijenja()' style='padding-left:50px'>
+                                JOSIP ADAMČEK
+                            </li>
+                            <li onclick='odabir="klaic";tekstMijenja()' style='padding-left:50px'>
+                                NADA KLAIĆ
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="wrapper tekst zamjena1">
                         <div class="box a">
-                            <img src='slike/historiografija/1973_Adamcek%20(2).jpg' class="slikica" onclick="$('#adamcek').show();$('#historiografija').fadeOut(600);">
-                            <div class="ime-autora">Josip Adamček</div>
-                            <br>
-                            <div class="naziv-knjige">Seljačka buna 1573.</div>
-                            <br>
-                            <div class="izdano">Donja Stubica; Gornja Stubica: Fond za izgradnju spomen-objekta: Muzej seljačkih buna, 1973.</div>
+
+                            <a href="slike/historiografija/1622%20Istvanffy.jpg" class="html5lightbox" data-group="mygroup" data-thumbnail="slike/historiografija/1622%20Istvanffy.jpg" title="Nikola Istvanffy<br>Historiarvm de rebvs Vngaricis Libri XXXIV.<br>Coloniae Agrippinae (Köln): Sumptibus Antonij Hierati, 1622.">
+
+
+
+                                <img src='slike/historiografija/1622%20Istvanffy.jpg' class="slikica">
+                                <br>
+
+                                <div class="naziv-knjige">Historiarvm de rebvs Vngaricis Libri XXXIV.</div>
+                            </a>
+
+                        </div>
+                        <div class="box c">
+                            <a href="slike/historiografija/1956_Stjepan%20Antoljak%20(1).jpg" class="html5lightbox" data-group="mygroup" data-thumbnail="slike/historiografija/1956_Stjepan%20Antoljak%20(1).jpg" title="Josip Adamček<br>Seljačka buna 1573.<br>Donja Stubica: Odbor za proslavu 400 godišnjice Seljačke bune 1573, 1968.">
+                                <img src='slike/historiografija/1956_Stjepan%20Antoljak%20(1).jpg' class="slikica" onclick="$('#antoljak').show();$('#historiografija').fadeOut(600);">
+                                <br>
+
+                                <div class="naziv-knjige">Bune pučana i seljaka u Hrvatskoj</div>
+                            </a>
 
                         </div>
                         <div class="box b">
-                            <img src='slike/historiografija/1973_Radovi.jpg' class="slikica">
-                            <div class="ime-autora">Ivan Kampuš (urednik)</div>
-                            <br>
-                            <div class="naziv-knjige">Radovi Zavoda za hrvatsku povijest Filozofskoga fakulteta Sveučilišta u Zagrebu 5: U povodu 400. godišnjice hratsko-slovenske seljačke bune</div>
-                            <br>
-                            <div class="izdano">Zagreb: Grafički zavod Hrvatske, 1973</div>
+                            <a href="slike/historiografija/1967_Adamcek (1).jpg" class="html5lightbox" data-group="mygroup" data-thumbnail="slike/historiografija/1967_Adamcek (1).jpg" title="Josip Adamček<br>Seljačka buna 1573.<br>Donja Stubica; Gornja Stubica: Fond za izgradnju spomen-objekta: Muzej seljačkih buna, 1973.
+">
+                                <img src='slike/historiografija/1967_Adamcek (1).jpg' class="slikica" onclick="$('#adamcek').show();$('#historiografija').fadeOut(600);">
+                                <br>
+                                <div class="naziv-knjige">Seljačka buna 1573.</div>
+                            </a>
                         </div>
-                        <div class="box c">
-                            <img src='slike/historiografija/1976_Nada%20Klaic%20(2).jpg' class="slikica" onclick="$('#klaic').show();$('#historiografija').fadeOut(600);">
-                            <div class="ime-autora">Nada Klaić</div>
-                            <br>
-                            <div class="naziv-knjige">Društvena previranja i bune u Hrvatskoj u XVI i XVII stoljeć</div>
-                            <br>
-                            <div class="izdano">Beograd: Nolit, 1976.</div>
-                        </div>
-                        <div class="box d">
-                            <img src='slike/historiografija/1987_Adamcek_Bune i otpori.jpg' class="slikica">
-                            <div class="ime-autora">Josip Adamček</div>
-                            <br>
-                            <div class="naziv-knjige">Bune i otpori: seljačke bune u Hrvatskoj u XVII. stoljeću</div>
-                            <br>
-                            <div class="izdano">Zagreb: Globus; Filozofski fakultet, Zavod za hrvatsku povijest, 1987.</div>
+
+                        <div class="wrapper" style="grid-template-columns: 300px 300px 300px minmax(250px, 300px);">
+                            <div class="box a">
+                                <a href="slike/historiografija/1973_Adamcek%20(2).jpg" class="html5lightbox" data-group="mygroup" data-thumbnail="slike/historiografija/1973_Adamcek%20(2).jpg" title="Ivan Kampuš (urednik)<br>Radovi Zavoda za hrvatsku povijest Filozofskoga fakulteta Sveučilišta u Zagrebu 5: U povodu 400. godišnjice hratsko-slovenske seljačke bune<br>Zagreb: Grafički zavod Hrvatske, 1973.">
+                                    <img src='slike/historiografija/1973_Adamcek%20(2).jpg' class="slikica" onclick="$('#adamcek').show();$('#historiografija').fadeOut(600);">
+
+                                    <br>
+                                    <div class="naziv-knjige">Seljačka buna 1573.</div>
+
+                                </a>
+                            </div>
+                            <div class="box b">
+                                <a href="slike/historiografija/1973_Radovi.jpg" class="html5lightbox" data-group="mygroup" data-thumbnail="slike/historiografija/1973_Radovi.jpg" title="Drago Zdunić (urednik)<br>Matija Gubec: monografija o spomeniku Matiji Gupcu i Muzeju seljačkih buna u Gornjoj Stubici<br>Gornja Stubica: Muzej seljačkih buna; Zagreb: Spektar, 1975.">
+                                    <img src='slike/historiografija/1973_Radovi.jpg' class="slikica">
+                                    <br>
+
+                                    <div class="naziv-knjige">Radovi Zavoda za hrvatsku povijest Filozofskoga fakulteta Sveučilišta u Zagrebu 5: U povodu 400. godišnjice hratsko-slovenske seljačke bune</div>
+                                    <br>
+                                </a>
+                            </div>
+                            <div class="box c">
+                                <a href="slike/historiografija/1976_Nada%20Klaic%20(2).jpg" class="html5lightbox" data-group="mygroup" data-thumbnail="slike/historiografija/1976_Nada%20Klaic%20(2).jpg" title="Nada Klaić<br>Društvena previranja i bune u Hrvatskoj u XVI i XVII stoljeću<br>Beograd: Nolit, 1976.">
+                                    <img src='slike/historiografija/1976_Nada%20Klaic%20(2).jpg' class="slikica" onclick="$('#klaic').show();$('#historiografija').fadeOut(600);">
+                                    <br>
+
+                                    <div class="naziv-knjige">Društvena previranja i bune u Hrvatskoj u XVI i XVII stoljeć</div>
+                                </a>
+                            </div>
+                            <div class="box d">
+                                <a href="slike/historiografija/1987_Adamcek_Bune i otpori.jpg" class="html5lightbox" data-group="mygroup" data-thumbnail="slike/historiografija/1987_Adamcek_Bune i otpori.jpg" title="Josip Adamček<br>Bune i otpori: seljačke bune u Hrvatskoj u XVII. stoljeću<br>Zagreb: Globus; Filozofski fakultet, Zavod za hrvatsku povijest, 1987.<br>">
+                                    <img src='slike/historiografija/1987_Adamcek_Bune i otpori.jpg' class="slikica">
+                                    <br>
+
+                                    <div class="naziv-knjige">Bune i otpori: seljačke bune u Hrvatskoj u XVII. stoljeću</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    
+                    
+                    
+                    
+                    <div class="wrapper zamjena2" style='display:none'>
+                        
+                        <img src='slike/historiografija/1956_Stjepan%20Antoljak%20(2).JPG' class='autor'>Stjepan Antoljak (1909.-1997.) doktorirao je 1935. povijest na Filozofskom fakultetu u Zagrebu, gdje je djelovao kao asistent i docent. Bio je potom ravnatelj Državnog arhiva u Zadru, znanstveni suradnik Državnog arhiva u Rijeci, profesor na Filozofskom fakultetu u Skopju, Prištini, gdje je i utemeljio Odsjek za povijest, i Zadru. Proučavao je povijest hrvatskog i makedonskog naroda, osobito srednjovjekovno razdoblje. Bavio se i istraživanjem starije hrvatske književnosti i povijesti umjetnosti. Značajan je i Antoljakov prinos hrvatskoj enciklopedistici.<br><br> Autor je i niza monografskih djela. Pregled hrvatske poviesti (1942., 1944., prošireno izdanje 1994. u suradnji s drugim autorima), prvi je repetitorij u hrvatskoj povijesnoj znanosti u kojem se kronološki predstavlja povijest hrvatskog naroda. Bune pučana i seljaka u Hrvatskoj (1956) je sinteza pokreta hrvatskog seljaštva od srednjega vijeka do kraja 19. stoljeća. U djelu Pacta ili Concordia od 1102. godine (1980.) dao je kritičku analizu sporazuma između 12 hrvatskih plemena i ugarskoga kralja Kolomana. U Hrvatskoj historiografiji do 1918. I—II (1992.) donosi pregled razvoja hrvatske historiografije od srednjega vijeka do početka XX. Stoljeća, a historiografiji je posvećena i Renesansa hrvatske historiografije: dosadašnje, sadašnje i buduće zadaće (1996.). Najvrjednije studije i rasprave iz hrvatske povijesti sakupljene su mu u djelu Hrvati u prošlosti te Izabrani radovi (1992.).
+                        
+                        
+                    </div>
+                    <div class="wrapper zamjena3" style='display:none'>
+                        
+                        
+                       <img src='slike/historiografija/1967_Adamcek%20(3).jpg' class='autor'> Adamček, Josip, hrvatski povjesničar (Vuka kraj Osijeka, 13. III. 1933 – Zagreb, 25. XII. 1995). Studij povijesti i filozofije završio na Filozofskom fakultetu u Zagrebu (1959), gdje je doktorirao 1977. Od 1961. asistent, od 1978. izvanredni profesor, a od 1983. redoviti profesor na Odsjeku za povijest pri istom fakultetu. Proučavao agrarne odnose i društvene pokrete seljaštva na hrvatskom sjeveru od kasnoga srednjeg vijeka do 1848. god. Temeljna su mu djela: Seljačka buna 1573. (1968), analiza poznate seljačke pobune sa stajališta gospodarskih odnosa; Agrarni odnosi u Hrvatskoj od sredine XV. do kraja XVII. stoljeća (1980), cjelovit pregled društvenih i gospodarskih odnosa ranoga hrvatskog novovjekovlja; Bune i otpori. Seljačke bune u Hrvatskoj u XVII. stoljeću (1987), analiza društvenih pokreta hrvatskog seljaštva. U suradnji s I. Kampušem objavio građu Popisi i obračuni poreza u Hrvatskoj u XV. i XVI. stoljeću (1976), a sa skupinom autora priredio je zbirku izvora Seljačke bune u Hrvatskoj u XVII. stoljeću (1987). Od 1991. redoviti član HAZU. Predsjednik Saveza povijesnih društava Hrvatske (1977–81); predstojnik Odjela za hrvatsku povijest Centra za povijesne znanosti (1977–86). God. 2009. objavljena je Spomenica Josipa Adamčeka s nizom priloga suvremenih povjesničara. <br><br>*** <br><br>Josip Adamček (Vuka, 13. ožujka 1933. - Zagreb, 25. prosinca 1995.), hrvatski povjesničar. <br><br>Osnovnu školu pohađa u rodnom mjestu, gimnaziju u Osijeku, Požegi i Đakovu, a studij povijesti i filozofije na zagrebačkom Filozofskom fakultetu. Od 1978. godine je izvanredni, a od 1983. redovni profesor na Katedri za hrvatsku povijest Filozofskog fakulteta u Zagrebu. <br><br>Njegov znanstveni rad usmjeren je na istraživanje hrvatske povijesti u doba kasnog feudalizma te agrarne odnose, a posebno seljačke bune od sredine 16. do sredine 19. stoljeća. Bio je redoviti član HAZU (akademik).
+                        
+                    </div>
+                    <div class="wrapper zamjena4" style='display:none'>
+                        
+                        <img src='slike/historiografija/1976_Nada%20Klaic%20(1).jpg' class='autor'> Nada Klaić (1920.-1988.) svrstava se u utemeljitelje hrvatske medievistike. Krenuvši stopama slavnog djeda Vjekoslava, diplomirala je te kasnije i doktorirala povijest na Filozofskom fakultetu u Zagrebu gdje je i radila sve do smrti. Bavila se razdobljem od doseljenja Slavena do XIX. stoljeća. Znatan dio njezina rada bio je posvećen kritici izvora – pitanju vjerodostojnosti srednjovjekovnih isprava. Značajne su njezine rasprave iz društvene povijesti, a posebnu pozornost obraćala je povijesti gradova. Napisala je niz rasprava o bunama i socijalnim sukobima, a rezultate je sabrala u knjizi Društvena previranja i bune u Hrvatskoj u XVI i XVII stoljeću (1976.). <br><br>Izuzetan doprinos Nade Klaić izražen je ponajviše na modernizaciji pristupa hrvatskoj povijesti pogotovo srednjovjekovnoj, čime je pomogla oslobođenju od nacionalno-romantičarskih pripovjedačkih povijesti 19. stoljeća, kao i utemeljenju suvremenoga multidisciplinarnoga pristupa hrvatskoj povijesti koji uključuje arheologiju, paleografiju, gospodarsku povijest, povijest umjetnosti i kulture. Njenom zaslugom preispitana su starija povijesna vrela, te raspršeni mnogi mitovi koji su odražavali političku funkciju hrvatske historiografije 19. stoljeća. Nerijetko je, zbog svog karaktera, ulazila u polemike u kojima je zastupala promašene teze, ali to ne umanjuje činjenicu da je njezin prinos modernoj hrvatskoj medievalistici golem, te da je vrijeme potvrdilo većinu njezinih postavki. <br><br>Velik dio njezina rada čini ocjena i objavljivanje izvora. Oslanjajući se i na prinose starijih povjesničara, analizirala je cjelokupan hrvatski diplomatički materijal ranosrednjovjekovnoga razdoblja, dovodeći u sumnju njegovu autentičnost. Sumnja u autentičnost bila je ispravna, budući da su sve sačuvane isprave hrvatskih vladara iz ranoga srednjega vijeka prijepisi, a samim time i formalni falsifikati. Međutim, Nada Klaić nikad nije odbacila autentičnost povijesne jezgre pojedine isprave. Osim anonimne splitske kronike (Historia Salonitana maior, 1967.), objavila je niz izvora prevedenih s latinskoga za potrebe studenata (Izvori za hrvatsku povijest do 1526. godine, 1972.). Cjelovito i izvorno poimanje ranosrednjovjekovnoga razvoja hrvatskih zemalja dala je u knjizi Povijest Hrvata u ranom srednjem vijeku (1971.), dok je mnogobrojne probleme kasnijega razdoblja sabrala u djelu Povijest Hrvata u razvijenom srednjem vijeku (1976.). Posmrtno su joj objavljene knjige Srednjovjekovna Bosna: politički položaj bosanskih vladara do Tvrtkove krunidbe, 1377. g. (1989.) i Povijest Hrvata u srednjem vijeku (1990.).
+                        
+                        
+                    </div>
+                   
+                    
+                    
                 </div>
             </div>
         </div>
     </div>
-
+    <!--
     <div id="antoljak" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
             <div class="w3-container">
@@ -248,9 +311,9 @@
             </div>
         </div>
     </div>
+-->
 
-
-    <div id="historiografija-prava" class="w3-modal">
+    <!--<div id="historiografija-prava" class="w3-modal">
         <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
             <div class="w3-container">
                 <span onclick="$('#historiografija-prava').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
@@ -374,7 +437,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
 
@@ -384,7 +447,7 @@
         <area target="" alt="Kiparstvo" title="Kiparstvo" coords="355,191,672,257" shape="rect">
         <area target="" alt="Slikarstvo" title="Slikarstvo" coords="959,195,1306,260" shape="rect">
         <area target="" alt="Glazba" title="Glazba" coords="1574,756,1797,824" shape="rect">
-        <area target="" alt="Historiografija" title="Historiografija" coords="77,979,583,1043" shape="rect" onclick="odabir='historiografija';tekstMijenja();$('.zamjnas').text('HISTORIOGRAFIJA');$('#historiografija-prava').show()">
+        <area target="" alt="Historiografija" title="Historiografija" coords="77,979,583,1043" shape="rect" onclick="$('#historiografija').show()">
         <area target="" alt="Knjizevnost" title="Knjizevnost" coords="290,1095,673,1169" shape="rect">
         <area target="" alt="Muzej" title="Muzej" coords="1022,1043,1684,1116" shape="rect">
     </map>
@@ -395,16 +458,28 @@
         $('img[usemap]').imageMap();
 
         function tekstMijenja() {
-            if (odabir == 'historiografija') {
-                $('.ucitaj').html("<div class='wrapper' id='historiografija-2'> <div class='box a'> <img src='slike/historiografija/1622%20Istvanffy.jpg' class='slikica'> <div class='ime-autora'>Nikola Istvanffy</div><br><div class='naziv-knjige'>Historiarvm de rebvs Vngaricis Libri XXXIV.</div><br><div class='izdano'>Coloniae Agrippinae (Köln): Sumptibus Antonij Hierati, 1622.</div></div><div class='box c'> <img src='slike/historiografija/1956_Stjepan%20Antoljak%20(1).jpg' class='slikica'> <br><div class='ime-autora'> Stjepan Antoljak</div><br><div class='naziv-knjige'>Bune pučana i seljaka u Hrvatskoj</div><br><div class='izdano'>Zagreb: Matica hrvatska, 1956.</div></div><div class='box b'> <img src='slike/historiografija/1967_Adamcek (1).jpg' class='slikica'> <div class='ime-autora'>Josip Adamček</div><br><div class='naziv-knjige'>Seljačka buna 1573.</div><br><div class='izdano'>Donja Stubica: Odbor za proslavu 400 godišnjice Seljačke bune 1573, 1968.</div></div><div class='wrapper' style='grid-template-columns: 300px 300px 300px minmax(250px, 300px);'> <div class='box a'> <img src='slike/historiografija/1973_Adamcek%20(2).jpg' class='slikica'> <div class='ime-autora'>Josip Adamček</div><br><div class='naziv-knjige'>Seljačka buna 1573.</div><br><div class='izdano'>Donja Stubica; Gornja Stubica: Fond za izgradnju spomen-objekta: Muzej seljačkih buna, 1973. </div></div><div class='box b'> <img src='slike/historiografija/1973_Radovi.jpg' class='slikica'> <div class='ime-autora'>Ivan Kampuš (urednik)</div><br><div class='naziv-knjige'>Radovi Zavoda za hrvatsku povijest Filozofskoga fakulteta Sveučilišta u Zagrebu 5: U povodu 400. godišnjice hratsko-slovenske seljačke bune</div><br><div class='izdano'>Zagreb: Grafički zavod Hrvatske, 1973</div></div><div class='box c'> <img src='slike/historiografija/1976_Nada%20Klaic%20(2).jpg' class='slikica'> <div class='ime-autora'>Nada Klaić</div><br><div class='naziv-knjige'>Društvena previranja i bune u Hrvatskoj u XVI i XVII stoljeć</div><br><div class='izdano'>Beograd: Nolit, 1976.</div></div><div class='box d'> <img src='slike/historiografija/1987_Adamcek_Bune i otpori.jpg' class='slikica'> <div class='ime-autora'>Josip Adamček</div><br><div class='naziv-knjige'>Bune i otpori: seljačke bune u Hrvatskoj u XVII. stoljeću</div><br><div class='izdano'>Zagreb: Globus; Filozofski fakultet, Zavod za hrvatsku povijest, 1987.</div></div></div></div> ");
+            if (odabir == 'pocetna') {
+                $('.zamjena2, .zamjena3, .zamjena4').hide();
+                $('.zamjena1').show();
+                $('.zamjnas').text('HISTORIOGRAFIJA (pritisnite naslovnicu za pregled galerije)');
             }
             //grananje
-            else if (odabir == 'knjizevnost') {
-                $('.ucitaj').html("<p>a</p>");
+            else if (odabir == 'antolja') {
+                $('.zamjena1, .zamjena3, .zamjena4').hide();
+                $('.zamjena2').show();
+                 $('.zamjena2').removeClass('wrapper');
+                $('.zamjnas').text('STJEPAN ANTOLJAK');
             } else if (odabir == 'adamcek') {
-                $('.ucitaj').html("a");
+                $('.zamjena2, .zamjena1, .zamjena4').hide();
+                $('.zamjena3').show();
+                $('.zamjena3').removeClass('wrapper');
+                $('.zamjnas').text('JOSIP ADAMČEK');
+
             } else if (odabir == 'klaic') {
-                $('.ucitaj').html("a");
+                $('.zamjena1, .zamjena2, .zamjena3').hide();
+                $('.zamjena4').show();
+                $('.zamjena4').removeClass('wrapper');
+                $('.zamjnas').text('NADA KLAIĆ');
             }
         }
         $(function() {
