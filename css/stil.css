@@ -249,6 +249,13 @@
             display: grid;
             grid-template-columns: 400px 400px minmax(300px, 1fr);
         }
+
+      .wrapper-10 {
+            grid-gap: 5px;
+            display: grid;
+            grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+        }
+        
         
       
         

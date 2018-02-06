@@ -44,6 +44,16 @@
             box-shadow: 0 0 5px;
         }
         
+        .slikica3 {
+            height: 400px;
+            box-shadow: 0 0 5px;
+        }
+        
+        .slikica4 {
+            height: 120px;
+            box-shadow: 0 0 5px;
+        }
+        
         .slika-knjige {
             position: absolute;
             top: 50%;
@@ -109,7 +119,10 @@
             display: block
         }
         
-        #glazba img{max-height: 450px; box-shadow: 0 0 5px;}
+        #glazba img {
+            max-height: 450px;
+            box-shadow: 0 0 5px;
+        }
     </style>
 </head>
 
@@ -470,18 +483,22 @@
                 </div>
                 <div class="wrapper-2 ">
                     <div class="box tekst">
-                        <ul>
+                        <ul class="accordion">
                             <li onclick='odabir="pocetna";tekstMijenja_knj()'>KNJIŽEVNOST</li>
 
 
                             <li onclick='odabir="senoa";tekstMijenja_knj()' style='padding-left:50px'>
-                                AUGUST ŠENOA
-                            </li>
-                            <li onclick='odabir="kirin";tekstMijenja_knj()' style='padding-left:100px'>
-                                ILUSTRACIJE VLADIMIRA KIRINA
-                            </li>
-                            <li onclick='odabir="izvanred";tekstMijenja_knj()' style='padding-left:100px'>
-                                IZVANREDNO IZDANJE, 1973.
+                                <div class="link glavni"> AUGUST ŠENOA <i class="fa fa-chevron-down"></i></div>
+
+                                <ul class="submenu">
+
+                                    <li onclick='odabir="kirin";tekstMijenja_knj()' style='padding-left:100px'>
+                                        ILUSTRACIJE VLADIMIRA KIRINA
+                                    </li>
+                                    <li onclick='odabir="izvanred";tekstMijenja_knj()' style='padding-left:100px'>
+                                        IZVANREDNO IZDANJE, 1973.
+                                    </li>
+                                </ul>
                             </li>
                             <li onclick='odabir="ostali";tekstMijenja_knj()' style='padding-left:50px'>
                                 OSTALI AUTORI
@@ -988,20 +1005,162 @@
                     <strong>GLAZBA</strong>
                 </h1>
                 <div class='wrapper-9'>
-                    <div class='box'>   <a href="slike/glazba/a%20(1).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(1).jpg" title="Plakat za predstavu, Narodno kazalište u Zagrebu, 1936. <br>Mirko Bogović<br>Matija Gubec, kralj seljački: drama u pet činah<br>Zagreb, 1859"><img src='slike/glazba/a%20(1).jpg' class="slike-tekst poravnaj"></a></div>
-                    <div class='box'><a href="slike/glazba/a%20(2).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(2).jpg" title="Rapsodija o seljačkoj buni: moderna epopea<br>Ante Petravić<br>Zadar: 1902. "><img src='slike/glazba/a%20(2).jpg' class="slike-tekst poravnaj"></a></div>
-                        <div class='box'><a href="slike/glazba/a%20(3).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(3).jpg" title="Mješoviti pjevački zborovi<br>Grafičko KUD Ognjen Prica - KUD željezničara Vinko Jeđut <br>Matija Gubec / Vili Čaklec, Jura Stubičanec<br>Matiji Gupcu / Rudolf Matz, Ivan Ašperger<br>Zagreb: Jugoton, 1973."><img src='slike/glazba/a%20(3).jpg' class="slike-tekst poravnaj"></a></div>
+                    <div class='box'>
+                        <a href="slike/glazba/a%20(1).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(1).jpg" title="Plakat za predstavu, Narodno kazalište u Zagrebu, 1936. <br>Mirko Bogović<br>Matija Gubec, kralj seljački: drama u pet činah<br>Zagreb, 1859"><img src='slike/glazba/a%20(1).jpg' class="slike-tekst poravnaj"></a>
+                    </div>
+                    <div class='box'>
+                        <a href="slike/glazba/a%20(2).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(2).jpg" title="Rapsodija o seljačkoj buni: moderna epopea<br>Ante Petravić<br>Zadar: 1902. "><img src='slike/glazba/a%20(2).jpg' class="slike-tekst poravnaj"></a>
+                    </div>
+                    <div class='box'>
+                        <a href="slike/glazba/a%20(3).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(3).jpg" title="Mješoviti pjevački zborovi<br>Grafičko KUD Ognjen Prica - KUD željezničara Vinko Jeđut <br>Matija Gubec / Vili Čaklec, Jura Stubičanec<br>Matiji Gupcu / Rudolf Matz, Ivan Ašperger<br>Zagreb: Jugoton, 1973."><img src='slike/glazba/a%20(3).jpg' class="slike-tekst poravnaj"></a>
+                    </div>
                 </div>
                 <div class='wrapper-3'>
-                    <div class='box'><a href="slike/glazba/a%20(4).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(4).jpg" title="Gubec-beg: rock opera<br>Ivica Krajač, Karlo Metikoš, Miljenko Prohaska<br>Zagreb: Jugoton, 1975."><img src='slike/glazba/a%20(4).jpg' class="slike-tekst poravnaj"></a></div>
-                    <div class='box'><a href="slike/glazba/a%20(5).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(5).jpg" title="Seljačka buna<br>Legen<br>Zagreb: Croatia Records/Kopito Records, 2000."><img src='slike/glazba/a%20(5).jpg' class="slike-tekst poravnaj"></a></div>
+                    <div class='box'>
+                        <a href="slike/glazba/a%20(4).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(4).jpg" title="Gubec-beg: rock opera<br>Ivica Krajač, Karlo Metikoš, Miljenko Prohaska<br>Zagreb: Jugoton, 1975."><img src='slike/glazba/a%20(4).jpg' class="slike-tekst poravnaj"></a>
+                    </div>
+                    <div class='box'>
+                        <a href="slike/glazba/a%20(5).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(5).jpg" title="Seljačka buna<br>Legen<br>Zagreb: Croatia Records/Kopito Records, 2000."><img src='slike/glazba/a%20(5).jpg' class="slike-tekst poravnaj"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div id="kiparstvo" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
+            <div class="w3-container">
+                <span onclick="$('#kiparstvo').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+                <div class="wrapper-2">
+                    <div class="box tekst"></div>
+                    <div>
+                        <h1 class="naslov zamjnas3">
+                    <strong>KIPARSTVO</strong></h1></div>
+                </div>
+                <div class="wrapper-2 ">
+
+
+                    <div class="box tekst">
+                        <ul id="accordion" class="accordion">
+                            <li onclick='odabir="pocetna";tekstMijenja_kip()'>KIPARSTVO</li>
+
+                            <li onclick='odabir="seljobun";tekstMijenja_kip()' style='padding-left:50px'>
+                                SELJAČKA BUNA U KIPARSTVU
+                            </li>
+                            <li onclick='odabir="natjecaj";tekstMijenja_kip()' style='padding-left:50px'>
+                                NATJEČAJ ZA SPOMENIK SELJAČKOJ BUNI
+                            </li>
+                            <li onclick='odabir="augustincic";tekstMijenja_kip()' style='padding-left:50px'>
+                                <div class="link glavni"> SPOMENIK AUGUSTA AUGUSTINČIĆA <i class="fa fa-chevron-down"></i></div>
+
+                                <ul class="submenu">
+                                    <li onclick='odabir="izgrad";tekstMijenja_kip()' style='padding-left:100px'>
+                                        IZGRADNJA
+                                    </li>
+                                    <li onclick='odabir="viz";tekstMijenja_kip()' style='padding-left:100px'>
+                                        VIZUALIZACIJA
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tekst zamjenakip1">
+                        <div class='wrapper-6'>
+                            <div class='box'>
+                                <a href="slike/kiparstvo-uvod/k (1).jpg" class="html5lightbox" data-group="kiparstvo-u" data-thumbnail="slike/kiparstvo-uvod/k (1).jpg" title="Matija Gubec<br>Antun Augustinčić<br>Zagreb, 1973. g.<br>Inv. broj: MSB-006"><img src='slike/kiparstvo-uvod/k (1).jpg' class='slike-tekst poravnaj slikica3' /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kiparstvo-uvod/k (2).jpg" class="html5lightbox" data-group="kiparstvo-u" data-thumbnail="slike/kiparstvo-uvod/k (2).jpg" title="Gubec na konju<br>Robert Frangeš Mihanović<br>Zagreb, oko 1928. g.<br>Inv. broj: MSB-007"><img src='slike/kiparstvo-uvod/k (2).jpg' class='slike-tekst poravnaj slikica3' /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kiparstvo-uvod/k (3).jpg" class="html5lightbox" data-group="kiparstvo-u" data-thumbnail="slike/kiparstvo-uvod/k (3).jpg" title="Galženjaki<br>Stipe Sikirica<br>Zagreb, 1972. g.- 1973. g.<br>Inv. broj: MSB-008"><img src='slike/kiparstvo-uvod/k (3).jpg' class='slike-tekst poravnaj slikica3' /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kiparstvo-uvod/k (4).jpg" class="html5lightbox" data-group="kiparstvo-u" data-thumbnail="slike/kiparstvo-uvod/k (4).jpg" title="Tahijevo drvo<br>Branko Ružić<br>Zagreb, 20. st.<br>Inv. broj: MSB-009"><img src='slike/kiparstvo-uvod/k (4).jpg' class='slike-tekst poravnaj slikica3' /></a>
+                            </div>
+                        </div>
+                        <div class='wrapper-6'>
+                            <div class='box'>
+                                <a href="slike/kiparstvo-uvod/k (5).jpg" class="html5lightbox" data-group="kiparstvo-u" data-thumbnail="slike/kiparstvo-uvod/k (5).jpg" title="Petrica i Galženjaki<br>Vanja Radauš<br>Zagreb, 1973. g.<br>Inv. broj: MSB-010"><img src='slike/kiparstvo-uvod/k (5).jpg' class='slike-tekst poravnaj slikica3' /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kiparstvo-uvod/k (6).jpg" class="html5lightbox" data-group="kiparstvo-u" data-thumbnail="slike/kiparstvo-uvod/k (6).jpg" title="Matija Gubec<br>Stjepan Škvorić<br>Prvča, 1973. g.<br>Inv. broj: MSB-011"><img src='slike/kiparstvo-uvod/k (6).jpg' class='slike-tekst poravnaj slikica3' /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kiparstvo-uvod/k (7).jpg" class="html5lightbox" data-group="kiparstvo-u" data-thumbnail="slike/kiparstvo-uvod/k (7).jpg" title="Gubec na konju<br>Robert Frangeš Mihanović<br>Zagreb, 1928. g.<br>Inv. broj: MSB-046"><img src='slike/kiparstvo-uvod/k (7).jpg' class='slike-tekst poravnaj slikica3' /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kiparstvo-uvod/k (8).jpg" class="html5lightbox" data-group="kiparstvo-u" data-thumbnail="slike/kiparstvo-uvod/k (8).jpg" title="Matija Gubec<br>Zlatko Šimunović<br>Zagreb, 20. st.<br>Inv. broj: MSB-355/1<br>"><img src='slike/kiparstvo-uvod/k (8).jpg' class='slike-tekst poravnaj slikica3' /></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tekst zamjenakip2" style='display:none'>
+
+                    </div>
+                    <div class="tekst zamjenakip3" style='display:none'>
+                        <div class="tekst"> Ideja o izgradnji spomenika Seljačkoj buni javljala se u više navrata, a 1951. bio je osnovan i odbor za izgradnju, no sve se svelo na konstituirajućoj sjednici. Krajem 1969. raspisuje se javni natječaj na koji je pristiglo 86 radova, za 58 je ocjenjivački sud ocijenio da ne zadovoljavaju uvjete natječaja, a 6 radova ušlo je u uži izbor. Ocjenjivačkom sudu ipak se nijedan od radova nije činio pogodnim za izvedbu i nakon duže rasprave odlučeno je da se prva nagrada neće dodijeliti, dok je druga pripala Branku Ružiću, a na Skupštini općine Donja Stubica ostala je odluka hoće li rad biti izveden. Radovi pristigli na natječaj izloženi su u Umjetničkom paviljonu uz veliki interes ne samo kulturne javnosti. U člancima u dnevnim novinama pisalo se da je oko zamisli autora izbio pravi mali rat, rabile su se velike riječi i termini, govorilo se o vatrenim polemikama, farsi, malograđanskom ili pak zaostalom ukusu, javnim šamarima, nekompetentnosti.
+                            <br>
+                            <br>Posljednju riječ oko sudbine natječaja i Ružićevog Gupca imali su donjostubički odbornici, koju su jednoglasno odbacili mogućnost da se Ružićev rad izvede. Više je novinskih članaka tih dana spominjalo uzaludne milijunske troškove natječaja koji nisu ničem poslužili, kao ni trud 86 umjetnika koji su u natječaju sudjelovali. Nakon propasti natječaja, raspisanog da bi se zadovoljilo slovo zakona, smatrali su mnogi, počinje se spominjati direktna narudžba te razmišljati o pomicanju proslave s veljače na jesen 1973. godine, kako bi se stiglo spomenik završiti.
+                            <br>
+                            <br>Konačno, spomenik je naručen kod Antuna Augustinčića, s kojim su razgovori vođeni još od 1965. godine. Augustinčić je predočio svoju skicu, i sugerirao da spomenik ne bi trebalo realizirati na mjestu tik uz dvorac, već ga izmjestiti, kako ne bi narušavao vizuru građevine. Napokon je, na samom početku 1972. godine, potpisan s Augustinčićem i ugovor o radovima na modeliranju spomenika , a u novinskim člancima koji su uslijedili oko realizacije više se nitko nije vraćao na priču o natječaju.</div>
+                        <div class='wrapper-10'>
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(1).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(1).jpg" title="Skica za spomenik I<br>Branko Ružić<br>Zagreb, 1970. g.<br>Inv. broj: MSB-043"><img src='slike/kip-natjecaj/n%20(1).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(2).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(2).jpg" title="Skica za spomenik II<br>Branko Ružić<br>Zagreb, 1970. g.<br>Inv. broj: MSB-044"><img src='slike/kip-natjecaj/n%20(2).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(3).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(3).jpg" title="FOT-0360<br>Skica za spomenik seljačkoj buni od kipara Branka Ružića koja je dobila prvu nagradu na natječaju. Predstavlja  zbijenu masu apstraktnih ljudskih likova od terakote postavljenu malo izvan centra postolja. Skica se nalazi u MSB-u.<br>(oko 1970)"><img src='slike/kip-natjecaj/n%20(3).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(4).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(4).jpg" title="Skica za spomenik Seljačkoj buni<br>Šime Vulas<br>Zagreb, 1970. g.<br>Inv. broj: MSB-045"><img src='slike/kip-natjecaj/n%20(4).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(5).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(5).jpg" title="FOT-0361<br>Skica za spomenik seljačkoj buni kipara Šime Vulasa koja je dobila drugu nagradu na natječaju. Apstraktna skulptura s nazubljenim podnožjem i ovalno tijelo sastavljeno od elipsastih prstenova sa ispupčenjima i udubljenjima što se šire prema središtu i sužavaju prema vrhovima. Skica se nalazi u MSB-u.<br>(oko 1970)"><img src='slike/kip-natjecaj/n%20(5).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+
+                        </div>
+                        <div class='wrapper-10'>
+
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(6).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(6).jpg" title="Skica za spomenik seljačkoj buni (nerealiziran)<br>Ivan Kožarić<br>Zagreb, 1970. g.<br>Inv. broj: MSB-142"><img src='slike/kip-natjecaj/n%20(6).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(7).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(7).jpg" title="FOT-0362<br>Skica za spomenik seljačkoj buni kipara  Ivana Kožarića koja je dobila treću nagradu na natječaju. Sastoji se od dvije odvojene cjeline: polukružne arkade kojoj se jedan krak nastavlja vodoravno po površini postolja i od dvije kocke i jednog kvadrata. Skica se nalazi u MSB-u.<br>(oko 1970)"><img src='slike/kip-natjecaj/n%20(7).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(8).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(8).jpg" title="FOT-0363<br>Skica za spomenik seljačkoj buni kipara Ivana Kožarića koja je osvojila treću nagradu na natječaju. Sastoji se od dvije odvojene cjeline: polukružne arkade koja se jednim krakom nastavlja vodoravno po površini postolja i od dvije kocke i jednog kvadrata. Skica se nalazi u MSB-u.<br>(oko 1970)"><img src='slike/kip-natjecaj/n%20(8).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(9).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(9).jpg" title="Skica za spomenik<br>Lojze Drašler<br>1970. g.<br>Inv. broj: MSB-636"><img src='slike/kip-natjecaj/n%20(9).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+                            <div class='box'>
+                                <a href="slike/kip-natjecaj/n%20(10).jpg" class="html5lightbox" data-group="kiparstvo-n" data-thumbnail="slike/kip-natjecaj/n%20(10).jpg" title="Skica za spomenik<br>Franc Popek<br>1970. g.<br>Inv. broj: MSB-2201<br>"><img src='slike/kip-natjecaj/n%20(10).jpg' class="slike-tekst poravnaj slikica4" /></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="wrapper-5  tekst zamjenakip4" style='display:none'>
+
+                    </div>
+                    <div class="wrapper-5  tekst zamjenakip5" style='display:none'> </div>
+                    <div class="wrapper-5  tekst zamjenakip6" style='display:none'>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <map name="image-map">
         <area target="" alt="Uvod" title="Uvod" coords="550,35,1240,131" shape="rect" href="pamtimo-punte.html">
-        <area target="" alt="Kiparstvo" title="Kiparstvo" coords="355,191,672,257" shape="rect">
+        <area target="" alt="Kiparstvo" title="Kiparstvo" coords="355,191,672,257" shape="rect" onclick="odabir='pocetna';tekstMijenja_kip();$('#kiparstvo').show()">
         <area target="" alt="Slikarstvo" title="Slikarstvo" coords="959,195,1306,260" shape="rect" onclick="$('#slikarstvo').show()">
         <area target="" alt="Glazba" title="Glazba" coords="1574,756,1797,824" shape="rect" onclick="$('#glazba').show()">
         <area target="" alt="Historiografija" title="Historiografija" coords="77,979,583,1043" shape="rect" onclick="odabir='pocetna';tekstMijenja();$('#historiografija').show()">
@@ -1069,6 +1228,18 @@
             }
         }
 
+        function tekstMijenja_kip() {
+            if (odabir == 'pocetna') {
+                $('.zamjenakip2, .zamjenakip3, .zamjenakip4,.zamjenakip5').hide();
+                $('.zamjenakip1').show();
+                $('.zamjnas3').text('KIPARSTVO');
+            } else if (odabir == 'natjecaj') {
+                $('.zamjenakip1, .zamjenakip2, .zamjenakip4,.zamjenakip5').hide();
+                $('.zamjenakip3').show();
+                $('.zamjnas3').text('NATJEČAJ ZA SPOMENIK SELJAČKOJ BUNI');
+            }
+        }
+
         $(function() {
 
             $('.close').click(function() {
@@ -1131,7 +1302,7 @@
             }
 
 
-            var accordion = new Accordion($('#accordion'), false);
+            var accordion = new Accordion($('.accordion'), false);
         });
 
         $('#zvucnik').click(function() {
