@@ -225,6 +225,11 @@
             grid-gap: 10px;
             grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
         }
+    .wrapper-6 {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
+        }
 
 
        
