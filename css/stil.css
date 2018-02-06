@@ -233,18 +233,24 @@
         }
         
         .wrapper-7 {
-            display: grid;
             grid-gap: 10px;
             display: grid;
             grid-template-columns: minmax(200px, 300px) minmax(200px, 300px) minmax(200px, 300px);
         }
         
         .wrapper-8 {
-            display: grid;
             grid-gap: 10px;
             display: grid;
             grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
         }
+        
+        .wrapper-9 {
+            grid-gap: 10px;
+            display: grid;
+            grid-template-columns: 400px 400px minmax(300px, 1fr);
+        }
+        
+      
         
         .box {
             padding: 20px;

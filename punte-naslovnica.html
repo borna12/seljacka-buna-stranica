@@ -38,7 +38,8 @@
             height: 200px;
             box-shadow: 0 0 5px;
         }
-          .slikica2 {
+        
+        .slikica2 {
             height: 160px;
             box-shadow: 0 0 5px;
         }
@@ -107,6 +108,8 @@
             margin: auto;
             display: block
         }
+        
+        #glazba img{max-height: 450px; box-shadow: 0 0 5px;}
     </style>
 </head>
 
@@ -816,7 +819,7 @@
                 <div class="wrapper-8 ">
                     <div class='box'>
                         <a href="slike/slikarstvo/a%20(1).jpg" class="html5lightbox" data-group="slikarstvo" data-thumbnail="slike/slikarstvo/a%20(1).jpg" title="Krsto Hegedušić<br>Bitka kod Stubice 1573.<br>1947. g.<br>Inv. br. MSB-00">
-                            <img src='slike/slikarstvo/a%20(1).jpg' class='poravnaj slike-tekst slikica2' style='height:100px'/>
+                            <img src='slike/slikarstvo/a%20(1).jpg' class='poravnaj slike-tekst slikica2' style='height:100px' />
                         </a>
                     </div>
                     <div class='box'>
@@ -949,10 +952,10 @@
                 <div class="wrapper-8 ">
 
                     <div class='box'>
-                        
+
                     </div>
                     <div class='box'>
-                       
+
                     </div>
                     <div class='box'>
                         <a href="slike/slikarstvo/a%20(25).jpg" class="html5lightbox" data-group="slikarstvo" data-thumbnail="slike/slikarstvo/a%20(25).jpg" title="Vjekoslav Hrupec<br>1573.<br>1974. g.<br>Inv. br. MSB-394">
@@ -965,10 +968,10 @@
                         </a>
                     </div>
                     <div class='box'>
-                        
+
                     </div>
                     <div class='box'>
-                       
+
                     </div>
                 </div>
 
@@ -977,11 +980,30 @@
         </div>
     </div>
 
+    <div id="glazba" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
+            <div class="w3-container">
+                <span onclick="$('#glazba').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
+                <h1 class="naslov">
+                    <strong>GLAZBA</strong>
+                </h1>
+                <div class='wrapper-9'>
+                    <div class='box'>   <a href="slike/glazba/a%20(1).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(1).jpg" title="Plakat za predstavu, Narodno kazalište u Zagrebu, 1936. <br>Mirko Bogović<br>Matija Gubec, kralj seljački: drama u pet činah<br>Zagreb, 1859"><img src='slike/glazba/a%20(1).jpg' class="slike-tekst poravnaj"></a></div>
+                    <div class='box'><a href="slike/glazba/a%20(2).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(2).jpg" title="Rapsodija o seljačkoj buni: moderna epopea<br>Ante Petravić<br>Zadar: 1902. "><img src='slike/glazba/a%20(2).jpg' class="slike-tekst poravnaj"></a></div>
+                        <div class='box'><a href="slike/glazba/a%20(3).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(3).jpg" title="Mješoviti pjevački zborovi<br>Grafičko KUD Ognjen Prica - KUD željezničara Vinko Jeđut <br>Matija Gubec / Vili Čaklec, Jura Stubičanec<br>Matiji Gupcu / Rudolf Matz, Ivan Ašperger<br>Zagreb: Jugoton, 1973."><img src='slike/glazba/a%20(3).jpg' class="slike-tekst poravnaj"></a></div>
+                </div>
+                <div class='wrapper-3'>
+                    <div class='box'><a href="slike/glazba/a%20(4).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(4).jpg" title="Gubec-beg: rock opera<br>Ivica Krajač, Karlo Metikoš, Miljenko Prohaska<br>Zagreb: Jugoton, 1975."><img src='slike/glazba/a%20(4).jpg' class="slike-tekst poravnaj"></a></div>
+                    <div class='box'><a href="slike/glazba/a%20(5).jpg" class="html5lightbox" data-group="glazba" data-thumbnail="slike/glazba/a%20(5).jpg" title="Seljačka buna<br>Legen<br>Zagreb: Croatia Records/Kopito Records, 2000."><img src='slike/glazba/a%20(5).jpg' class="slike-tekst poravnaj"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <map name="image-map">
         <area target="" alt="Uvod" title="Uvod" coords="550,35,1240,131" shape="rect" href="pamtimo-punte.html">
         <area target="" alt="Kiparstvo" title="Kiparstvo" coords="355,191,672,257" shape="rect">
         <area target="" alt="Slikarstvo" title="Slikarstvo" coords="959,195,1306,260" shape="rect" onclick="$('#slikarstvo').show()">
-        <area target="" alt="Glazba" title="Glazba" coords="1574,756,1797,824" shape="rect">
+        <area target="" alt="Glazba" title="Glazba" coords="1574,756,1797,824" shape="rect" onclick="$('#glazba').show()">
         <area target="" alt="Historiografija" title="Historiografija" coords="77,979,583,1043" shape="rect" onclick="odabir='pocetna';tekstMijenja();$('#historiografija').show()">
         <area target="" alt="Knjizevnost" title="Knjizevnost" coords="290,1095,673,1169" shape="rect" onclick="odabir='pocetna';tekstMijenja_knj();$('#knjizevnost').show()">
         <area target="" alt="Muzej" title="Muzej" coords="1022,1043,1684,1116" shape="rect">
