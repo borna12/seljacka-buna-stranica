@@ -17,17 +17,16 @@
         <img id="naslovnica" src="homepage.jpg" / usemap="#image-map">
     </div>
 
-    <div id="feudal1" class="w3-modal">
-        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+    <div id="igre" class="w3-modal">
+        <div class="w3-modal-content w3-animate-opacity w3-card-4 prozor">
             <div class="w3-container">
-                <h1 class="naslov"><strong>Feudalno društvo</strong></h1>
-                <div style="width:50%; float:right"><img src="slike/feudalna-piramida.png" class="slike-tekst"></div>
-                <div style="width:50%;float:left">
-                    <p class="tekst">Danas nam je pomalo teško zamisliti društvo u kakvom se živjelo u srednjem vijeku i odnose koji su tada vladali. Iako feudalizam obično poistovjećujemo sa srednjim vijekom, u Hrvatskoj i susjednim zemljama zadržao se sve do 19. stoljeća. Već i stoga, bitno ga je upoznati.
-                        <br> Feudalizam je utemeljen na odnosu između vladara i njegovih vazala te vazala - vlastelina i njihovih podložnika – vazalnom lancu. Naziv feudalizam potječe od riječi <i>feod</i> – posjed i ukazuje na veliko značenje zemlje za obradu u feudalizmu. Vrhovno vlasništvo nad zemljom ima vladar, on pojedine dijelove dodjeljuje velikašima, koji ih daju svojim vazalima, a obrađuju ih njihovi podložnici. Zemljišni posjed – vlastelinstvo, osnova je srednjovjekovnog društva i ekonomije. Dijeli se na dva dijela: <i>alodij</i> i <i>rustikal</i>. Rustikal je podijeljen na mnogo malih jedinica: kmetskih selišta. Svi prinosi s alodija pripadaju vlastelinu, koji je i njegov neposredni vlasnik, dok je rustikal podijeljen seljacima koji ga obrađuju. Seljaci obrađuju vlastelinsku zemlju, to zovemo radnom rentom (ili tlakom), te daju dio prinosa sa svojih polja – to je naturalna renta i novac – novčanu rentu. Za uzvrat, vlastelini su svojim seljacima dužni pružiti zaštitu. Obrađivači su morali davati vlasteli i neka druga davanja, kojima je svrha bila i naglasiti ugled viših staleža. I crkva se financirala iz davanja seljaka kroz crkvenu desetinu.
-                    </p>
+                <h1 class="naslov"><strong>IGRE</strong></h1>
+                <div class="wrapper-5 tekst crvena" style='text-align:center;'>
+                    <a href='memori/index.html'><div class='box'><img src="galge.JPG" class="slike-tekst poravnaj"><br>MEMORI S ORUŽJEM</div></a>
+                    <a href='vjesala/index.html'><div class='box'><img src="memori.JPG" class="slike-tekst poravnaj"><br>GALGE</div></a>
                 </div>
-                <p> <span onclick="$('.w3-modal-content').addClass('w3-animate-zoom-out'); $('#feudal1').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span></p>
+
+                <p> <span onclick="$('#igre').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span></p>
             </div>
         </div>
     </div>
@@ -44,13 +43,14 @@
         <area target="" alt="Feudalna trgovina" title="Feudalna trgovina" href="trgovina.html" coords="1287,543,1818,1068" shape="rect">
         <area target="" alt="Feudalna trgovina" title="Feudalna trgovina" href="trgovina.html" coords="1915,1077,1796,652" shape="rect">
         <area target="" alt="video" title="video" href="" coords="1,478,130,604" shape="rect">
+        <area target="" alt="igre" title="igre"  coords="1836,424,1916,653" shape="rect" onclick="$('#igre').show()">
     </map>
 
 
 
 
 
-    
+
 
 
     <script>

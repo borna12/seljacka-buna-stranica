@@ -58,10 +58,10 @@
                 this.rightGuesses = [],
                 this.guessForm = $(".guessForm"),
                 this.guessLetterInput = $(".guessLetter"),
-                this.goodSound = new Audio("zvuk/goodbell.mp3"),
-                this.badSound = new Audio("zvuk/bad.mp3"),
-                this.winSound = new Audio("zvuk/win.mp3"),
-                this.loseSound = new Audio("zvuk/lose.mp3"),
+                this.goodSound = new Audio("zvuk/goodbell.ogg"),
+                this.badSound = new Audio("zvuk/bad.ogg"),
+                this.winSound = new Audio("zvuk/win.ogg"),
+                this.loseSound = new Audio("zvuk/lose.ogg"),
                 this.setup();
         },
 
@@ -257,7 +257,7 @@
 
             rand_broj = Math.floor(Math.random() * this.words.length);
             $("#hint").html(hintovi[rand_broj]);
-            $("#slicica").attr("src", "slike/" + hintovi[rand_broj] + ".png");
+            $("#slicica").attr("src", "slike/" + slicice[rand_broj] + ".jpg");
             return this._wordData(this.words[rand_broj]);
 
         },
@@ -396,15 +396,19 @@
                 this.playSound("winSound");
                 hintovi.splice(rand_broj, 1);
                 wordList.splice(rand_broj, 1);
+                slicice.splice(rand_broj, 1);
                 $("#gumb").html("Nova igra");
                 lose = 1;
                 wordList = ["feudalizam", "ALODIJ I RUSTIKAL", "SUSEDGRAD", "SUNČANI SAT", "SAMCI", "TLAKA", "GORNICA", "PUNTE", "AMBROZ GUBEC", "STUBIČKIH TOPLICA", "JOSIP ADAMČEK", "AUGUST ŠENOA", "HEGEDUŠIĆ", "MATIJI GUPCU", "MITNICE", "TRGOVIŠTA", "VITEŠKI TURNIR", "ZLATNOG KALEŽA"];
+                slicice=["a (1)","a (2)","a (3)","a (4)","a (5)","a (6)","a (7)","a (8)","a (9)","a (10)","a (11)","a (12)","a (13)","a (14)","a (15)","a (16)","a (17)","a (18)"]
+
                 hintovi = ["Društveno uređenje koje se temelji na lančanom odnosu podložnosti između vladara i vazala (vlastelina i njihovih podložnika) naziva se", "U feudalizmu, zemljišni posjed podijeljen je na osobni posjed vlastelina i zemljište koje obrađuju njegovi podložnici. Ti se posjedi nazivaju", "Franjo Tahy je u posjed dijela susedgradsko-stubičkog vlastelinstva došao kupnjom posjeda utvrde", "Prilikom arheoloških istraživanja na lokalitetu Stari ili Tahyjev grad u Donjoj Stubici otkriven je vrlo rijedak osobni predmet, džepni", "Muzej seljačkih buna nalazi se u dvorcu Oršić na mjestu nekadašnje utvrde", "Obveza kmetova na besplatan rad naziva se", "Među feudalnim podavanjima u naturi posebno se ističe vinska daća ili", "Seljačke bune nazivaju se još i", "Pravo ime vođe Velike seljačke bune 1573. bilo je", "Velika bitka u kojoj je poražena glavna ustanička vojska i kojom je završila Velika seljačka buna 1573. zbila se 9. veljače kod", "Od hrvatskih povjesničara Velikom seljačkom bunom najviše se bavio", "Za popularizaciju Velike seljačke bune 1573. najviše je zaslužan povijesni roman Seljačka buna čiji je autor", "U slikarstvu se temom Velike seljačke bune 1573. posebno intenzivno bavio slikar Krsto", "Puni naziv monumentalnog spomenika Velikoj seljačkoj buni autora Antuna Augustinčića je Spomenik Seljačkoj buni i", "Mjesta na kojima se naplaćivao prolaz robe nazivala su se", "Naselja čiji se stanovnici bave pretežito trgovinom i obrtom te imaju poseban pravni status zovu se", "Muzej seljačkih buna od 2001. organizira manifestaciju pod nazivom (...) u Gornjoj Stubici.", "Glavni organizator prikaza Velike seljačke bune 1573. „Seljačka buna 1573. – Bitka kod Stubice“ je Družba vitezova"];
                 tocno = 0;
                 Hangman.init(wordList);
             } else {
                 hintovi.splice(rand_broj, 1);
                 wordList.splice(rand_broj, 1);
+                slicice.splice(rand_broj, 1);
                 this.msgTitle.html("Čestitamo!");
                 // this is messy
                 this.msgText.html("Pogodili ste riječ u <span class='highlight'>" + rating.guesses + "</span> pokušaja.<br>Rezultat: <span class='highlight'>" + rating.rating + "%</span><br> Broj točno riješenih riječi: <span class='highlight'>" + tocno + "/" + 10 + "</span>");
@@ -422,12 +426,14 @@
 
             lose = 1;
             resetiraj = 1;
-            this.msgTitle.html("Na galge!<br><img src='hm6.png'><br>Odgovor je : <span class='highlight'>" + this.wrd.word + "</span>");
+            this.msgTitle.html("Na galge!<br><img src='hm6.png' height='600'><br>Odgovor je : <span class='highlight'>" + this.wrd.word + "</span>");
             this.msgText.html("Broj točno riješenih: <span class='highlight'>" + tocno + "/" + 10 + "</span>" + "<br>Ne uzrujavaj se i pokušaj ponovno.");
             this.showMsg();
             this.playSound("loseSound");
             wordList = ["feudalizam", "ALODIJ I RUSTIKAL", "SUSEDGRAD", "SUNČANI SAT", "SAMCI", "TLAKA", "GORNICA", "PUNTE", "AMBROZ GUBEC", "STUBIČKIH TOPLICA", "JOSIP ADAMČEK", "AUGUST ŠENOA", "HEGEDUŠIĆ", "MATIJI GUPCU", "MITNICE", "TRGOVIŠTA", "VITEŠKI TURNIR", "ZLATNOG KALEŽA"];
             hintovi = ["Društveno uređenje koje se temelji na lančanom odnosu podložnosti između vladara i vazala (vlastelina i njihovih podložnika) naziva se", "U feudalizmu, zemljišni posjed podijeljen je na osobni posjed vlastelina i zemljište koje obrađuju njegovi podložnici. Ti se posjedi nazivaju", "Franjo Tahy je u posjed dijela susedgradsko-stubičkog vlastelinstva došao kupnjom posjeda utvrde", "Prilikom arheoloških istraživanja na lokalitetu Stari ili Tahyjev grad u Donjoj Stubici otkriven je vrlo rijedak osobni predmet, džepni", "Muzej seljačkih buna nalazi se u dvorcu Oršić na mjestu nekadašnje utvrde", "Obveza kmetova na besplatan rad naziva se", "Među feudalnim podavanjima u naturi posebno se ističe vinska daća ili", "Seljačke bune nazivaju se još i", "Pravo ime vođe Velike seljačke bune 1573. bilo je", "Velika bitka u kojoj je poražena glavna ustanička vojska i kojom je završila Velika seljačka buna 1573. zbila se 9. veljače kod", "Od hrvatskih povjesničara Velikom seljačkom bunom najviše se bavio", "Za popularizaciju Velike seljačke bune 1573. najviše je zaslužan povijesni roman Seljačka buna čiji je autor", "U slikarstvu se temom Velike seljačke bune 1573. posebno intenzivno bavio slikar Krsto", "Puni naziv monumentalnog spomenika Velikoj seljačkoj buni autora Antuna Augustinčića je Spomenik Seljačkoj buni i", "Mjesta na kojima se naplaćivao prolaz robe nazivala su se", "Naselja čiji se stanovnici bave pretežito trgovinom i obrtom te imaju poseban pravni status zovu se", "Muzej seljačkih buna od 2001. organizira manifestaciju pod nazivom (...) u Gornjoj Stubici.", "Glavni organizator prikaza Velike seljačke bune 1573. „Seljačka buna 1573. – Bitka kod Stubice“ je Družba vitezova"];
+            slicice=["a (1)","a (2)","a (3)","a (4)","a (5)","a (6)","a (7)","a (8)","a (9)","a (10)","a (11)","a (12)","a (13)","a (14)","a (15)","a (16)","a (17)","a (18)"]
+
             Hangman.init(wordList);
             $("#gumb").html("Nova igra");
             tocno = 0;
@@ -436,6 +442,7 @@
     };
     var wordList = ["feudalizam", "ALODIJ I RUSTIKAL", "SUSEDGRAD", "SUNČANI SAT", "SAMCI", "TLAKA", "GORNICA", "PUNTE", "AMBROZ GUBEC", "STUBIČKIH TOPLICA", "JOSIP ADAMČEK", "AUGUST ŠENOA", "HEGEDUŠIĆ", "MATIJI GUPCU", "MITNICE", "TRGOVIŠTA", "VITEŠKI TURNIR", "ZLATNOG KALEŽA"];
     var hintovi = ["Društveno uređenje koje se temelji na lančanom odnosu podložnosti između vladara i vazala (vlastelina i njihovih podložnika) naziva se", "U feudalizmu, zemljišni posjed podijeljen je na osobni posjed vlastelina i zemljište koje obrađuju njegovi podložnici. Ti se posjedi nazivaju", "Franjo Tahy je u posjed dijela susedgradsko-stubičkog vlastelinstva došao kupnjom posjeda utvrde", "Prilikom arheoloških istraživanja na lokalitetu Stari ili Tahyjev grad u Donjoj Stubici otkriven je vrlo rijedak osobni predmet, džepni", "Muzej seljačkih buna nalazi se u dvorcu Oršić na mjestu nekadašnje utvrde", "Obveza kmetova na besplatan rad naziva se", "Među feudalnim podavanjima u naturi posebno se ističe vinska daća ili", "Seljačke bune nazivaju se još i", "Pravo ime vođe Velike seljačke bune 1573. bilo je", "Velika bitka u kojoj je poražena glavna ustanička vojska i kojom je završila Velika seljačka buna 1573. zbila se 9. veljače kod", "Od hrvatskih povjesničara Velikom seljačkom bunom najviše se bavio", "Za popularizaciju Velike seljačke bune 1573. najviše je zaslužan povijesni roman Seljačka buna čiji je autor", "U slikarstvu se temom Velike seljačke bune 1573. posebno intenzivno bavio slikar Krsto", "Puni naziv monumentalnog spomenika Velikoj seljačkoj buni autora Antuna Augustinčića je Spomenik Seljačkoj buni i", "Mjesta na kojima se naplaćivao prolaz robe nazivala su se", "Naselja čiji se stanovnici bave pretežito trgovinom i obrtom te imaju poseban pravni status zovu se", "Muzej seljačkih buna od 2001. organizira manifestaciju pod nazivom (...) u Gornjoj Stubici.", "Glavni organizator prikaza Velike seljačke bune 1573. „Seljačka buna 1573. – Bitka kod Stubice“ je Družba vitezova"];
+    var slicice=["a (1)","a (2)","a (3)","a (4)","a (5)","a (6)","a (7)","a (8)","a (9)","a (10)","a (11)","a (12)","a (13)","a (14)","a (15)","a (16)","a (17)","a (18)"]
     var duljina = wordList.length;
 
     Hangman.init(wordList);

@@ -309,7 +309,7 @@
             var naj_minute = Math.floor(najvrijeme / 60);
             var naj_sekunde = najvrijeme - naj_minute * 60;
 
-            $(".time").html("<br>trenutačni broj pokušaja: " + pokusaj + "</br>najmanji broj pokušaja u igri: " + najpokusaji + "</br></br>vrijeme potrebno za završetak igre: " + minute + " min " + sekunde + " sec</br>najbolje vrijeme: " + naj_minute + " min " + naj_sekunde + " sec</br></br></br><p><a href='#' >odaberite drugi tip igre</a></p>");
+            $(".time").html("<br>trenutačni broj pokušaja: " + pokusaj + "</br>najmanji broj pokušaja u igri: " + najpokusaji + "</br></br>vrijeme potrebno za završetak igre: " + minute + " min " + sekunde + " sec</br>najbolje vrijeme: " + naj_minute + " min " + naj_sekunde + " sec</br></br></br><p><a href='../index.html' >vrati se na naslovnicu</a></p>");
             $(".disclaimer").hide();
         },
 
