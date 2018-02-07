@@ -388,3 +388,27 @@
             height: 15px;
             border-radius: 50%;
         }
+        
+        .skroler2 {
+            overflow-y: auto;
+            height: 600px;
+            padding-right: 8px;
+        }
+        
+        .skroler2::-webkit-scrollbar {
+            width: 15px;
+        }
+        
+        .skroler2::-webkit-scrollbar-thumb {
+            background: rgb(104, 0, 2);
+        }
+        
+        .skroler2::-webkit-scrollbar-track {
+            background: #ddd;
+        }
+        
+        .skroler2::-webkit-scrollbar-button {
+            background: rgb(104, 0, 2);
+            height: 15px;
+            border-radius: 50%;
+        }
