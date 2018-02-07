@@ -1,11 +1,40 @@
 //inicijalizacija vrijednosti i funkcija
 (function ($, window, undefined) {
     var pogreske = 0;
-    var CC = 0;
+
+
+
+
+
+
+    var A = 0;
+    var B = 0;
     var C = 0;
-    var S = 0;
-    var Z = 0;
+    var CC = 0;
+    var CCC = 0;
+    var D = 0;
     var DJ = 0;
+    var E = 0;
+    var F = 0;
+    var G = 0;
+    var H = 0;
+    var I = 0;
+    var J = 0;
+    var K = 0;
+    var L = 0;
+    var M = 0;
+    var N = 0;
+    var O = 0;
+    var P = 0;
+    var R = 0;
+    var S = 0;
+    var SS = 0;
+    var T = 0;
+    var U = 0;
+    var V = 0;
+    var Z = 0;
+    var ZZ = 0;
+    var space = 0;
     var rand_broj = 0;
     var win = 0;
     var lose = 0;
@@ -95,21 +124,94 @@
         theGuess: function (e) {
             e.preventDefault();
 
-            if (CC == 1) {
+
+
+
+            if (A == 1) {
+                var guess = "A";
+                A = 0;
+            } else if (B == 1) {
+                var guess = "B";
+                B = 0;
+            } else if (C == 1) {
+                var guess = "C";
+                C = 0;
+            } else if (CC == 1) {
                 var guess = "Č";
                 CC = 0;
-            } else if (C == 1) {
+            }else if (CCC == 1) {
                 var guess = "Ć";
-                C = 0;
-            } else if (S == 1) {
-                var guess = "Š";
-                S = 0;
-            } else if (Z == 1) {
-                var guess = "Ž";
-                Z = 0;
+                CCC = 0;
+            }else if (D == 1) {
+                var guess = "D";
+                D = 0;
             } else if (DJ == 1) {
-                var guess = "Š";
+                var guess = "Đ";
                 DJ = 0;
+            }
+            else if (E == 1) {
+                var guess = "E";
+                E = 0;
+            } else if (F == 1) {
+                var guess = "F";
+                F = 0;
+            } else if (G == 1) {
+                var guess = "G";
+                G = 0;
+            } else if (H == 1) {
+                var guess = "H";
+                H = 0;
+            } else if (I == 1) {
+                var guess = "I";
+                I = 0;
+            } else if (J == 1) {
+                var guess = "J";
+                J = 0;
+            } else if (K == 1) {
+                var guess = "K";
+                K = 0;
+            } else if (L == 1) {
+                var guess = "L";
+                L = 0;
+            } else if (M == 1) {
+                var guess = "M";
+                M = 0;
+            } else if (N == 1) {
+                var guess = "N";
+                N = 0;
+            } else if (O == 1) {
+                var guess = "O";
+                O = 0;
+            } else if (P == 1) {
+                var guess = "P";
+                P = 0;
+            } else if (R == 1) {
+                var guess = "R";
+                R = 0;
+            } else if (S == 1) {
+                var guess = "S";
+                S = 0;
+            } else if (SS == 1) {
+                var guess = "Š";
+                SS = 0;
+            } else if (T == 1) {
+                var guess = "T";
+                T = 0;
+            } else if (U == 1) {
+                var guess = "U";
+                U = 0;
+            } else if (V == 1) {
+                var guess = "V";
+                V = 0;
+            } else if (Z == 1) {
+                var guess = "Z";
+                Z = 0;
+            } else if (ZZ == 1) {
+                var guess = "Ž";
+                ZZ = 0;
+            } else if (space == 1) {
+                var guess = " ";
+                space = 0;
             } else {
                 var guess = this.guessLetterInput.val().toUpperCase();
             }
@@ -348,12 +450,24 @@
     });
 
     $(document).ready(function () {
-        $("#CC").click(function () { //č
-            if (CC == 0) {
-                CC = 1
+        $("#A").click(function () { //č
+            if (A == 0) {
+                A = 1
                 $("form").submit();
             } else {
-                CC = 0
+                A = 0
+            };
+
+        });
+
+
+        $("#B").click(function () { //ć
+
+            if (B == 0) {
+                B = 1
+                $("form").submit();
+            } else {
+                B = 0
             };
 
         });
@@ -370,19 +484,37 @@
 
         });
 
-        $("#S").click(function () { //š
+        $("#CC").click(function () { //ć
 
-            if (S == 0) {
-                S = 1
+            if (CC == 0) {
+                CC = 1
                 $("form").submit();
             } else {
-                S = 0
+                CC = 0
             };
 
         });
+        $("#CCC").click(function () { //ć
 
+            if (CCC == 0) {
+                CCC = 1
+                $("form").submit();
+            } else {
+                CCC = 0
+            };
 
-        $("#DJ").click(function () { //đ
+        });
+        $("#D").click(function () { //ć
+
+            if (D == 0) {
+                D = 1
+                $("form").submit();
+            } else {
+                D = 0
+            };
+
+        });
+        $("#DJ").click(function () { //ć
 
             if (DJ == 0) {
                 DJ = 1
@@ -392,10 +524,197 @@
             };
 
         });
+        $("#E").click(function () { //ć
+
+            if (E == 0) {
+                E = 1
+                $("form").submit();
+            } else {
+                E = 0
+            };
+
+        });
+        $("#F").click(function () { //ć
+
+            if (F == 0) {
+                F = 1
+                $("form").submit();
+            } else {
+                F = 0
+            };
+
+        });
+        $("#G").click(function () { //ć
+
+            if (G == 0) {
+                G = 1
+                $("form").submit();
+            } else {
+                G = 0
+            };
+
+        });
+
+        $("#G").click(function () { //ć
+
+            if (G == 0) {
+                G = 1
+                $("form").submit();
+            } else {
+                G = 0
+            };
+
+        });
+        $("#H").click(function () { //ć
+
+            if (H == 0) {
+                H = 1
+                $("form").submit();
+            } else {
+                H = 0
+            };
+
+        });
 
 
+        $("#I").click(function () { //ć
 
-        $("#Z").click(function () { //ž
+            if (I == 0) {
+                I = 1
+                $("form").submit();
+            } else {
+                I = 0
+            };
+
+        });
+        $("#J").click(function () { //ć
+
+            if (J == 0) {
+                J = 1
+                $("form").submit();
+            } else {
+                J = 0
+            };
+
+        });
+        $("#K").click(function () { //ć
+
+            if (K == 0) {
+                K = 1
+                $("form").submit();
+            } else {
+                K = 0
+            };
+
+        });
+
+        $("#L").click(function () { //ć
+
+            if (L == 0) {
+                L = 1
+                $("form").submit();
+            } else {
+                L = 0
+            };
+
+        }); $("#M").click(function () { //ć
+
+            if (M == 0) {
+                M = 1
+                $("form").submit();
+            } else {
+                M = 0
+            };
+
+        }); $("#N").click(function () { //ć
+
+            if (N == 0) {
+                N = 1
+                $("form").submit();
+            } else {
+                N = 0
+            };
+
+        }); $("#O").click(function () { //ć
+
+            if (O == 0) {
+                O = 1
+                $("form").submit();
+            } else {
+                O = 0
+            };
+
+        }); $("#P").click(function () { //ć
+
+            if (P == 0) {
+                P = 1
+                $("form").submit();
+            } else {
+                P = 0
+            };
+
+        });
+        $("#R").click(function () { //ć
+
+            if (R == 0) {
+                R = 1
+                $("form").submit();
+            } else {
+                R = 0
+            };
+
+        });
+        $("#S").click(function () { //ć
+
+            if (S == 0) {
+                S = 1
+                $("form").submit();
+            } else {
+                S = 0
+            };
+
+        });
+        $("#SS").click(function () { //ć
+
+            if (SS == 0) {
+                SS = 1
+                $("form").submit();
+            } else {
+                SS = 0
+            };
+
+        });
+        $("#T").click(function () { //ć
+
+            if (T == 0) {
+                T = 1
+                $("form").submit();
+            } else {
+                T = 0
+            };
+
+        });
+        $("#U").click(function () { //ć
+
+            if (U == 0) {
+                U = 1
+                $("form").submit();
+            } else {
+                U = 0
+            };
+
+        });
+        $("#V").click(function () { //ć
+
+            if (V == 0) {
+                V = 1
+                $("form").submit();
+            } else {
+                V = 0
+            };
+
+        });
+        $("#Z").click(function () { //ć
 
             if (Z == 0) {
                 Z = 1
@@ -405,6 +724,31 @@
             };
 
         });
+
+        $("#ZZ").click(function () { //ć
+
+            if (ZZ == 0) {
+                ZZ = 1
+                $("form").submit();
+            } else {
+                ZZ = 0
+            };
+
+        });
+
+        $("#space").click(function () { //ć
+
+            if (space == 0) {
+                space = 1
+                $("form").submit();
+            } else {
+                space = 0
+            };
+
+        });
+
+
+
     });
 
     $(document).keypress(function (e) {
