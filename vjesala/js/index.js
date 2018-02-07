@@ -139,10 +139,10 @@
             } else if (CC == 1) {
                 var guess = "Č";
                 CC = 0;
-            }else if (CCC == 1) {
+            } else if (CCC == 1) {
                 var guess = "Ć";
                 CCC = 0;
-            }else if (D == 1) {
+            } else if (D == 1) {
                 var guess = "D";
                 D = 0;
             } else if (DJ == 1) {
@@ -386,12 +386,12 @@
             win = 1;
             var rating = this.rating();
             tocno++;
-            if (wordList.length == 32) {
+            if (wordList.length == 10) {
                 resetiraj = 1;
                 postotak += rating.rating;
                 this.msgTitle.html("Završili ste igru!");
                 // this is messy
-                this.msgText.html("Posljednja je riječ  pogođena u <span class='highlight'>" + rating.guesses + "</span> pokušaja.<br>Rezultat: <span class='highlight'>" + rating.rating + "%</span><br>Ukupni rezultat igre: <span class='highlight'>" + postotak / 10 + "%</span>");
+                this.msgText.html("Posljednja je pitanje  pogođena u <span class='highlight'>" + rating.guesses + "</span> pokušaja.<br>Rezultat: <span class='highlight'>" + rating.rating + "%</span><br>Ukupni rezultat igre: <span class='highlight'>" + postotak / 10 + "%</span>");
                 this.showMsg();
                 this.playSound("winSound");
                 hintovi.splice(rand_broj, 1);
@@ -422,8 +422,8 @@
 
             lose = 1;
             resetiraj = 1;
-            this.msgTitle.html("Izvisio si!<br><img src='hm6.png'><br>Riječ je bila: <span class='highlight'>" + this.wrd.word + "</span>");
-            this.msgText.html("Broj točno riješenih riječi: <span class='highlight'>" + tocno + "/" + 10 + "</span>" + "<br>Ne uzrujavaj se i pokušaj ponovno.");
+            this.msgTitle.html("Na galge!<br><img src='hm6.png'><br>Odgovor je : <span class='highlight'>" + this.wrd.word + "</span>");
+            this.msgText.html("Broj točno riješenih: <span class='highlight'>" + tocno + "/" + 10 + "</span>" + "<br>Ne uzrujavaj se i pokušaj ponovno.");
             this.showMsg();
             this.playSound("loseSound");
             wordList = ["feudalizam", "ALODIJ I RUSTIKAL", "SUSEDGRAD", "SUNČANI SAT", "SAMCI", "TLAKA", "GORNICA", "PUNTE", "AMBROZ GUBEC", "STUBIČKIH TOPLICA", "JOSIP ADAMČEK", "AUGUST ŠENOA", "HEGEDUŠIĆ", "MATIJI GUPCU", "MITNICE", "TRGOVIŠTA", "VITEŠKI TURNIR", "ZLATNOG KALEŽA"];
@@ -544,17 +544,6 @@
             };
 
         });
-        $("#G").click(function () { //ć
-
-            if (G == 0) {
-                G = 1
-                $("form").submit();
-            } else {
-                G = 0
-            };
-
-        });
-
         $("#G").click(function () { //ć
 
             if (G == 0) {
