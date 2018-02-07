@@ -80,7 +80,7 @@ body {
     perspective: 500px;
     min-height: 100%;
     height: 100%;
-        padding-bottom: 60px;
+        padding-bottom: 70px;
 }
 
 @-webkit-keyframes matchAnim {
@@ -331,7 +331,7 @@ footer {
 }
 footer .disclaimer {
     
-    font-size: 60px;
+    font-size: 50px;
  
     text-align: center;
          color: rgb(104, 0, 2);
