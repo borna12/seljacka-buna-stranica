@@ -89,7 +89,7 @@
                             vrijeme = 0;
                             swal({
                                 title: '',
-                                html: '<img src="slike/a (2).JPG" class="ikone"/><br><br>' +
+                                html: '<img src="slike/a (2).jpg" class="ikone"/><br><br>' +
                                     '<p>Kaciga je bilo različitih tipova. One jednostavne izvedbe su bile namijenjene običnim vojnicima.</p>',
                                 showCloseButton: true,
                                 confirmButtonText: ' dalje',
@@ -103,7 +103,7 @@
                             vrijeme = 0;
                             swal({
                                 title: '',
-                                html: '<img src="slike/a (3).JPG" class="ikone"/><br><br>' +
+                                html: '<img src="slike/a (3).jpg" class="ikone"/><br><br>' +
                                     '<p>Koplje spada u oružja na dugoj motki. Koplje (pika) kroz cijelo 16. i 17. st. nazivaju kraljicom oružja. Koplja jednostavnije izrade s nepreciznijim bodilima vjerojatno su djelo seoskog kovača.</p>',
                                 confirmButtonText: ' dalje',
                             });
@@ -130,7 +130,7 @@
                             vrijeme = 0;
                             swal({
                                 title: '',
-                                html: '<img src="slike/a (5).JPG" class="ikone"/><br><br>' +
+                                html: '<img src="slike/a (5).jpg" class="ikone"/><br><br>' +
                                     '<p>Bojna sjekira je svaka sjekira izrađena s namjerom da se koristi kao oružje.</p>',
                                 showCloseButton: true,
                                 confirmButtonText: ' dalje',
@@ -144,7 +144,7 @@
                             vrijeme = 0;
                             swal({
                                 title: '',
-                                html: '<img src="slike/a (6).JPG" class="ikone"/><br><br>' +
+                                html: '<img src="slike/a (6).jpg" class="ikone"/><br><br>' +
                                     '<p>Bradva je vrsta sjekire koja se mogla koristiti kao oružje i kao alat.</p>',
                                 showCloseButton: true,
                                 confirmButtonText: ' dalje',
@@ -158,7 +158,7 @@
                             vrijeme = 0;
                             swal({
                                 title: '',
-                                html: '<img src="slike/a (7).JPG" class="ikone"/><br><br>' +
+                                html: '<img src="slike/a (7).jpg" class="ikone"/><br><br>' +
                                     '<p>Nadžak je oružje za udaranje koje završava kljunom. To je pješadijsko, ali i konjaničko oružje. Nadžak je služio za probijanje kaciga, a zahvaćanjem oklopa zbacivao se protivnik s konja.</p>',
                                 showCloseButton: true,
                                 confirmButtonText: ' dalje',
@@ -172,7 +172,7 @@
                             vrijeme = 0;
                             swal({
                                 title: '',
-                                html: '<img src="slike/a (8).JPG" class="ikone"/><br><br>' +
+                                html: '<img src="slike/a (8).jpg" class="ikone"/><br><br>' +
                                     '<p>Gizerna (seljačka helebarda) je oružje na motki koje predstavlja spoj koplja i kuke kojom se moglo zahvatiti protivnika te ga zbaciti s konja. </p>',
                                 showCloseButton: true,
                                 confirmButtonText: ' dalje',
@@ -200,7 +200,7 @@
                             vrijeme = 0;
                             swal({
                                 title: '',
-                                html: '<img src="slike/a (10).JPG" class="ikone"/><br><br>' +
+                                html: '<img src="slike/a (10).jpg" class="ikone"/><br><br>' +
                                     '<p>Buzdovan je oružje sa željeznom glavicom nasađenom na drveni držak. Buzdovanom su se služili i konjanici i pješaci. Pješaci ga nose u desnoj ruci, a konjanici ga drže obješenog o sedlo. Obično se bacao na protivnika, a udarac je bio jednako jak bilo da se urada glavicom ili drškom.</p>',
                                 showCloseButton: true,
                                 confirmButtonText: ' dalje',
@@ -228,7 +228,7 @@
                             vrijeme = 0;
                             swal({
                                 title: '',
-                                html: '<img src="slike/a (12).JPG" class="ikone"/><br><br>' +
+                                html: '<img src="slike/a (12).jpg" class="ikone"/><br><br>' +
                                     '<p>Korda je vrsta velikog noža. Smatrala se isključivo pučkim oružjem, cijena joj je bila niska i izrađivali su je kovači. </p>',
                                 showCloseButton: true,
                                 confirmButtonText: ' dalje',
@@ -374,11 +374,11 @@
             id: 1,
         }, {
             name: "",
-            img: "slike/a (2).JPG",
+            img: "slike/a (2).jpg",
             id: 2
         }, {
             name: "",
-            img: "slike/a (3).JPG",
+            img: "slike/a (3).jpg",
             id: 3
         }, {
             name: "",
@@ -386,19 +386,19 @@
             id: 4
         }, {
             name: "",
-            img: "slike/a (5).JPG",
+            img: "slike/a (5).jpg",
             id: 5
         }, {
             name: "",
-            img: "slike/a (6).JPG",
+            img: "slike/a (6).jpg",
             id: 6
         }, {
             name: "",
-            img: "slike/a (7).JPG",
+            img: "slike/a (7).jpg",
             id: 7
         }, {
             name: "",
-            img: "slike/a (8).JPG",
+            img: "slike/a (8).jpg",
             id: 8
         }, {
             name: "",
@@ -406,7 +406,7 @@
             id: 9
         }, {
             name: "",
-            img: "slike/a (10).JPG",
+            img: "slike/a (10).jpg",
             id: 10
         }, {
             name: "",
@@ -414,7 +414,7 @@
             id: 11
         }, {
             name: "",
-            img: "slike/a (12).JPG",
+            img: "slike/a (12).jpg",
             id: 12
         }];
 
