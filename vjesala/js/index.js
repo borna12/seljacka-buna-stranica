@@ -391,7 +391,7 @@
                 postotak += rating.rating;
                 this.msgTitle.html("Završili ste igru!");
                 // this is messy
-                this.msgText.html("Posljednja je pitanje  pogođena u <span class='highlight'>" + rating.guesses + "</span> pokušaja.<br>Rezultat: <span class='highlight'>" + rating.rating + "%</span><br>Ukupni rezultat igre: <span class='highlight'>" + postotak / 10 + "%</span>");
+                this.msgText.html("Posljednje odgovor <span class='highlight'>" + this.wrd.word + "</span><br>pogođen je u <span class='highlight'>" + rating.guesses + "</span> pokušaja.<br>Rezultat: <span class='highlight'>" + rating.rating + "%</span><br>Ukupni rezultat igre: <span class='highlight'>" + postotak / 10 + "%</span>");
                 this.showMsg();
                 this.playSound("winSound");
                 hintovi.splice(rand_broj, 1);
