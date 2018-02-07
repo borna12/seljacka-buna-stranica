@@ -411,7 +411,7 @@
                 slicice.splice(rand_broj, 1);
                 this.msgTitle.html("Čestitamo!");
                 // this is messy
-                this.msgText.html("Pogodili ste odgovor"+tocno+ "u <span class='highlight'>" + rating.guesses + "</span> pokušaja.<br>Rezultat: <span class='highlight'>" + rating.rating + "%</span><br> Broj točno riješenih riječi: <span class='highlight'>" + tocno + "/" + 10 + "</span>");
+                this.msgText.html("Pogodili ste odgovor <span class='highlight'>" + this.wrd.word + "</span><br> u <span class='highlight'>" + rating.guesses + "</span> pokušaja.<br>Rezultat: <span class='highlight'>" + rating.rating + "%</span><br> Broj točno riješenih riječi: <span class='highlight'>" + tocno + "/" + 10 + "</span>");
                 this.showMsg();
                 this.playSound("winSound");
                 postotak += rating.rating;
