@@ -115,7 +115,7 @@
             }
 
             //dozvoljena slova
-            if (guess.match(/[a-žA-Ž]/) && guess.length == 1) {
+            if (guess.match(/^[a-žA-Ž\s]*$/) && guess.length == 1) {
 
 
                 //ako se ponovi isto slovo
