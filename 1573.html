@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <script src="js/index.js" type="text/javascript"></script>
     <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+    <script src='js/jquery.reel.js'></script>
 
 
     <style>
@@ -48,6 +49,13 @@
         #navcontainer img {
             height: 50px;
         }
+        
+        .reel-overlay {
+            height: 900px!important;
+            width: 100%!important;
+            padding: 40px!important;
+        }
+        #rotacija{z-index: 10000000}
     </style>
 </head>
 
@@ -246,68 +254,61 @@
             </div>
         </div>
     </div>
+    <div id="rotacija" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
+            <div class="w3-container" style="display:block;">
+                               <span onclick="$('#rotacija').fadeOut(600);" class="w3-button w3-display-topright iks">&times;</span>
 
+                <img src="img_0001.jpg" width="100%" height="100%" class="reel" data-image="img_0001.jpg" data-frames="32" data-footage="4" data-revolution="800" data-images="Oruzje/3D1/img_####.jpg|1..24" data-directional="true" data-opening="1" data-speed="0.2">
+            </div>
+        </div>
+    </div>
 
     <div id="oruzje" class="w3-modal">
-        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor">
+        <div class="w3-modal-content w3-card-4 w3-animate-opacity prozor siroki">
             <div class="w3-container" style="display:block;">
                 <span onclick='$("#oruzje").fadeOut(600);' class="w3-button w3-display-topright iks">&times;</span>
                 <h1 class="naslov"><strong>Oružje</strong></h1>
-                <p class="tekst">Vojnu snagu Hrvatske 16. st. sačinjavale su čete najamnika, a u posebnim slučajevima sazivao se i opći zemaljski ustanak – insurekcija. Najamnici se dijele na pješake (haramije) i laku konjicu (husare). Uz domaće stanovništvo, javljaju se među paćenicima i brojni prebjezi s turskog područja, koji se nazivaju raznim imenima, a najčešće uskocima.
-                    <br> U prvoj polovini 16. st. oprema i naoružanje lakog konjanika sastoji se od pancira, <strong><u>kacige</u></strong>, štita, <strong><u>koplja</u></strong> i sablje. U drugoj polovini stoljeća laki konjanik – husar opremljen je oklopom ili pancirom, šišakom (kacigom), štitom, kopljem, sabljom, bodežom, batom (<strong><u>buzdovanom</u></strong>) ili <strong><u>sjekiricom</u></strong>. Zavisno od materijalnih mogućnosti, laki konjanik se mogao naoružati i puškom. Postojale su i cijele čete konjanika naoružane samo puškama. <strong><u>Franjo Tahy</u></strong> prikazan je na nadgrobnoj ploči u kompletnoj plemićkoj opremi.
-                    <br> O naoružanju pješaka nemamo iscrpnih podataka. Pojedini pješaci su bili strijelci, a većina pješačkog naoružanja bilo je hladno oružje. Njemački najamnici bili su naoružani kopljima, <strong><u>helebardama</u></strong>, <strong><u>nadžacima</u></strong>, o pojasu im je vidio <strong><u>mač</u></strong>, a u pojas im je bio utaknut bodež. U prvim borbenim redovima bili su dvostruko plaćeni odredi naoružani teškim mačevima – dvoručnjacima. Zadatak im je bio lomiti koplja i nanositi gubitke neprijateljskog navali.
-                    <br> Nemamo sigurnih podataka čime su bili naoružani seljaci za vrijeme Seljačke bune. Suci istražitelji pitali su većinom za vatreno oružje. Prema izvještaju zagrabačkog biskupa Jurja Draškovića seljaci su bili „... ratoborni, dobro naoružani, većinom izvježbani na granici...“. Seljaci su bili brojčano nadmoćniji. Naoružali su se oruđem kojim su se služili u radu u polju ili pri kućnim poslovima – kosama, vilama na dva ili tri kraka, srpovima, rankunima ili <strong><u>gizernama</u></strong>, sjekirama (<strong><u>bradvama</u></strong>), mlatovima i kijačama (drvenim okovanim batinama). Jedan od seljačkih vođa navodi da su seljaci imali 20 teških pušaka i jedan falkonet na kotačima. Seoski kovači svakako su znali izraditi jednostavnije oružje, kao što je na primjer koplje, a seljaci su često bili naoružani i dugim noževima, tzv. <strong><u>kordama</u></strong>.
+                <p class="tekst">Vojnu snagu Hrvatske 16. st. sačinjavale su čete najamnika, a u posebnim slučajevima sazivao se i opći zemaljski ustanak – insurekcija. Najamnici se dijele na pješake (haramije) i laku konjicu (husare). Uz domaće stanovništvo, javljaju se među paćenicima i brojni prebjezi s turskog područja, koji se nazivaju raznim imenima, a najčešće uskocima. U prvoj polovini 16. st. oprema i naoružanje lakog konjanika sastoji se od pancira, kacige, štita, koplja i sablje. U drugoj polovini stoljeća laki konjanik – husar opremljen je oklopom ili pancirom, šišakom (kacigom), štitom, kopljem, sabljom, bodežom, batom (buzdovanom) ili sjekiricom. Zavisno od materijalnih mogućnosti, laki konjanik se mogao naoružati i puškom. Postojale su i cijele čete konjanika naoružane samo puškama. <strong>Franjo Tahy</strong> prikazan je na nadgrobnoj ploči u kompletnoj plemićkoj opremi.
+                    <br>
+                    <br>O naoružanju pješaka nemamo iscrpnih podataka. Pojedini pješaci su bili strijelci, a većina pješačkog naoružanja bilo je hladno oružje. Njemački najamnici bili su naoružani kopljima, helebardama, nadžacima, o pojasu im je vidio mač, a u pojas im je bio utaknut bodež. U prvim borbenim redovima bili su dvostruko plaćeni odredi naoružani teškim mačevima – dvoručnjacima. Zadatak im je bio lomiti koplja i nanositi gubitke neprijateljskog navali.
+                    <br>
+                    <br>Nemamo sigurnih podataka čime su bili naoružani seljaci za vrijeme Seljačke bune. Suci istražitelji pitali su većinom za vatreno oružje. Prema izvještaju zagrabačkog biskupa Jurja Draškovića seljaci su bili „... ratoborni, dobro naoružani, većinom izvježbani na granici...“. Seljaci su bili brojčano nadmoćniji. Naoružali su se oruđem kojim su se služili u radu u polju ili pri kućnim poslovima – kosama, vilama na dva ili tri kraka, srpovima, rankunima ili gizernama, sjekirama (bradvama), mlatovima i kijačama (drvenim okovanim batinama). Jedan od seljačkih vođa navodi da su seljaci imali 20 teških pušaka i jedan falkonet na kotačima. Seoski kovači svakako su znali izraditi jednostavnije oružje, kao što je na primjer koplje, a seljaci su često bili naoružani i dugim noževima, tzv. kordama.
+
                 </p>
-                <div id="navcontainer">
-
-                    <ul>
-                        <li>
-                            <a href="Oruzje/01_2096%20(1).jpg" class="html5lightbox" title="Kaciga je bilo različitih tipova. One jednostavne izvedbe su bile namijenjene običnim vojnicima." data-group="mygroup" data-thumbnail="Oruzje/01_2096%20(1).jpg" title=""><img src="Oruzje/01_2096%20(1).jpg"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/02_414.jpg" class="html5lightbox" data-height="480" data-group="mygroup" data-thumbnail="Oruzje/02_414.jpg" title="Koplje spada u oružja na dugoj motki. Koplje (pika) kroz cijelo 16. i 17. st. nazivaju kraljicom oružja. Koplja jednostavnije izrade s nepreciznijim bodilima vjerojatno su djelo seoskog kovača."><img src="Oruzje/02_414.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/02_724 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/02_724 (1).jpg" title="Buzdovan je oružje sa željeznom glavicom nasađenom na drveni držak. Buzdovanom su se služili i konjanici i pješaci. Pješaci ga nose u desnoj ruci, a konjanici ga drže obješenog o sedlo. Obično se bacao na protivnika, a udarac je bio jednako jak bilo da se urada glavicom ili drškom.
-"><img src="Oruzje/02_724 (1).jpg"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/03_264 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/03_264 (1).jpg" title="Bojna sjekira je svaka sjekira izrađena s namjerom da se koristi kao oružje."><img src="Oruzje/03_264 (1).jpg"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/04_451 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/04_451 (1).jpg" title="Helebarda je oružje švicarskih najamnika. Sastoji se od koplja (šiljka), sjekirice i kljuna, a pomoću tuljca i dugih šina nasađuje se na drvenu motku. Služile su u navali za nanošenje udaraca prodorom vrška kroz kolutiće pancirne košulje."><img src="Oruzje/04_451 (1).jpg"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/06_662 (1).JPG" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/06_662 (1).JPG" title="Nadžak je oružje za udaranje koje završava kljunom. To je pješadijsko, ali i konjaničko oružje. Nadžak je služio za probijanje kaciga, a zahvaćanjem oklopa zbacivao se protivnik s konja."><img src="Oruzje/06_662 (1).JPG"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/08_706 (1).JPG" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/08_706 (1).JPG" title="Bojni nož"><img src="Oruzje/08_706 (1).JPG"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/09_416.jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/09_416.jpg" title="Gizerna je oružje na motki koje predstavlja spoj koplja i kuke kojom se moglo zahvatiti protivnika te ga zbaciti s konja."><img src="Oruzje/09_416.jpg"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/10a_1307 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/10a_1307 (1).jpg" title="Bradva je vrsta sjekire koja se mogla koristiti kao oružje i kao alat."><img src="Oruzje/10a_1307 (1).jpg"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/10a_1307 (3).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/10a_1307 (3).jpg" title="Korda je vrsta velikog noža. Smatrala se isključivo pučkim oružjem, cijena joj je bila niska i izrađivali su je kovači."><img src="Oruzje/10a_1307 (3).jpg"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/11a_431 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/11a_431 (1).jpg" title=""><img src="Oruzje/11a_431 (1).jpg"></a>
-                        </li>
-                        <li>
-                            <a href="Oruzje/11b_434 (1).jpg" class="html5lightbox" data-width="480" data-group="mygroup" data-thumbnail="Oruzje/11b_434 (1).jpg" title=""><img src="Oruzje/11b_434 (1).jpg"></a>
-                        </li>
-
-
-                    </ul>
+                <div class='wrapper-8'>
+                    <div class='box'>
+                        <a href="Oruzje/a%20(1).jpg" class="html5lightbox" data-group="oruzje" data-thumbnail="Oruzje/a%20(1).jpg" title="Momački poluoklop najamnika<br>
+Njemačka, 1580. g.- 1590. g.<br>
+Inv. broj: MSB-2202<br>
+"><img src='Oruzje/a%20(1).jpg' class='poravnaj slike-tekst'></a>
+                    </div>
+                    <script>
+                        function smrt() {
+                           
+                            $("#rotacija").show()
+                        }
+                    </script>
+                    <div class='box'>
+                        <a href="Oruzje/a%20(2).jpg" class="html5lightbox" data-group="oruzje" data-thumbnail="Oruzje/a%20(2).jpg" title="Morion<br>Njemačka, kraj 16. st.<br>Inv. broj: MSB-2096<br><img src='oruzje/rotator.png' class='poravnaj' onclick='smrt()'/>"><img src='Oruzje/a%20(2).jpg' class='poravnaj slike-tekst'></a>
+                    </div>
+                    <div class='box'>
+                        <a href="Oruzje/a%20(3).jpg" class="html5lightbox" data-group="oruzje" data-thumbnail="Oruzje/a%20(3).jpg" title=""><img src='Oruzje/a%20(3).jpg' class='poravnaj slike-tekst'></a>
+                    </div>
+                    <div class='box'>
+                        <a href="Oruzje/a%20(4).jpg" class="html5lightbox" data-group="oruzje" data-thumbnail="Oruzje/a%20(4).jpg" title=""><img src='Oruzje/a%20(4).jpg' class='poravnaj slike-tekst'></a>
+                    </div>
+                    <div class='box'>
+                        <a href="Oruzje/a%20(5).jpg" class="html5lightbox" data-group="oruzje" data-thumbnail="Oruzje/a%20(5).jpg" title=""><img src='Oruzje/a%20(5).jpg' class='poravnaj slike-tekst'></a>
+                    </div>
+                    <div class='box'>
+                        <a href="Oruzje/a%20(6).jpg" class="html5lightbox" data-group="oruzje" data-thumbnail="Oruzje/a%20(6).JPG" title=""><img src='Oruzje/a%20(6).jpg' class='poravnaj slike-tekst'></a>
+                    </div>
                 </div>
-                <!--<a href="Oruzje/01_2096%20(1).jpg" class="html5lightbox" title="nes" data-group="mygroup" data-thumbnail="Oruzje/01_2096%20(1).jpg" width="600" data-height="400" title=""><img src="Oruzje/01_2096%20(1).jpg"></a>
-
-                
-                The Modal/Lightbox -->
 
             </div>
+
+
         </div>
     </div>
 
