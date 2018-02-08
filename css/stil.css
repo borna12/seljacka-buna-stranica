@@ -19,6 +19,10 @@
             color: rgb(104, 0, 2);
         }
         
+        .sredina {
+            text-align: center
+        }
+        
         #naslovnica {
             position: fixed;
             top: 0;
